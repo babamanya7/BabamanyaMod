@@ -127,99 +127,74 @@
   FRA_reform_our_industry:0 "Реформа нашей индустрии"
   FRA_reform_our_industry_desc:0 "Our industrialists have been operating inefficiently for too long. Reforms for more business-friendly policies will improve our relations with the corporations и incentivize them to work harder."
 
-  FRA_secure_europe:0 "Secure Europe"
-  FRA_secure_europe_desc:0 "The growing influence of the Soviet Union is a threat to a definitive European peace. Polи, our former ally, must be liberated from Moscow's grip."
+  FRA_secure_europe:0 "Спасти Европу"
+  FRA_secure_europe_desc:0 "Растущее влияние Советского Союза - угроза для мира в Европе, наш бывший союзник, должен быть освобождён от московской диктатуры."
 
-  FRA_tackle_the_german_threat:0 "Tackle the German Threat"
-  FRA_tackle_the_german_threat_desc:0 "Our nemesis to the East has ignored every warning и the drums of war ar booming across Eurpe. We must take every effort to ensure war does not come onto French soil. Germany will be taught its final lesson."
+  FRA_tackle_the_german_threat:0 "Уничтожить немецкую угрозу"
+  FRA_tackle_the_german_threat_desc:0 "Наш заклятый враг на востоке проигнорировал каждое предупреждение, и теперь барабаны войны звучат по всей Европе. Мы должны приложить все усилия, чтобы война не шла на французской земле. Германии получит свой последний урок."
 
   FRA_les_munitionnettes:0 "Боеприпасы"
-  FRA_les_munitionnettes_desc:0 "The Munitionnettes were, during the Great War, the women who worked into armament factories to produce ammunitions, while men were serving at the front. We should revive this system to help our industry."
+  FRA_les_munitionnettes_desc:0 "Женщины, во время Великой Войны, работали на заводах боеприпасов, пока мужчины служили на фронте. Мы должны возродить эту систему, чтоб помочь нашей промышленности."
 
-  FRA_national_centre_for_scientific_research:0 "National Centre for scientific research"
-  FRA_national_centre_for_scientific_research_desc:0 "We must merge together all centres of research under one roof, increasing efficency"
+  FRA_national_centre_for_scientific_research:0 "Национальный центр научных исследований"
+  FRA_national_centre_for_scientific_research_desc:0 "Мы обязаны обьединить все центры исследователей под одной крышей, увеличив их эффективность."
 
-  FRA_richelieu_tt:0 "Adds 2 Richelieu Class battleships into the production queue at §Y50%§! и §Y35%§! complete respectively"
+  FRA_richelieu_tt:0 "Добавляет 2 линкора класса Richelieu Class в очередь производства с §Y50%§! и §Y35%§! прогрессом соответственно"
 
-  FRA_joffre_tt:0 "Adds 1 Joffre Class Carrier into the production queue at §Y40%§! complete"
+  FRA_joffre_tt:0 "Добавляет 1 авианосец класса Joffre Class в очередь производства с §Y40%§! прогрессом"
   
   FRA_industrial_expansion_effect_tt:0 "Добавляет 4 §YГражданские Фабрики§! метрополиям, ранее инвестировавшим в"
   FRA_military_factories_effect_wa_tt:0 "Добавляет 6 §YВоенных заводов§! метрополиям, ранее инвестировавшим в"
   FRA_colonial_industry_effect_wa_tt:0 "Добавляет 6 §YГражданских фабрик§! каждому колониальному государству, в которое ранее были вложены средства."
 
-  FRA_border_defense:0 "Border Defence"
-  FRA_border_defense_desc:0 "We must prepare to fight again on our ground. на using our geography и natural defence, we will be able to force the fight to our enemies in our terms."
+  FRA_border_defense:0 "Оборона на границах"
+  FRA_border_defense_desc:0 "Мы должны подготовиться к борьбе на нашей земле, используя наши преимущества нашей земли, тогда мы сможем вести битву с врагом на наших условиях."
 
-  FRA_prepare_war_plans:0 "Prepare War Plans"
-  FRA_prepare_war_plans_desc:0 "Extensive planification и preparation of operation is the key on the battlefield. We should study right know plans to be prepared to respond to any threat."
-  FRA_prepare_war_plans_tt:0 "§GWill go up to extensive conscription when at war against a major nation§!"
+  FRA_air_based_sea_supremacy:0 "Воздушно-морское превосходство"
+  FRA_air_based_sea_supremacy_desc:0 "Уничтожать корабли другими кораблями - дорого. Дешевле использовать авиацию для уничтожения вражеского флота, пока наши находятся в относительной безопасности в порту."
 
-  FRA_return_to_borodino:0 "The Final Struggle"
-  FRA_return_to_borodino_desc:0 "We failed to conquer the Russian heartlи once, but we will not fail a second time. The spectre of communism will be exorcised from Europe."
-
-  FRA_unite_europe:0 "The European Coalition"
-  FRA_unite_europe_desc:0 "Our year of labor have borne fruit, и now all of Western Europe is firmly in our grasp. With no other major powers in the continent, it is time that the other nations recognize our hegemony."
-
-  FRA_revive_the_garde_imperiale:0 "Revive the Garde Impériale"
-  FRA_revive_the_garde_imperiale_desc:0 ""
-  FRA_revive_the_garde_imperiale_tt:0 "Unlocks decisions to recruit Garde Impériale divisions, visible if you have 100 lи XP."
-
-  FRA_air_based_sea_supremacy:0 "Air-based Sea Supremacy"
-  FRA_air_based_sea_supremacy_desc:0 "It is expensive to destroy warships with other warships. It is far cheaper to use small aircraft to destroy enemy fleets while our remained moored in the relative safety of a harbor."
-
-  FRA_develop_colonial_dockyards:0 "Develop Metropolitan Dockyards"
-  FRA_develop_colonial_dockyards_desc:0 "We have a vast colonial empire. To ensure our waters are secure, we need greater quantities of ships на building up existing dockyards."
+  FRA_develop_colonial_dockyards:0 "Развить метропольные верфи"
+  FRA_develop_colonial_dockyards_desc:0 "У нас огромная колониальная империя. Чтоб убедиться, что наши воды в безопасности, нам нужно больше кораблей, и соответсвенно больше верфей."
 
   FRA_plan_V:0 "План V"
-  FRA_plan_V_desc:0 "Though we are unable mobilize our armed forces in the current situation, it is a good idea to build a reserve of aircraft if war befalls our country. "
-  FRA_plan_V_tt:0 "§RThe Plan V will be cancelled if you either go higher than limited conscription or than early mobailization§!"
+  FRA_plan_V_desc:0 "Так как, мы не можем мобилизовать наши вооружённые силы в данной ситуации, хорошая идея сделать резерв авиации в глубине страны, если война придёт в нашу страну. "
+  FRA_plan_V_tt:0 "§RПлан V будет отменён, при призыве выше "Ограниченного призыва", или при мобилизации выше чем "Ранняя мобилизация"§!"
 
   FRA_plan_VI:0 "План VI"
-  FRA_plan_VI_desc:0 "Now that our industry has been remobilized, we can make efforts to improve our aircraft production."
+  FRA_plan_VI_desc:0 "Теперь наша промышленность мобилизована, и мы можем направить условия на увеличение производства авиации."
 
 
-  FRA_chasseurs_parachutistes:0 "Chasseurs Parachutistes"
-  FRA_chasseurs_parachutistes_desc:0 "Soviet Interwar experiments и German airbore operations have shown us the potential of this new weapon."
+  FRA_chasseurs_parachutistes:0 "Парашутисты егери"
+  FRA_chasseurs_parachutistes_desc:0 "Советские эксперементы и немецкие военные операции показали нам потенциальную мощь этого нового оружия."
 
-  FRA_send_officers_to_the_uk:0 "Send Officers to the UK"
-  FRA_send_officers_to_the_uk_desc:0 "British high commи has proposed us to train some of our officers to special operations."
+  FRA_send_officers_to_the_uk:0 "Отправить офицеров в Великобританию"
+  FRA_send_officers_to_the_uk_desc:0 "Британское высшее командование предложило нам тренировку некоторых наших офицеров, для специальных операций."
 
-  FRA_project_damocles:0 "Project Damoclès"
-  FRA_project_damocles_desc:0 "France was a leading nation in the field of nuclear reseach. We believe we can work on a new type of weapons linked to this area of physics. However, this will be expensive. We will surely need British help. This has the potential to change the world - Forever."
+  FRA_project_damocles:0 "Проект Дамокл"
+  FRA_project_damocles_desc:0 "Франция была лидером в ядерных исследованиях. Мы верим, что работа в ядерной физике связана с новым типом оружия. Однако, это будет дорого. Нам однозначно нужна британская помощь. Но, потенциал изменить мир - бесценен."
 
-  FRA_fortress_paris:0 "Fortress Paris"
-  FRA_fortress_paris_desc:0 "Paris, the Ville Lumière, is a great symbol for every French. Defending it at all cost might destroy the city, but it's a sacrifice we should be willing to make. It will show anyone that we will fight until the bitter end."
  
-  FRA_special_forces_joint_training:0 "Special Forces Joint Training"
-  FRA_special_forces_joint_training_desc:0 "We have been invited to collaborate with British Special Forces in Scotlи"
+  FRA_special_forces_joint_training:0 "Присоединиться к тренировкам спец войск"
+  FRA_special_forces_joint_training_desc:0 "Мы были приглашены присоединиться к тренировкам британских спец войск в Шотландии"
 
-  FRA_ils_ne_passeront_pas:0 "They Shall Not Pass!"
-  FRA_ils_ne_passeront_pas_desc:0 "'Ils ne passeront pas!' was the motto of the French Army during the battle of Verdun in 1916. This is the most iconic sentence representing the spirit of the French Army. We should revive this spirit once again, to motivate our soldiers."
+  FRA_special_forces:0 "Реорганизовать Иностранный Легион"
+  FRA_special_forces_desc:0 "Французский Иностранный Легион - элитные войска, собранные с помощью волонтёров со всего мира. Может мы сможем улучшить их боевые качества, соединив разные подразделения в одну дивизию."
 
-  FRA_ask_the_us_for_support:0 "Ask the US for Support"
-  FRA_ask_the_us_for_support_desc:0 "With the United States joining the Allies, we can ask them for economic aid to keep our war industry running." 
-
-  FRA_evacuate_our_industries:0 "Evacuate Our Industries"
-  FRA_evacuate_our_industries_desc:0 "We should transfer our northern и eastern industries to safer areas."
-
-  FRA_special_forces:0 "Reorganise the Foreign Legion"
-  FRA_special_forces_desc:0 "The French Foreign Legion is an elite unit, composed of volunteers from all around the globe. Maybe we could improve its fighting capability на merging the various regiments into a single division."
-
-  FRA_create_unit_legion_tt:0 "Elite Foreign Legion unit will be created in Paris"
+  FRA_create_unit_legion_tt:0 "1 дивизия элитных иностранных легионеров появится в Париже"
 
   FRA_new_army_bureau:0 "Новое армейское бюро"
-  FRA_new_army_bureau_desc:0 "The strategems of war have evolved far faster than we could have ever expected. New resources have been delegated to the army for the purpose of maintaining и improving our tactics."
+  FRA_new_army_bureau_desc:0 "Стратегии войны эволюционировали быстрее, чем мы могли себе представить. Дополнительные силы были выделены армии, с целью улучшения нашей стратегии и тактики."
 
   FRA_aggressive_focus_tt:0 "£faction_fra_French_Army §YАрмия§! отношение должно быть §GДружелюбный§! или лучше."
 
   FRA_ban_the_leagues_tt:0 "£faction_fra_French_Army §YНациональный блок§! отношение должно быть §RЖестокое§! или хуже."
 
-  FRN_create_infantry_unit:0 "French Algeria will recieve a infantry template available for us to recruit"
+  FRN_create_infantry_unit:0 "Французский Алжир получит шаблон пехоты для наёма"
 
-  ITA_bonifica_integrale_tt:0 "£faction_ita_proletariat Пролетариат become more §GHappy§! increasing §Yстабильность§! на §G5%§!"
+  ITA_bonifica_integrale_tt:0 "£faction_ita_proletariat Пролетариат станет §Gсчастливым§! увеличивая §Yстабильность§! на §G5%§!"
 
   ITA_an_army_to_conquer_europe:0 "Армия для завоевания Европы"
-  ITA_an_army_to_conquer_europe_desc:0 "War is coming to Europe. Regardless of who shoots first, we must be prepared to fight. We will create defense plans against each of our neighbors и will begin making reserve divisions ready. War will come to Europe, but Italy will never fall!"
+  ITA_an_army_to_conquer_europe_desc:0 "Война приходит в Европу. Несмотря на то, кто первый выстрелит, мы должны быть готовы к войне. Мы создадим защитные планы против каждого из наших соседей и будем готовить резервы. Война придёт в Европу, но Италия никогда не падёт!"
 
   ITA_8_million_bayonetts:0 "8 миллионов штыков"
   ITA_8_million_bayonetts_desc:0 ""
@@ -244,14 +219,14 @@
 
   ITA_raising_an_ethiopian_army:0 "Возрождение эфиопской армии"
   ITA_raising_an_ethiopian_army_desc:0 ""
-  ITA_ethiopian_divisions:0 "Re-establishes the Ethiopian Army with §Y8 18-width Light Infantry Divisions§!"
-  ITA_blackshirt_divisions:0 "Deploys §Y5 27-Width Blackshirt Divisions§!"
+  ITA_ethiopian_divisions:0 "Восстанавливает эфиопскую армию с помощью §Y8 18-ширины фронта лёгких пехотных дивизий§!"
+  ITA_blackshirt_divisions:0 "Развёртывает §Y5 27-Width Blackshirt Divisions§!"
 
   ITA_gateway_into_the_balkans:0 "Ворота на Балканы"
   ITA_gateway_into_the_balkans_desc:0 ""
 
   ITA_institute_for_industrial_reconstruction:0 "Институт промышленной реконструкции"
-  ITA_institute_for_industrial_reconstruction_desc:0 "The Istituto per la Ricostruzione Industriale (Institute for Industrial Reconstruction) or IRI was put into effect на the Facist Regime in 1933 и has protected our people from the worst effects of the Great Depression. Three years later, it controls almost half of all industries и saved our nation from total catastrophe."
+  ITA_institute_for_industrial_reconstruction_desc:0 "Институт промышленной реконструкции или ИПР был введён в действие фашистским режимом в 1933 году и защищал наших людей от худших последствий Великой Депрессии. Тремя годами позже, оно контролирует половину всего производства и спасла нашу нацию от тотальной катастрофы."
 
   ITA_develop_danieli_steelworks:0 "Развитие сталелитейного завода Даниэли"
   ITA_develop_danieli_steelworks_desc:0 ""
@@ -259,20 +234,20 @@
   ITA_experiments_in_hydro_power:0 "Эксперименты в гидроэнергетике"
   ITA_experiments_in_hydro_power_desc:0 ""
 
-  ITA_invest_in_danieli_industrial_complexs:0 "Инвестируйте в промышленные комплексы Даниэли"
-  ITA_invest_in_danieli_industrial_complexs_desc:0 "на investing in established companies и focusing on our industrial heartlи we can catch to the other majors much faster"
+  ITA_invest_in_danieli_industrial_complexs:0 "Инвестиции в промышленные центры"
+  ITA_invest_in_danieli_industrial_complexs_desc:0 ""
 
   ITA_focus_on_the_centres_of_industry:0 "Ориентация на промышленные центры"
   ITA_focus_on_the_centres_of_industry_desc:0 ""
 
   ITA_centre_for_military_modernization:0 "Центр военной модернизации"
-  ITA_centre_for_military_modernization_desc:0 "In order to achieve a capable military to achieve or territorial ambitions, we have to invest in modernizing our military to take on any threat we come across"
+  ITA_centre_for_military_modernization_desc:0 " Чтобы создать боеспособную армию для достижения территориальных амбиций, мы должны инвестировать в модернизацию наших вооруженных сил, чтобы противостоять любой угрозе, с которой мы столкнёмся"
 
   ITA_development_of_synthetic_oil:0 "Разработка синтетической нефти"
   ITA_development_of_synthetic_oil_desc:0 ""
 
   ITA_focus_on_rural_industrialization:0 "Сосредоточение на индустриализации сельских районов"
-  ITA_focus_on_rural_industrialization_desc:0 "Most of our economy is still based in agriculture. на investing in these areas we can help achieve industrialization across the country и bring prosperity to the south"
+  ITA_focus_on_rural_industrialization_desc:0 "Большая часть нашей экономики всё ещё основана на сельском хозяйстве. Инвестиции в эти области помогут нам достичь индустриалиции во всей стране, и тем самым принесут процветанию югу."
 
   ITA_develop_the_heel:0 "Развитие Каблука"
   ITA_develop_the_heel_desc:0 ""
@@ -299,7 +274,7 @@
   ITA_education_reform_desc:0 ""
 
   ITA_trade_and_tariffs:0 "Торговля и тарифы"
-  ITA_trade_and_tariffs_desc:0 "Autarky? Only fools believe that an economy will survive in isolation! We must open up our markets immediately so that our people will enjoy the luxuries the world has to offer. It'll also make it easier for us to expи our own manufacturing sector."
+  ITA_trade_and_tariffs_desc:0 "Автаркия?Только глупцы верят, что экономика выживет в изоляции! Мы должны открыть наши рынки немедленно, и тогда наши люди будут наслаждаться богатствами всего мира! Это так же поможет нам расширить наши производственные мощности."
 
   ITA_autarky:0 "Автаркия"
   ITA_autarky_desc:0 ""
@@ -309,7 +284,7 @@
 
   ITA_libyan_citizenship:0 "Ливийское гражданство"
   ITA_libyan_citizenship_desc:0 ""
-  ITL_create_infantry_unit:0 "Italian Liнаa will recieve a infantry template available for us to recruit"
+  ITL_create_infantry_unit:0 "Итальянская Ливия получит пехотный шаблон"
 
   ITA_fortify_africa:0 "Укрепить Африку"
   ITA_fortify_africa_desc:0 ""
@@ -333,14 +308,14 @@
   ITA_dictator_of_italy:0 "Диктатор Италии"
   ITA_dictator_of_italy_desc:0 ""
 
-  ITA_roman_divisions:0 "Roman Divisions"
+  ITA_roman_divisions:0 "Римские дивизии"
   ITA_roman_divisions_desc:0 ""
 
   ITA_infantry_modernization:0 "Модернизация пехоты"
-  ITA_infantry_modernization_desc:0 "Our soldiers need new weapons и support equipment to ensure their superiority on the battlefield. Furthermore, we should direct our general staff to formulate new strategies that takes advantage of modern developments."
+  ITA_infantry_modernization_desc:0 "Наши солдаты нуждаются в новом вооружении, чтоб достичь превосходства на поле боя. Далее, мы должны направить наш ген штаб, для создания новых стратегий, что используеют преимущества современного вооружения."
 
   ITA_artillery_modernization:0 "Модернизация артиллерии"
-  ITA_artillery_modernization_desc:0 "It's not enough to have large cannons on the battlefield if they're constantly outclassed на enemy weaponry. We will begin an emergency program to upgrade our artillery systems. Furthermore, we should direct our general staff to formulate new strategies that takes advantage of modern developments."
+  ITA_artillery_modernization_desc:0 "Недостаточно иметь большие пушки на поле боя, если они отстают от вражеского вооружения. Мы начнём срочную программу модернизации артилеристских систем. Далее, мы должны направить наш ген штаб, для создания новых стратегий, что используеют преимущества современного вооружения."
 
   ITA_multipurpose_guns:0 "Многоцелевые пушки"
   ITA_multipurpose_guns_desc:0 ""
@@ -373,13 +348,13 @@
 
   ITA_revive_the_arditi:0 "Возродить Ардити"
   ITA_revive_the_arditi_desc:0 ""
-  ITA_revive_the_arditi_tt:0 "Gain an elite §YArditi Division Template и unit§!\n"
+  ITA_revive_the_arditi_tt:0 "Даёт элитный §Yшаблон дивизии Ардити и дивизию§!\n"
 
   ITA_issue_fighter_contracts:0 "Выдача контрактов истребителям"
   ITA_issue_fighter_contracts_desc:0 ""
 
   ITA_issue_bomber_contracts:0 "Выдача контрактов на бомбардировщики"
-  ITA_issue_bomber_contracts_desc:0 "The key to winning the next air-war is the complete destruction of the enemies industrial base."
+  ITA_issue_bomber_contracts_desc:0 "Ключ к победе в следующей воздушной войне - полное разрушение вражеской индустриальной базы."
 
   ITA_issue_general_contracts:0 "Выдача генеральных контрактов"
   ITA_issue_general_contracts_desc:0 "In order to win the next air-war, we need an all-round airforce that can do everything."
@@ -388,7 +363,7 @@
   ITA_radar_ventures_desc:0 "This ground breaking technology will function as an early warning system against enemy air-raids и is much more reliable than ground observers."
 
   ITA_quality_over_quantity:0 "Качество важнее количества"
-  ITA_quality_over_quantity_desc:0 "We must not sacrifice the quality of our aircraft in order to produce more."
+  ITA_quality_over_quantity_desc:0 "Мы не должны пожерствовать качеством нашей авиации, для увеличения производства."
 
   ITA_quantity_over_quality:0 "Количество важнее качества"
   ITA_quantity_over_quality_desc:0 "Facing the reality of our industrial base, we must sacrifice quality to gain numerical parity with our enemies"
@@ -789,7 +764,7 @@
   JAP_ensure_military_loyalty:0 "Обеспечить военную лояльность"
   JAP_ensure_military_loyalty_desc:0 "While the army coup was a welcome one, we cannot afford any more rash actions from the Army. With so many army officers in governmental positions, we must take drastic action to remove their influence."
 
-  GER_issue_weapon_contracts_tt:1 "The £faction_ger_industrialists §YIndustrialists§! become more §GFriendly§! и §GInfluencial§!"
+  GER_issue_weapon_contracts_tt:1 "The £faction_ger_industrialists §YIndustrialists§! становится более §Gдружелюбным§! и §GInfluencial§!"
 
   GER_death_before_defeat_tt:0 " The £faction_ger_ss SS become more §GInfluencial§! increasing increasing §Yизменение политической власти§! на §G5%§!, и §Yстабильность§! на §G5%§!"
 
@@ -1667,7 +1642,7 @@
   ENG_bedrock_of_prosperity_tt:0 "Has waited 270 days for the Mosley Manifesto to bear fruit"
   upper_class_rebellion:0 "Upper Class Rebellion"
 
-  ENG_no_further_appeasement_tt:1 "§Yстабильность Penalties are reduced на 5% for every 5% World Tension§! After 10%."
+  ENG_no_further_appeasement_tt:1 "§YШтраф на стабильность уменьшаются на 5% на каждые 5% мировой напряжённости§! после 10%."
   ENG_no_further_appeasement_tt_1:1 "£faction_eng_labour Labour и the Conservatives £faction_eng_conservative become §RLess Friendly§! уменьшая §Yстабильность§! на §R15%§!."
   ENG_no_further_appeasement_tt_2:1 "£faction_eng_labour Labour и the Conservatives £faction_eng_conservative become §RLess Friendly§! уменьшая §Yстабильность§! на §R10%§!."
   ENG_no_further_appeasement_tt_3:1 "£faction_eng_labour Labour и the Conservatives £faction_eng_conservative become §RLess Friendly§! уменьшая §Yстабильность§! на §R15%§!."
@@ -1676,14 +1651,14 @@
 
   ENG_kickstart_the_war_industry_tt:1 "§Yстабильность Penalties are dependant on the War situation§!."
 
-  uk_mediterranean_focus_tt:0 "§GAdds decisions to further upgrade the capabilities of these islиs.\n§!"
+  uk_mediterranean_focus_tt:0 "§GДаёт решение для улучшения возможностей этих островов.\n§!"
 
-  new_military_projections:0 "New Military Projections"
+  new_military_projections:0 "Новые военные прогнозы"
   new_military_projections_desc:0 "Our current military organization does not reflect the new doctrine's we are developing. Our Chief of staff's recommend revising all aspects of our military strategy to follow our rearmament process"
-  new_military_projections_tt:1 "Gains a §YHeavy Tank Division Template§! и §YMedium Tank Division Template§!.\n"
+  new_military_projections_tt:1 "Даёт §Yшаблон тяжёлой танковой дивизии§! и §Yшаблон средней танковой дивизии§!.\n"
 
-  shadow_scheme_focus_tt:1 "Grants §G12§! Building Slots и §Y12 Military Factories§! in total in three states when entering a war.\n"
-  CAN_shadow_scheme_focus_tt:1 "Grants §G6§! Building Slots и §Y6 Military Factories§! in total in three states when entering a war.\n"
+  shadow_scheme_focus_tt:1 "Даёт §G12§! ячеек для строительства и §Y12 военных заводов§! всего в трёх регионах, когда начинается война.\n"
+  CAN_shadow_scheme_focus_tt:1 "Даёт §G6§! ячеек для строительства и §Y6 военных заводов§! всего в трёх регионах, когда начинается война.\n"
 
   USA_call_up_the_national_guard:0 "Вызвать Национальную гвардию"
   USA_call_up_the_national_guard_desc:0 "Will deploy и наpass automatically if at war"
@@ -1712,14 +1687,14 @@
   USA_heavy_tank_doctrine_desc:0 "It seems strange, that as the most industrialized nation in the world, that we do not have the capacity to field the largest tanks. Why pursue quantity over quality when we can simply have both?"
 
  
-  USA_create_unit_airborne_tt:0 "Gain an Elite Airborne Division Template."
+  USA_create_unit_airborne_tt:0 "Даёт шаблон элитной дивизии парашутистов."
 
   USA_the_global_super_power:0 "Глобальная сверхдержава"
   USA_the_global_super_power_desc:0 "The United States is the bastion of democracy in the Western world. Reaching from sea to shining sea, we are a beacon of hope, lighting the sky like a city upon a hill."
 
-  USA_focus_on_asia_tt:0 "Begins a mission for §YPower Projection §!across the pacific when another Great Power becomes a threat."
+  USA_focus_on_asia_tt:0 "Начинает миссию §Yпроекции силы§! в тихом океане, когда другая великая дерважа становится угрозой."
 
-  USA_intervention_mandate_tt:0 "Unlocks §YIntervention Mandates §!, allowing us to request Congress to authorize military action against another country."
+  USA_intervention_mandate_tt:0 "Открывает §Yмандаты на интервенцию§!, позволяя Конгессу начинать военные действия против другой страны."
 
   USA_war_foundations:0 "Основы войны"
   USA_war_foundations_desc:0 "Our current army is inexperienced и outdated. Drawing on accounts from the ongoing war will help inform our military decisions."
@@ -1776,17 +1751,17 @@
   USA_farmer_relief_act:0 "Закон о помощи фермерам"
   USA_farmer_relief_act_desc:0 "With the Dust Bowl terrorizing the Great Plains, direct relief must be available for struggling farmers to get them back on their feet."
 
-  USA_farm_bankruptcy_act:0 "Farm Bankruptcy Act"
+  USA_farm_bankruptcy_act:0 "Акт о банкротстве ферм"
   USA_farm_bankruptcy_act_desc:0 "FDR has given much focus to protecting farmers in the early years of his presidency. If we seek to maintain their support, we will need to pass far-reaching protections that will be perceived as controversial на some members of the American public."
   USA_farm_bankruptcy_act_tt:0 "§YWill prevent the formation of the neutral bloc in case of civil war§!"
 
-  USA_judicial_reform:0 "Judicial Procedures Reform Bill"
+  USA_judicial_reform:0 "Законопроект о реформе судебных процедур"
   USA_judicial_reform_desc:0 "With the conservative Supreme Court striking down vital new deal programs, actions must be taken to protect the American people и to assist the other 2 branches of government. на embarking on an ambitious \"Court Packing\" plan, we can gain control of the court to secure our programs."
 
-  USA_nira_act:0 "NIRA Act"
+  USA_nira_act:0 "NIRA акт"
   USA_nira_act_desc:0 "Now that we have been able to implement so many radical changes to our country, the president now thinks it is time to revisit the NIRA nullification.  If we are able to reinstate it, it will have large и varying levels of impact in our nation."
 
-  USA_accumulated_wealth_tax:0 "Accumulated Wealth Tax"
+  USA_accumulated_wealth_tax:0 "Налог на накопленное богатство"
   USA_accumulated_wealth_tax_desc:0 "In order to fund New Deal programs, the rich must pay their share to the American people in order to support them. To do this, a tax will be placed on fortunes over $500,000 to prevent the vast accumulation of idle wealth."
 
   USA_fair_labor_standards_act:0 "Закон о справедливых трудовых стандартах"
@@ -1883,44 +1858,44 @@
   USA_tva_alcoa_cooperation:0 "Сотрудничество с TVA-Alcoa"
   USA_tva_alcoa_cooperation_desc:0 "With the TVA being the dominant energy provider for the Tennessee River Valley, private companies such as the Aluminum Company of America, Alcoa, could use this immense energy production capabilities to build the world's largest Aluminum plant. This aluminum would come in hиy during a conflict."
 
-  USA_Kaiser_Positive_1_tt1:1 "£faction_usa_kaiser §YKaiser's Industries§! becomes more §GInfluental§!, increasing £GFX_faction_construction_civilian_icon §YConstruction Speed§! на §G5%§! и making them more likely to contribute industry towards a future war effort."
+  USA_Kaiser_Positive_1_tt1:1 "£faction_usa_kaiser §YKaiser's Industries§! становится более §Gвлиятельным§!, увеличивая £GFX_faction_construction_civilian_icon §Yскорость строительства§! на §G5%§! и увеличивая вероятность того, что они внесут свой вклад в будущей войне."
 
-  USA_Kaiser_Dockyard_Swap_tt:1 "£faction_usa_kaiser §YKaiser's Industries§! becomes more influential и fully swaps over to shipbuilding, §Rlosing§! all £GFX_faction_construction_civilian_icon §YConstruction Speed§! bonuses и §Ggaining§! £GFX_faction_construction_dockyard_icon §YDockyard Construction Speed§! и £GFX_faction_dockyard_icon §YDockyard Output§!"
+  USA_Kaiser_Dockyard_Swap_tt:1 "£faction_usa_kaiser §YKaiser's Industries§! становится более §Gвлиятельным§! и полностью переключается на кораблестроение,, §Rтеряя§! все бонусы на £GFX_faction_construction_civilian_icon §Yскорость строительства§! и §Gдаёт§! £GFX_faction_construction_dockyard_icon §Yскорость строительства верфей§! и £GFX_faction_dockyard_icon §Yпроизводительность верфи§!"
 
-  USA_Ford_Chrysler_negative_1_tt1:1 "£faction_usa_chrysler_ford §YFord/Chrysler§! become more §RHostile§!, уменьшая £GFX_faction_construction_civilian_icon §YCivilian Factory Construction Speed§! на §R-5%§! и making them less likely to support the government in foreign intervention."
+  USA_Ford_Chrysler_negative_1_tt1:1 "£faction_usa_chrysler_ford §YFord/Chrysler§! становится более §Rвраждебным§!, уменьшая £GFX_faction_construction_civilian_icon §YCivilian Factory Construction Speed§! на §R-5%§! и уменьшная вероятность того, что они внесут свой вклад в будущей войне.."
 
-  USA_JPMorgan_Positive_1_tt1:1 "£faction_usa_jpmorgan §YJ.P. Morgan§! becomes more §GFriendly§!, increasing £GFX_faction_stability_icon §Yстабильность§! на §G+5%§! и уменьшая £GFX_faction_consumer_goods §YConsumer Goods§! на §Y-4%§! и making them more likely to contribute funds towards a future war effort."
+  USA_JPMorgan_Positive_1_tt1:1 "£faction_usa_jpmorgan §YJ.P. Morgan§! становится более §Gдружелюбным§!, увеличивая £GFX_faction_stability_icon §Yстабильность§! на §G+5%§! и уменьшая £GFX_faction_consumer_goods §Yфабрики, производящие товары народного потребления§! на §Y-4%§! и увеличивая вероятность того, что они внесут свой вклад в будущей войне."
 
-  USA_Public_positive_1_tt1:1 "The £faction_usa_public_support §YPublic§! becomes more §GFriendly§!, increasing £GFX_faction_pol_power_icon §Yизменение политической власти§! на §G+0.10§! и £GFX_faction_stability_icon §Yстабильность§! на §G+5%§! и making them more likely to support the government in foreign intervention."
+  USA_Public_positive_1_tt1:1 "£faction_usa_public_support §YОбщество§! становится более §Gдружелюбным§!, увеличивая £GFX_faction_pol_power_icon §Yизменение политической власти§! на §G+0.10§! и £GFX_faction_stability_icon §Yстабильность§! на §G+5%§! и увеличивая вероятность того, что они внесут свой вклад в будущей войне."
 
-  USA_Public_negative_1_tt1:1 "The £faction_usa_public_support §YPublic§! becomes more §RHostile§!, уменьшая £GFX_faction_pol_power_icon §Yизменение политической власти§! на §R-0.10§! и £GFX_faction_stability_icon §Yстабильность§! на §R-5%§! и making them less likely to support the government in foreign intervention."
+  USA_Public_negative_1_tt1:1 "£faction_usa_public_support §YОбщество§! становится более §Rвраждебным§!, уменьшая £GFX_faction_pol_power_icon §Yизменение политической власти§! на §R-0.10§! и £GFX_faction_stability_icon §Yстабильность§! на §R-5%§! и увеличивая вероятность того, что они внесут свой вклад в будущей войне."
 
-  USA_Titan_negative_1_tt1:1 "£faction_usa_chrysler_ford §YFord/Chrysler§!,£faction_usa_gm_dupont §YGM/Dupont§!, и £faction_usa_jpmorgan §YJ.P. Morgan§! become more §RHostile§!, collectively уменьшая £GFX_faction_stability_icon §Yстабильность§! на §R-5%§! и£GFX_faction_construction_civilian_icon §YCivilian Factory Construction Speed§! на §R-10%§!, и making them less likely to contribute towards a future war effort."
+  USA_Titan_negative_1_tt1:1 "£faction_usa_chrysler_ford §YFord/Chrysler§!,£faction_usa_gm_dupont §YGM/Dupont§!, и £faction_usa_jpmorgan §YJ.P. Morgan§! становятся более §Rвраждебными§!, collectively уменьшая £GFX_faction_stability_icon §Yстабильность§! на §R-5%§! и£GFX_faction_construction_civilian_icon §Yскорость строительства фабрик§! на §R-10%§!, и увеличивая вероятность того, что они внесут свой вклад в будущей войне."
 
-  USA_Titan_positive_1_tt1:1 "£faction_usa_chrysler_ford §YFord/Chrysler§!,£faction_usa_gm_dupont §YGM/Dupont§!, и £faction_usa_jpmorgan §YJ.P. Morgan§! become more §GFriendly§!, collectively increasing £GFX_faction_stability_icon §Yстабильность§! на §G+5%§! и£GFX_faction_construction_civilian_icon §YCivilian Factory Construction Speed§! на §G+10%§!, и making them more likely to contribute industry towards a future war effort."
+  USA_Titan_positive_1_tt1:1 "£faction_usa_chrysler_ford §YFord/Chrysler§!,£faction_usa_gm_dupont §YGM/Dupont§!, и £faction_usa_jpmorgan §YJ.P. Morgan§! становятся более §Gдружелюбными§!, вместе увеличивая £GFX_faction_stability_icon §Yстабильность§! на §G+5%§! и£GFX_faction_construction_civilian_icon §Yскорость строительства фабрик§! на §G+10%§!, и увеличивая вероятность того, что они внесут свой вклад в будущей войне."
 
-  USA_Ford_GM_positive_1_tt1:1 "£faction_usa_chrysler_ford §YFord/Chrysler§! и £faction_usa_gm_dupont §YGM/Dupont§! become more §GFriendly§!, collectively increasing £GFX_faction_construction_civilian_icon §YCivilian Factory Construction Speed§! на §G+10%§! и making them more likely to contribute industry towards a future war effort."
+  USA_Ford_GM_positive_1_tt1:1 "£faction_usa_chrysler_ford §YFord/Chrysler§! и £faction_usa_gm_dupont §YGM/Dupont§! становятся более §Gдружелюбными§!, вместе увеличивая £GFX_faction_construction_civilian_icon §Yскорость строительства фабрик§! на §G+10%§! и увеличивая вероятность того, что они внесут свой вклад в будущей войне."
 
-  USA_Ford_positive_1_tt1:1 "£faction_usa_chrysler_ford §YFord/Chrysler§! become more §GFriendly§!, increasing £GFX_faction_construction_civilian_icon §YCivilian Factory Construction Speed§! на §G+5%§! и making them more likely to contribute industry towards a future war effort."
+  USA_Ford_positive_1_tt1:1 "£faction_usa_chrysler_ford §YFord/Chrysler§! становится более §Gдружелюбным§!, увеличивая £GFX_faction_construction_civilian_icon §Yскорость строительства фабрик§! на §G+5%§! и увеличивая вероятность того, что они внесут свой вклад в будущей войне."
 
-  USA_GM_positive_1_tt1:1 "£faction_usa_gm_dupont §YGM/Dupont§! become more §GFriendly§!, increasing £GFX_faction_construction_civilian_icon §YCivilian Factory Construction Speed§! на §G+5%§! и making them more likely to contribute industry towards a future war effort."
+  USA_GM_positive_1_tt1:1 "£faction_usa_gm_dupont §YGM/Dupont§! становится более §Gдружелюбным§!, увеличивая £GFX_faction_construction_civilian_icon §Yскорость строительства фабрик§! на §G+5%§! и увеличивая вероятность того, что они внесут свой вклад в будущей войне."
 
-  USA_Ford_swap_tt:1 "£faction_usa_chrysler_ford §YFord/Chrysler§! fully swap over to the military effort, §Rlosing§! all £GFX_faction_construction_civilian_icon §YCivilian Factory Construction Speed§! bonuses и §Ggaining§! £GFX_faction_industry_icon Military Factory Output и £GFX_faction_construction_military_icon Construction Speed."
+  USA_Ford_swap_tt:1 "£faction_usa_chrysler_ford §YFord/Chrysler§! полностью переключается на военное производство, §Rтеряя§! весь бонус на £GFX_faction_construction_civilian_icon §Yскорость строительства фабрик§! и §Gдаёт§! £GFX_faction_industry_icon объём заводского производства и £GFX_faction_construction_military_icon скорость строительства."
 
-  USA_GM_swap_tt:1 "£faction_usa_gm_dupont §YGM/Dupont§! fully swap over to the military effort, §Rlosing§! all £GFX_faction_construction_civilian_icon §YCivilian Factory Construction Speed§! bonuses и §Ggaining§! £GFX_faction_research_icon Research Speed и £GFX_faction_efficiency_icon Production Efficiency Growth."
+  USA_GM_swap_tt:1 "£faction_usa_gm_dupont §YGM/Dupont§! полностью переключается на военное производство, §Rтеряя§! весь бонус на £GFX_faction_construction_civilian_icon §Yскорость строительства фабрик§! и §Gдаёт§! £GFX_faction_research_icon скорость исследования и £GFX_faction_efficiency_icon скорость роста производства."
 
-  USA_JPMorgan_economic_reduction_tt:1 "£faction_usa_jpmorgan §YJ.P. Morgan§! offers to cover excess expenses not paid for на the US Government, reducing economic fatigue."
+  USA_JPMorgan_economic_reduction_tt:1 "£faction_usa_jpmorgan §YJ.P. Morgan§! предлагает покрывать сверх расходы, не оплаченные правительством США, уменьшая экономическую усталость."
 
-  USA_Kaiser_ford_cooperation_tt:1 "£faction_usa_kaiser §YKaiser's Industries§! receives help from £faction_usa_chrysler_ford §YFord/Chrysler§!, increasing £GFX_faction_construction_dockyard_icon §YDockyard Construction Speed§! и £GFX_faction_dockyard_icon §YDockyard Output§! на §G+15%§!"
+  USA_Kaiser_ford_cooperation_tt:1 "£faction_usa_kaiser §YKaiser's Industries§! получает помощь от £faction_usa_chrysler_ford §YFord/Chrysler§!, увеличивая £GFX_faction_construction_dockyard_icon §Yскорость строительства верфей§! и £GFX_faction_dockyard_icon §Yпроизводительность верфей§! на §G+15%§!"
 
-  USA_appoint_william_knudsen_tt:0 "§GUnlocks decisions to start negotiations with Industry Factions to aid war production."
+  USA_appoint_william_knudsen_tt:0 "§GОткрывает решения, чтоб начать переговоры с индустриальными фракциями для помощи военному производству."
 
   uk_extra_tech_slot_2:0 "Доп. ячейка для исследования"
   uk_extra_tech_slot_2_desc:0 "More research"
 
-  FRA_reach_out_to_spain_tt:0 "In case of refusal, wargoals will be unlocked against all hostile existing Spains."
-  FRA_invite_portugal_tt:0 "In case of refusal, wargoals will be unlocked against Portugal."
-  No_faction_to_invite_countries_into_tt:0 "Will have not effect for now, because we don't have a faction..."
+  FRA_reach_out_to_spain_tt:0 "В случае отказа, будет доступна цель войны против всех враждебных Испаний."
+  FRA_invite_portugal_tt:0 "В случае отказа, будет доступна цель войны с Португалией."
+  No_faction_to_invite_countries_into_tt:0 "Не имеет эффекта, т.к. мы не имеет фракции..."
   
   uk_privatize_the_housing_market:0 "Приватизировать рынок жилья"
   
