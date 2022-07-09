@@ -1,0 +1,1546 @@
+
+economy_decisions = {
+
+	ITL_provide_bengazi_refinery_oil = {
+		icon = generic_industry
+
+		visible = {
+            original_tag = ITL
+            is_subject_of = ITA
+		}
+
+		available = {
+			ITA = { has_completed_focus = ITA_libyan_refineries }
+			has_capitulated = no
+			ITA = { has_capitulated = no }
+			has_full_control_of_state = 450
+		}
+	
+		days_remove = 60
+		is_good = yes
+	
+		cost = 0
+
+		remove_effect = {
+			if = {
+				limit = {
+					ITA = { has_tech = modern_oil_processing }
+				}
+				ITA = { add_fuel = 10080 }
+			}
+			else_if = {
+				limit = {
+					ITA = { has_tech = advanced_oil_processing }
+				}
+				ITA = { add_fuel = 8340 }
+			}
+			else_if = {
+				limit = {
+					ITA = { has_tech = improved_oil_processing }
+				}
+				ITA = { add_fuel = 7440 }
+			}
+			else_if = {
+				limit = {
+					ITA = { has_tech = oil_processing }
+				}
+				ITA = { add_fuel = 6600 }
+			}
+			else = {
+				ITA = { add_fuel = 5760 }
+			}
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	ITA_nationalize_failing_steel_industries = {
+
+		icon = generic_industry
+
+		visible = {
+			has_completed_focus = ITA_institute_for_industrial_reconstruction
+			has_capitulated = no
+		}
+
+		available = {
+			has_completed_focus = ITA_institute_for_industrial_reconstruction
+			has_capitulated = no
+			num_of_civilian_factories_available_for_projects > 9
+		}
+	
+		days_remove = 60
+		is_good = yes
+	
+		cost = 25
+	
+		fire_only_once = yes
+	
+		modifier = {
+			civilian_factory_use = 10
+		}
+
+		remove_effect = {
+			economy_fatigue_level_down_10 = yes
+			random_owned_controlled_state = {
+				prioritize = { 157 }
+				limit = {
+					free_building_slots = {
+						building = steel_refinery
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = steel_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				add = 500
+				OR = {
+					has_idea = economy_fatigue_20
+					has_idea = economy_fatigue_21
+					has_idea = economy_fatigue_22
+					has_idea = economy_fatigue_23
+					has_idea = economy_fatigue_24
+					has_idea = economy_fatigue_25
+					has_idea = economy_fatigue_26
+					has_idea = economy_fatigue_27
+					has_idea = economy_fatigue_28
+					has_idea = economy_fatigue_29
+					has_idea = economy_fatigue_30
+					has_idea = economy_fatigue_31
+					has_idea = economy_fatigue_32
+					has_idea = economy_fatigue_33
+					has_idea = economy_fatigue_34
+					has_idea = economy_fatigue_35
+					has_idea = economy_fatigue_36
+					has_idea = economy_fatigue_37
+					has_idea = economy_fatigue_38
+					has_idea = economy_fatigue_39
+					has_idea = economy_fatigue_40
+					has_idea = economy_fatigue_41
+					has_idea = economy_fatigue_42
+					has_idea = economy_fatigue_43
+					has_idea = economy_fatigue_44
+					has_idea = economy_fatigue_45
+					has_idea = economy_fatigue_46
+					has_idea = economy_fatigue_47
+					has_idea = economy_fatigue_48
+					has_idea = economy_fatigue_49
+					has_idea = economy_fatigue_50
+					has_idea = economy_fatigue_51
+					has_idea = economy_fatigue_52
+					has_idea = economy_fatigue_53
+					has_idea = economy_fatigue_54
+					has_idea = economy_fatigue_55
+					has_idea = economy_fatigue_56
+					has_idea = economy_fatigue_57
+					has_idea = economy_fatigue_58
+					has_idea = economy_fatigue_59
+					has_idea = economy_fatigue_60
+					has_idea = economy_fatigue_61
+					has_idea = economy_fatigue_62
+					has_idea = economy_fatigue_63
+					has_idea = economy_fatigue_64
+					has_idea = economy_fatigue_65
+					has_idea = economy_fatigue_66
+					has_idea = economy_fatigue_67
+					has_idea = economy_fatigue_68
+					has_idea = economy_fatigue_69
+					has_idea = economy_fatigue_70
+					has_idea = economy_fatigue_71
+					has_idea = economy_fatigue_72
+					has_idea = economy_fatigue_73
+					has_idea = economy_fatigue_74
+					has_idea = economy_fatigue_75
+					has_idea = economy_fatigue_76
+					has_idea = economy_fatigue_77
+					has_idea = economy_fatigue_78
+					has_idea = economy_fatigue_79
+					has_idea = economy_fatigue_80
+					has_idea = economy_fatigue_81
+					has_idea = economy_fatigue_82
+					has_idea = economy_fatigue_83
+					has_idea = economy_fatigue_84
+					has_idea = economy_fatigue_85
+					has_idea = economy_fatigue_86
+					has_idea = economy_fatigue_87
+					has_idea = economy_fatigue_88
+					has_idea = economy_fatigue_89
+					has_idea = economy_fatigue_90
+					has_idea = economy_fatigue_91
+					has_idea = economy_fatigue_92
+					has_idea = economy_fatigue_93
+					has_idea = economy_fatigue_94
+					has_idea = economy_fatigue_95
+					has_idea = economy_fatigue_96
+					has_idea = economy_fatigue_97
+					has_idea = economy_fatigue_98
+					has_idea = economy_fatigue_99
+					has_idea = economy_fatigue_100
+				}
+			}
+		}
+	}
+
+	ITA_nationalize_failing_weapon_industries = {
+
+		icon = generic_industry
+
+		visible = {
+			has_completed_focus = ITA_institute_for_industrial_reconstruction
+			has_capitulated = no
+		}
+
+		available = {
+			has_completed_focus = ITA_institute_for_industrial_reconstruction
+			has_capitulated = no
+			num_of_civilian_factories_available_for_projects > 9
+		}
+	
+		days_remove = 60
+		is_good = yes
+	
+		cost = 25
+	
+		fire_only_once = yes
+	
+		modifier = {
+			civilian_factory_use = 10
+		}
+
+		remove_effect = {
+			economy_fatigue_level_down_10 = yes
+			random_owned_controlled_state = {
+				prioritize = { 117 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				add = 500
+				OR = {
+					has_idea = economy_fatigue_20
+					has_idea = economy_fatigue_21
+					has_idea = economy_fatigue_22
+					has_idea = economy_fatigue_23
+					has_idea = economy_fatigue_24
+					has_idea = economy_fatigue_25
+					has_idea = economy_fatigue_26
+					has_idea = economy_fatigue_27
+					has_idea = economy_fatigue_28
+					has_idea = economy_fatigue_29
+					has_idea = economy_fatigue_30
+					has_idea = economy_fatigue_31
+					has_idea = economy_fatigue_32
+					has_idea = economy_fatigue_33
+					has_idea = economy_fatigue_34
+					has_idea = economy_fatigue_35
+					has_idea = economy_fatigue_36
+					has_idea = economy_fatigue_37
+					has_idea = economy_fatigue_38
+					has_idea = economy_fatigue_39
+					has_idea = economy_fatigue_40
+					has_idea = economy_fatigue_41
+					has_idea = economy_fatigue_42
+					has_idea = economy_fatigue_43
+					has_idea = economy_fatigue_44
+					has_idea = economy_fatigue_45
+					has_idea = economy_fatigue_46
+					has_idea = economy_fatigue_47
+					has_idea = economy_fatigue_48
+					has_idea = economy_fatigue_49
+					has_idea = economy_fatigue_50
+					has_idea = economy_fatigue_51
+					has_idea = economy_fatigue_52
+					has_idea = economy_fatigue_53
+					has_idea = economy_fatigue_54
+					has_idea = economy_fatigue_55
+					has_idea = economy_fatigue_56
+					has_idea = economy_fatigue_57
+					has_idea = economy_fatigue_58
+					has_idea = economy_fatigue_59
+					has_idea = economy_fatigue_60
+					has_idea = economy_fatigue_61
+					has_idea = economy_fatigue_62
+					has_idea = economy_fatigue_63
+					has_idea = economy_fatigue_64
+					has_idea = economy_fatigue_65
+					has_idea = economy_fatigue_66
+					has_idea = economy_fatigue_67
+					has_idea = economy_fatigue_68
+					has_idea = economy_fatigue_69
+					has_idea = economy_fatigue_70
+					has_idea = economy_fatigue_71
+					has_idea = economy_fatigue_72
+					has_idea = economy_fatigue_73
+					has_idea = economy_fatigue_74
+					has_idea = economy_fatigue_75
+					has_idea = economy_fatigue_76
+					has_idea = economy_fatigue_77
+					has_idea = economy_fatigue_78
+					has_idea = economy_fatigue_79
+					has_idea = economy_fatigue_80
+					has_idea = economy_fatigue_81
+					has_idea = economy_fatigue_82
+					has_idea = economy_fatigue_83
+					has_idea = economy_fatigue_84
+					has_idea = economy_fatigue_85
+					has_idea = economy_fatigue_86
+					has_idea = economy_fatigue_87
+					has_idea = economy_fatigue_88
+					has_idea = economy_fatigue_89
+					has_idea = economy_fatigue_90
+					has_idea = economy_fatigue_91
+					has_idea = economy_fatigue_92
+					has_idea = economy_fatigue_93
+					has_idea = economy_fatigue_94
+					has_idea = economy_fatigue_95
+					has_idea = economy_fatigue_96
+					has_idea = economy_fatigue_97
+					has_idea = economy_fatigue_98
+					has_idea = economy_fatigue_99
+					has_idea = economy_fatigue_100
+				}
+			}
+		}
+	}
+
+	ITA_nationalize_failing_chemical_industries = {
+
+		icon = generic_industry
+
+		visible = {
+			has_completed_focus = ITA_institute_for_industrial_reconstruction
+			has_capitulated = no
+		}
+
+		available = {
+			has_completed_focus = ITA_institute_for_industrial_reconstruction
+			has_capitulated = no
+			num_of_civilian_factories_available_for_projects > 9
+		}
+	
+		days_remove = 60
+		is_good = yes
+	
+		cost = 25
+	
+		fire_only_once = yes
+	
+		modifier = {
+			civilian_factory_use = 10
+		}
+
+		remove_effect = {
+			economy_fatigue_level_down_10 = yes
+			random_owned_controlled_state = {
+				prioritize = { 117 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				add = 500
+				OR = {
+					has_idea = economy_fatigue_20
+					has_idea = economy_fatigue_21
+					has_idea = economy_fatigue_22
+					has_idea = economy_fatigue_23
+					has_idea = economy_fatigue_24
+					has_idea = economy_fatigue_25
+					has_idea = economy_fatigue_26
+					has_idea = economy_fatigue_27
+					has_idea = economy_fatigue_28
+					has_idea = economy_fatigue_29
+					has_idea = economy_fatigue_30
+					has_idea = economy_fatigue_31
+					has_idea = economy_fatigue_32
+					has_idea = economy_fatigue_33
+					has_idea = economy_fatigue_34
+					has_idea = economy_fatigue_35
+					has_idea = economy_fatigue_36
+					has_idea = economy_fatigue_37
+					has_idea = economy_fatigue_38
+					has_idea = economy_fatigue_39
+					has_idea = economy_fatigue_40
+					has_idea = economy_fatigue_41
+					has_idea = economy_fatigue_42
+					has_idea = economy_fatigue_43
+					has_idea = economy_fatigue_44
+					has_idea = economy_fatigue_45
+					has_idea = economy_fatigue_46
+					has_idea = economy_fatigue_47
+					has_idea = economy_fatigue_48
+					has_idea = economy_fatigue_49
+					has_idea = economy_fatigue_50
+					has_idea = economy_fatigue_51
+					has_idea = economy_fatigue_52
+					has_idea = economy_fatigue_53
+					has_idea = economy_fatigue_54
+					has_idea = economy_fatigue_55
+					has_idea = economy_fatigue_56
+					has_idea = economy_fatigue_57
+					has_idea = economy_fatigue_58
+					has_idea = economy_fatigue_59
+					has_idea = economy_fatigue_60
+					has_idea = economy_fatigue_61
+					has_idea = economy_fatigue_62
+					has_idea = economy_fatigue_63
+					has_idea = economy_fatigue_64
+					has_idea = economy_fatigue_65
+					has_idea = economy_fatigue_66
+					has_idea = economy_fatigue_67
+					has_idea = economy_fatigue_68
+					has_idea = economy_fatigue_69
+					has_idea = economy_fatigue_70
+					has_idea = economy_fatigue_71
+					has_idea = economy_fatigue_72
+					has_idea = economy_fatigue_73
+					has_idea = economy_fatigue_74
+					has_idea = economy_fatigue_75
+					has_idea = economy_fatigue_76
+					has_idea = economy_fatigue_77
+					has_idea = economy_fatigue_78
+					has_idea = economy_fatigue_79
+					has_idea = economy_fatigue_80
+					has_idea = economy_fatigue_81
+					has_idea = economy_fatigue_82
+					has_idea = economy_fatigue_83
+					has_idea = economy_fatigue_84
+					has_idea = economy_fatigue_85
+					has_idea = economy_fatigue_86
+					has_idea = economy_fatigue_87
+					has_idea = economy_fatigue_88
+					has_idea = economy_fatigue_89
+					has_idea = economy_fatigue_90
+					has_idea = economy_fatigue_91
+					has_idea = economy_fatigue_92
+					has_idea = economy_fatigue_93
+					has_idea = economy_fatigue_94
+					has_idea = economy_fatigue_95
+					has_idea = economy_fatigue_96
+					has_idea = economy_fatigue_97
+					has_idea = economy_fatigue_98
+					has_idea = economy_fatigue_99
+					has_idea = economy_fatigue_100
+				}
+			}
+		}
+	}
+
+	ITA_nationalize_failing_banks = {
+
+		icon = generic_industry
+
+		visible = {
+			has_completed_focus = ITA_institute_for_industrial_reconstruction
+			has_capitulated = no
+		}
+
+		available = {
+			has_completed_focus = ITA_institute_for_industrial_reconstruction
+			has_capitulated = no
+			num_of_civilian_factories_available_for_projects > 19
+		}
+	
+		days_remove = 60
+		is_good = yes
+	
+		cost = 25
+	
+		fire_only_once = yes
+	
+		modifier = {
+			civilian_factory_use = 20
+		}
+
+		remove_effect = {
+			economy_fatigue_level_down_10 = yes
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				add = 500
+				OR = {
+					has_idea = economy_fatigue_20
+					has_idea = economy_fatigue_21
+					has_idea = economy_fatigue_22
+					has_idea = economy_fatigue_23
+					has_idea = economy_fatigue_24
+					has_idea = economy_fatigue_25
+					has_idea = economy_fatigue_26
+					has_idea = economy_fatigue_27
+					has_idea = economy_fatigue_28
+					has_idea = economy_fatigue_29
+					has_idea = economy_fatigue_30
+					has_idea = economy_fatigue_31
+					has_idea = economy_fatigue_32
+					has_idea = economy_fatigue_33
+					has_idea = economy_fatigue_34
+					has_idea = economy_fatigue_35
+					has_idea = economy_fatigue_36
+					has_idea = economy_fatigue_37
+					has_idea = economy_fatigue_38
+					has_idea = economy_fatigue_39
+					has_idea = economy_fatigue_40
+					has_idea = economy_fatigue_41
+					has_idea = economy_fatigue_42
+					has_idea = economy_fatigue_43
+					has_idea = economy_fatigue_44
+					has_idea = economy_fatigue_45
+					has_idea = economy_fatigue_46
+					has_idea = economy_fatigue_47
+					has_idea = economy_fatigue_48
+					has_idea = economy_fatigue_49
+					has_idea = economy_fatigue_50
+					has_idea = economy_fatigue_51
+					has_idea = economy_fatigue_52
+					has_idea = economy_fatigue_53
+					has_idea = economy_fatigue_54
+					has_idea = economy_fatigue_55
+					has_idea = economy_fatigue_56
+					has_idea = economy_fatigue_57
+					has_idea = economy_fatigue_58
+					has_idea = economy_fatigue_59
+					has_idea = economy_fatigue_60
+					has_idea = economy_fatigue_61
+					has_idea = economy_fatigue_62
+					has_idea = economy_fatigue_63
+					has_idea = economy_fatigue_64
+					has_idea = economy_fatigue_65
+					has_idea = economy_fatigue_66
+					has_idea = economy_fatigue_67
+					has_idea = economy_fatigue_68
+					has_idea = economy_fatigue_69
+					has_idea = economy_fatigue_70
+					has_idea = economy_fatigue_71
+					has_idea = economy_fatigue_72
+					has_idea = economy_fatigue_73
+					has_idea = economy_fatigue_74
+					has_idea = economy_fatigue_75
+					has_idea = economy_fatigue_76
+					has_idea = economy_fatigue_77
+					has_idea = economy_fatigue_78
+					has_idea = economy_fatigue_79
+					has_idea = economy_fatigue_80
+					has_idea = economy_fatigue_81
+					has_idea = economy_fatigue_82
+					has_idea = economy_fatigue_83
+					has_idea = economy_fatigue_84
+					has_idea = economy_fatigue_85
+					has_idea = economy_fatigue_86
+					has_idea = economy_fatigue_87
+					has_idea = economy_fatigue_88
+					has_idea = economy_fatigue_89
+					has_idea = economy_fatigue_90
+					has_idea = economy_fatigue_91
+					has_idea = economy_fatigue_92
+					has_idea = economy_fatigue_93
+					has_idea = economy_fatigue_94
+					has_idea = economy_fatigue_95
+					has_idea = economy_fatigue_96
+					has_idea = economy_fatigue_97
+					has_idea = economy_fatigue_98
+					has_idea = economy_fatigue_99
+					has_idea = economy_fatigue_100
+				}
+			}
+		}
+	}
+}
+
+special_projects = {
+
+	ITA_improve_the_alpine_line_west = {
+
+		icon = generic_bunker
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 9
+			any_country = {
+				OR = {
+					tag = ITA
+					is_in_faction_with = ITA
+				}
+				has_full_control_of_state = 158
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		visible = {
+			has_completed_focus = ITA_improve_the_alpine_line
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 10
+		}
+		
+		remove_effect = {
+			158 = {
+				custom_effect_tooltip = ITA_improve_the_alpine_line_west_dd
+				hidden_effect = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 611
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 6780
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9738
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11721
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11891
+						instant_build = yes
+					}
+				}
+			}	
+		}
+	}
+
+	ITA_improve_the_alpine_line_north = {
+
+		icon = generic_bunker
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			any_country = {
+				OR = {
+					tag = ITA
+					is_in_faction_with = ITA
+				}
+				has_full_control_of_state = 39
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		visible = {
+			has_completed_focus = ITA_improve_the_alpine_line
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		
+		remove_effect = {
+			39 = {
+				custom_effect_tooltip = ITA_improve_the_alpine_line_north_dd
+				hidden_effect = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 6675
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9630
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11615
+						instant_build = yes
+					}
+				}
+			}	
+		}
+	}
+
+	ITA_improve_the_alpine_line_east = {
+
+		icon = generic_bunker
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			any_country = {
+				OR = {
+					tag = ITA
+					is_in_faction_with = ITA
+				}
+				has_full_control_of_state = 160
+				has_full_control_of_state = 885
+				has_full_control_of_state = 886
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		visible = {
+			has_completed_focus = ITA_improve_the_alpine_line
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = ITA_improve_the_alpine_line_east_dd
+			160 = {
+				hidden_effect = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 3657
+						instant_build = yes
+					}
+				}
+			}
+			885 = {
+				hidden_effect = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9613
+						instant_build = yes
+					}
+				}
+			}
+			886 = {
+				hidden_effect = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11595
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	ITA_gustav_line = {
+
+		icon = generic_bunker
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 9
+			any_country = {
+				OR = {
+					tag = ITA
+					is_in_faction_with = ITA
+				}
+				has_full_control_of_state = 2
+				has_full_control_of_state = 157
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		visible = {
+			has_completed_focus = ITA_internal_defenses
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 10
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = ITA_gustav_line_dd
+			158 = {
+				hidden_effect = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11846
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11882
+						instant_build = yes
+					}
+				}
+			}	
+			157 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 963
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6831
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 3910
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 9838
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	ITA_gothic_line = {
+
+		icon = generic_bunker
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 9
+			any_country = {
+				OR = {
+					tag = ITA
+					is_in_faction_with = ITA
+				}
+				has_full_control_of_state = 162
+				has_full_control_of_state = 157
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		visible = {
+			has_completed_focus = ITA_internal_defenses
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 10
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = ITA_gothic_line_dd
+			162 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6973
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 1616
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 11889
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 9879
+					instant_build = yes
+				}
+			}
+			157 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 967
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 11861
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+ITA_military_reform = {
+
+	ITA_army_reform = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_army_experience > 49
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 500
+		}
+		days_remove = 30
+
+		visible = {
+			OR = {
+				has_idea = ITA_inadequte_army
+				has_idea = ITA_inadequte_army_2
+				has_idea = ITA_inadequte_army_3
+				has_idea = ITA_inadequte_army_4
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { has_idea = ITA_inadequte_army }
+				swap_ideas = {
+					remove_idea = ITA_inadequte_army
+					add_idea = ITA_inadequte_army_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = ITA_inadequte_army_2 }
+				swap_ideas = {
+					remove_idea = ITA_inadequte_army_2
+					add_idea = ITA_inadequte_army_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = ITA_inadequte_army_3 }
+				swap_ideas = {
+					remove_idea = ITA_inadequte_army_3
+					add_idea = ITA_inadequte_army_4
+				}
+			}
+			else_if = {
+				limit = { has_idea = ITA_inadequte_army_4 }
+				remove_ideas = ITA_inadequte_army_4
+				set_country_flag = adequate_army
+			}
+		}
+		complete_effect = {
+			army_experience = -50
+		}		
+	}
+
+	ITA_airforce_reform = {
+
+		icon = generic_air
+
+		available = {
+			has_air_experience > 99
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 500
+		}
+		days_remove = 30
+
+		visible = {
+			OR = {
+				has_idea = ITA_inadequte_airforce
+				has_idea = ITA_inadequte_airforce_2
+				has_idea = ITA_inadequte_airforce_3
+				has_idea = ITA_inadequte_airforce_4
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { has_idea = ITA_inadequte_airforce }
+				swap_ideas = {
+					remove_idea = ITA_inadequte_airforce
+					add_idea = ITA_inadequte_airforce_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = ITA_inadequte_airforce_2 }
+				swap_ideas = {
+					remove_idea = ITA_inadequte_airforce_2
+					add_idea = ITA_inadequte_airforce_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = ITA_inadequte_airforce_3 }
+				swap_ideas = {
+					remove_idea = ITA_inadequte_airforce_3
+					add_idea = ITA_inadequte_airforce_4
+				}
+			}
+			else_if = {
+				limit = { has_idea = ITA_inadequte_airforce_4 }
+				remove_ideas = ITA_inadequte_airforce_4
+				set_country_flag = adequate_airforce
+			}
+		}
+		complete_effect = {
+			air_experience = -100						
+		}		
+	}
+
+	ITA_naval_reform = {
+
+		icon = generic_naval
+
+		available = {
+			has_navy_experience > 24
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 500
+		}
+		days_remove = 30
+
+		visible = {
+			OR = {
+				has_idea = ITA_inadequte_navy
+				has_idea = ITA_inadequte_navy_2
+				has_idea = ITA_inadequte_navy_3 
+				has_idea = ITA_inadequte_navy_4
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { has_idea = ITA_inadequte_navy }
+				swap_ideas = {
+					remove_idea = ITA_inadequte_navy
+					add_idea = ITA_inadequte_navy_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = ITA_inadequte_navy_2 }
+				swap_ideas = {
+					remove_idea = ITA_inadequte_navy_2
+					add_idea = ITA_inadequte_navy_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = ITA_inadequte_navy_3 }
+				swap_ideas = {
+					remove_idea = ITA_inadequte_navy_3
+					add_idea = ITA_inadequte_navy_4
+				}
+			}
+			else_if = {
+				limit = { has_idea = ITA_inadequte_navy_4 }
+				remove_ideas = ITA_inadequte_navy_4
+				set_country_flag = adequate_navy
+			}
+		}
+		complete_effect = {
+			navy_experience = -25						
+		}		
+	}
+}
+
+ITA_war_plans = {
+
+	ITA_operazione_d = {
+		icon = generic_operation
+		available = {
+			has_war_with = FRA
+		}
+		visible = {
+			has_completed_focus = ITA_an_army_to_conquer_europe
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		targeted_modifier = {
+			tag = FRA
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	ITA_operazione_e = {
+		icon = generic_operation
+		available = {
+			has_war_with = ENG
+		}
+		visible = {
+			has_completed_focus = ITA_an_army_to_conquer_europe
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		targeted_modifier = {
+			tag = ENG
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	ITA_operazione_g = {
+		icon = generic_operation
+		available = {
+			has_war_with = USA
+		}
+		visible = {
+			has_completed_focus = ITA_an_army_to_conquer_europe
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		targeted_modifier = {
+			tag = USA
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+}
+
+operations = {
+
+	ETH_gas_attacks = {
+
+		icon = generic_operation
+
+        allowed = {
+            original_tag = ITA
+        }
+
+        available = {
+            has_war_with = ETH
+			NOT = {
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+        }
+
+		visible = {
+            has_war_with = ETH
+			NOT = {
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+		}
+
+        remove_trigger = {
+        	NOT = { has_war_with = ETH }
+        }
+
+		cancel_trigger = {
+			NOT = { has_war_with = ETH }
+		}
+
+        cost = 0
+        fire_only_once = yes
+		days_remove = 210
+
+        ai_will_do = {
+			factor = 500
+		}
+
+		targeted_modifier = {
+			tag = ETH
+			attack_bonus_against = 0.4
+		}
+
+		complete_effect = {
+            add_political_power = -50
+        }
+	}
+}
+
+
+political_actions = {
+	ITA_demand_savoy = {
+	
+		icon = generic_oppression
+		
+		available = {
+			ITA = { is_subject = no }
+			original_tag = ITA
+			OR = {
+				735 = {
+					CONTROLLER = {
+						NOT = { tag = ITA }
+						NOT = { tag = FRA }
+						is_in_faction_with = ITA
+					}
+				}
+				AND = {
+					735 = {
+						CONTROLLER = {
+							tag = VIC
+						}
+					}
+					is_in_faction_with = GER
+				}
+			}
+		}
+
+		visible = {
+			ITA = { is_subject = no }
+			original_tag = ITA
+			OR = {
+				735 = {
+					CONTROLLER = {
+						NOT = { tag = ITA }
+						NOT = { tag = FRA }
+						is_in_faction_with = ITA
+					}
+				}
+				AND = {
+					735 = {
+						CONTROLLER = {
+							tag = VIC
+						}
+					}
+					is_in_faction_with = GER
+				}
+			}
+		}
+
+		highlight_states = { highlight_state_targets = { state = 735 } }
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		complete_effect = {
+			if = { 
+				limit = {
+					AND = {
+						735 = {
+							CONTROLLER = {
+								tag = VIC
+							}
+						}
+						is_in_faction_with = GER
+					}
+				}
+				GER = { country_event = ita_armor.834 }
+			}
+			else = { 
+				735 = {
+					CONTROLLER = {
+						country_event = ita_armor.834
+					}
+				}
+			}
+		}
+	}
+	
+	ITA_demand_corsica = {
+	
+		icon = generic_oppression
+		
+		available = {
+			ITA = { is_subject = no }
+			original_tag = ITA
+			OR = {
+				1 = {
+					CONTROLLER = {
+						NOT = { tag = ITA }
+						NOT = { tag = FRA }
+						is_in_faction_with = ITA
+					}
+				}
+				AND = {
+					1 = {
+						CONTROLLER = {
+							tag = VIC
+						}
+					}
+					is_in_faction_with = GER
+				}
+			}
+		}
+
+		visible = {
+			ITA = { is_subject = no }
+			original_tag = ITA
+			OR = {
+				1 = {
+					CONTROLLER = {
+						NOT = { tag = ITA }
+						NOT = { tag = FRA }
+						is_in_faction_with = ITA
+					}
+				}
+				AND = {
+					1 = {
+						CONTROLLER = {
+							tag = VIC
+						}
+					}
+					is_in_faction_with = GER
+				}
+			}
+		}
+
+		highlight_states = { highlight_state_targets = { state = 1 } }
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		complete_effect = {
+			if = { 
+				limit = {
+					AND = {
+						1 = {
+							CONTROLLER = {
+								tag = VIC
+							}
+						}
+						is_in_faction_with = GER
+					}
+				}
+				GER = { country_event = ita_armor.835 }
+			}
+			else = { 
+				1 = {
+					CONTROLLER = {
+						country_event = ita_armor.835
+					}
+				}
+			}
+		}
+	}
+	ITA_armistice_mission = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			tag = ITA
+		}
+
+		available = {
+			has_capitulated = yes
+		}
+
+		activation = {
+			always = no #Triggered from event
+		}
+		
+		days_mission_timeout = 60
+		is_good = yes
+
+		timeout_effect = {
+			if = {
+				limit = {
+					USA = { is_faction_leader = yes }
+				}
+				USA = {
+					country_event = { id = ita_armor.895 days = 60 }
+				}
+			}
+			else = {
+				ENG = {
+					country_event = { id = ita_armor.895 days = 60 }
+				}
+			}
+		}
+
+		complete_effect = {
+		}
+	}
+
+	ITA_in_crisis = {
+
+		icon = generic_ignite_civil_war
+
+		allowed = {
+			tag = ITA
+		}
+
+		available = {
+			115 = { is_controlled_by = ITA }
+            surrender_progress < 0.2
+		}
+		activation = {
+            ITA = { has_war_with = ENG }
+			has_idea = ITA_grand_council_of_fascism
+            NOT = { has_country_flag = italy_switching_sides }
+            NOT = { has_country_flag = italy_stands_strong }
+            has_government = fascism
+            OR = {
+            	AND = {
+		            458 = {
+						CONTROLLER = {
+							NOT = { is_in_faction_with = ITA }
+						}
+					}
+		            665 = {
+						CONTROLLER = {
+							NOT = { is_in_faction_with = ITA }
+						}
+					}
+		            115 = {
+						CONTROLLER = {
+							has_war_with = ITA
+						}
+					}
+		            448 = {
+						CONTROLLER = {
+							has_war_with = ITA
+						}
+					}
+		            449 = {
+						CONTROLLER = {
+							has_war_with = ITA
+						}
+					}
+		            450 = {
+						CONTROLLER = {
+							has_war_with = ITA
+						}
+					}
+		            451 = {
+						CONTROLLER = {
+							has_war_with = ITA
+						}
+					}
+		            661 = {
+						CONTROLLER = {
+							has_war_with = ITA
+						}
+					}
+		            662 = {
+						CONTROLLER = {
+							has_war_with = ITA
+						}
+					}
+		            663 = {
+						CONTROLLER = {
+							has_war_with = ITA
+						}
+					}
+            	}
+            	surrender_progress > 0.3
+            }
+        }
+		
+		days_mission_timeout = 14
+		is_good = no
+
+		timeout_effect = {
+			ITA = { country_event = { id = ita_armor.893 } }
+		}
+
+		complete_effect = {
+		}
+	}
+}

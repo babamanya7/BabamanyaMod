@@ -1,0 +1,1874 @@
+### #  # ### ### #  ### ###   ##  ### ###  ##  #  #
+ #  ## # #    #  #   #  #  # #  #  #   #  #  # ## #
+ #  # ## ##   #  #   #  ###  ####  #   #  #  # # ##
+ #  #  # #    #  #   #  #  # #  #  #   #  #  # #  #
+### #  # #   ### ### #  #  # #  #  #  ###  ##  #  #
+
+#Category only allowed for is_potentially_communist_china
+#Category visible when PRC_infiltration focus is completed
+
+#INFILTRATE_STATE_AI_WILL_DO <ID>
+#INFILTRATE_JAP_STATE_AI_WILL_DO <ID>
+
+
+@INFILTRATION_INF_EQ_COST = -500
+@DAYS_REMOVE_INFILTRATE_STATE = 7
+
+
+
+operations = {
+	PRC_war_of_resistance = {
+
+		icon = generic_operation
+
+        allowed = {
+			original_tag = PRC
+        }
+
+        available = {
+            original_tag = PRC
+        	is_ai = yes
+            JAP = { has_war_with = PRC }
+        }
+
+        visible = {
+            original_tag = PRC
+        	is_ai = yes
+            JAP = { has_war_with = PRC }
+        }
+
+        cost = 0
+        days_remove = 1440
+        fire_only_once = yes
+
+        remove_trigger = {
+            NOT = { JAP = { has_war_with = PRC } }
+        }
+
+        modifier = {
+            supply_consumption_factor = -0.5
+        }
+
+        ai_will_do = {
+			factor = 150
+		}
+
+		complete_effect = {
+        }
+        
+	}
+
+	PRC_launch_100_regiments_campaign = {
+		icon = generic_prepare_civil_war
+		visible = {
+			has_completed_focus = PRC_100_regiments_campaign
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 180
+
+		modifier = {
+			army_core_attack_factor = 0.25
+		}
+	}	
+}
+
+PRC_provoke_japan = {
+
+	PRC_provoke_japan = {
+
+		icon = generic_ignite_civil_war
+		available = {
+			not = {
+				has_war_with = JAP
+			}
+			OR = {
+				is_subject = no
+				is_subject_of = event_target:WTT_current_china_leader
+			}
+			OR = {
+				MAN = { 
+					OR = {
+						is_subject_of = JAP
+						has_cosmetic_tag = MAN_kwantung_army 
+					}
+				}
+				JAP = {
+					owns_state = 525
+					owns_state = 527
+					owns_state = 845
+					owns_state = 846
+					owns_state = 847
+					owns_state = 848
+				}
+			}
+		}
+		visible = {
+			not = {
+				has_war_with = JAP
+			}
+			OR = {
+				MAN = { 
+					OR = {
+						is_subject_of = JAP 
+						has_cosmetic_tag = MAN_kwantung_army 
+					}
+				}
+				JAP = {
+					owns_state = 525
+					owns_state = 527
+					owns_state = 845
+					owns_state = 846
+					owns_state = 847
+					owns_state = 848
+				}
+			}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war_with = event_target:WTT_current_china_leader
+				factor = 0 # let's just not make things worse for ourselves
+			}
+			modifier = {
+				JAP = {
+					has_war_with = event_target:WTT_current_china_leader
+				}
+				factor = 0 # mission accomplished
+			}
+		}
+		fixed_random_seed = no
+		days_re_enable = 90
+		complete_effect = {
+			IF = {
+				limit = {
+					OR = {
+						MAN = {
+							is_subject_of = JAP
+						}
+						JAP = {
+							owns_state = 525
+							owns_state = 527
+							owns_state = 845
+							owns_state = 846
+							owns_state = 847
+							owns_state = 848
+						}
+					}
+				}
+				JAP = {
+					random_list = {
+						25 = { country_event = wtt_prc.21 }# sabotage - military
+						25 = { country_event = wtt_prc.22 }# sabotage - civilian
+						25 = { country_event = wtt_prc.23 }# sabotage - infrastructure
+						25 = { country_event = wtt_prc.24 }# patrol ambushed
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					MAN = {
+						has_cosmetic_tag = MAN_kwantung_army 
+					}
+				}
+				MAN = {
+					random_list = {
+						25 = { country_event = wtt_prc.21 }# sabotage - military
+						25 = { country_event = wtt_prc.22 }# sabotage - civilian
+						25 = { country_event = wtt_prc.23 }# sabotage - infrastructure
+						25 = { country_event = wtt_prc.24 }# patrol ambushed
+					}
+				}
+			}
+		}
+	}
+}
+
+political_actions = {
+	PRC_return_manchuria_communist = {
+
+		available = {
+			event_target:WTT_communist_china = {
+				tag = ROOT
+			}
+			JAP = {
+				has_government = communism
+				not = {
+					has_war_with = ROOT
+				}
+				is_in_faction_with = ROOT
+				OR = {
+					controls_state = 610
+					controls_state = 716
+					controls_state = 745
+					controls_state = 328
+					controls_state = 717
+					controls_state = 714
+					controls_state = 715
+					controls_state = 761
+					controls_state = 611
+					controls_state = 612
+					controls_state = 609
+				}
+			}
+			MAN = {
+				OR = {
+					exists = no
+					has_capitulated = yes
+				}
+			}
+		}
+
+		visible = {
+			event_target:WTT_communist_china = {
+				tag = ROOT
+			}
+			JAP = {
+				has_government = communism
+				not = {
+					has_war_with = ROOT
+				}
+				is_in_faction_with = ROOT
+				OR = {
+					controls_state = 610
+					controls_state = 716
+					controls_state = 745
+					controls_state = 328
+					controls_state = 717
+					controls_state = 714
+					controls_state = 715
+					controls_state = 761
+					controls_state = 611
+					controls_state = 612
+					controls_state = 609
+				}
+			}
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			JAP = {
+				country_event = wtt_japan.40
+			}
+		}
+
+		remove_effect = {
+
+		}
+	}
+	
+}
+
+PRC_guerilla_warfare = {
+	
+	PRC_establish_guerilla_warfare_shaanxi = {
+		icon = hol_draw_up_staff_plans
+		available = {
+			622 = {
+				OR = {
+					is_controlled_by = ROOT
+					CONTROLLER = { is_in_faction_with = ROOT }
+				}
+				NOT = { has_state_flag = PRC_guerilla_warfare_flag }
+			}
+			has_war = yes
+		}
+		
+		visible = {
+			622 = {
+				OR = {
+					is_controlled_by = ROOT
+					CONTROLLER = { is_in_faction_with = ROOT }
+				}
+				NOT = { has_state_flag = PRC_guerilla_warfare_flag }
+			}
+		}
+
+		highlight_states = { highlight_state_targets = { state = 622 } }
+
+		days_remove = 60
+
+		fire_only_once = no
+		is_good = yes
+
+		cost = 0
+		custom_cost_text = custom_cost_10_cp
+		custom_cost_trigger = {
+			command_power > 9
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+
+		remove_effect = {
+			622 = {
+				add_province_modifier = {
+					static_modifiers = { guerilla_warfare }
+					province = {
+						all_provinces = yes
+					}
+				}
+				set_state_flag = PRC_guerilla_warfare_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 800
+		}
+	}
+	
+	PRC_establish_guerilla_warfare_central_shaanxi = {
+		icon = hol_draw_up_staff_plans
+		available = {
+			940 = {
+				OR = {
+					is_controlled_by = ROOT
+					CONTROLLER = { is_in_faction_with = ROOT }
+				}
+				NOT = { has_state_flag = PRC_guerilla_warfare_flag }
+			}
+			has_war = yes
+		}
+		
+		visible = {
+			940 = {
+				OR = {
+					is_controlled_by = ROOT
+					CONTROLLER = { is_in_faction_with = ROOT }
+				}
+				NOT = { has_state_flag = PRC_guerilla_warfare_flag }
+			}
+		}
+
+		highlight_states = { highlight_state_targets = { state = 940 } }
+
+		days_remove = 60
+
+		cost = 0
+		custom_cost_text = custom_cost_10_cp
+		custom_cost_trigger = {
+			command_power > 9
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+
+		remove_effect = {
+			940 = {
+				add_province_modifier = {
+					static_modifiers = { guerilla_warfare }
+					province = {
+						all_provinces = yes
+					}
+				}
+				set_state_flag = PRC_guerilla_warfare_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 800
+		}
+	}
+	PRC_establish_guerilla_warfare_shanxi = {
+		icon = hol_draw_up_staff_plans
+		available = {
+			615 = {
+				OR = {
+					is_controlled_by = ROOT
+					CONTROLLER = { is_in_faction_with = ROOT }
+				}
+				NOT = { has_state_flag = PRC_guerilla_warfare_flag }
+			}
+			has_war = yes
+		}
+		
+		visible = {
+			615 = {
+				OR = {
+					is_controlled_by = ROOT
+					CONTROLLER = { is_in_faction_with = ROOT }
+				}
+				NOT = { has_state_flag = PRC_guerilla_warfare_flag }
+			}
+		}
+
+		highlight_states = { highlight_state_targets = { state = 615 } }
+
+		days_remove = 60
+
+		cost = 0
+		custom_cost_text = custom_cost_10_cp
+		custom_cost_trigger = {
+			command_power > 9
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+
+		remove_effect = {
+			615 = {
+				add_province_modifier = {
+					static_modifiers = { guerilla_warfare }
+					province = {
+						all_provinces = yes
+					}
+				}
+				set_state_flag = PRC_guerilla_warfare_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 800
+		}
+	}
+	PRC_establish_guerilla_warfare_suiyan = {
+		icon = hol_draw_up_staff_plans
+		available = {
+			OR = {
+				621 = {
+					OR = {
+						is_controlled_by = ROOT
+						CONTROLLER = { is_in_faction_with = ROOT }
+					}
+					NOT = { has_state_flag = PRC_guerilla_warfare_flag }
+				}
+				926 = {
+					OR = {
+						is_controlled_by = ROOT
+						CONTROLLER = { is_in_faction_with = ROOT }
+					}
+					NOT = { has_state_flag = PRC_guerilla_warfare_flag }
+				}
+				941 = {
+					OR = {
+						is_controlled_by = ROOT
+						CONTROLLER = { is_in_faction_with = ROOT }
+					}
+					NOT = { has_state_flag = PRC_guerilla_warfare_flag }
+				}
+			}
+			has_war = yes
+		}
+		
+		visible = {
+			OR = {
+				621 = {
+					OR = {
+						is_controlled_by = ROOT
+						CONTROLLER = { is_in_faction_with = ROOT }
+					}
+					NOT = { has_state_flag = PRC_guerilla_warfare_flag }
+					is_core_of = ROOT
+				}
+				926 = {
+					OR = {
+						is_controlled_by = ROOT
+						CONTROLLER = { is_in_faction_with = ROOT }
+					}
+					NOT = { has_state_flag = PRC_guerilla_warfare_flag }
+					is_core_of = ROOT
+				}
+				941 = {
+					OR = {
+						is_controlled_by = ROOT
+						CONTROLLER = { is_in_faction_with = ROOT }
+					}
+					NOT = { has_state_flag = PRC_guerilla_warfare_flag }
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 621
+				state = 926	
+				state = 941			
+			}
+		}
+
+		days_remove = 60
+
+		cost = 0
+		custom_cost_text = custom_cost_10_cp
+		custom_cost_trigger = {
+			command_power > 9
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+
+		remove_effect = {
+			926 = {
+				add_province_modifier = {
+					static_modifiers = { guerilla_warfare }
+					province = {
+						all_provinces = yes
+					}
+				}
+				set_state_flag = PRC_guerilla_warfare_flag
+			}
+			621 = {
+				add_province_modifier = {
+					static_modifiers = { guerilla_warfare }
+					province = {
+						all_provinces = yes
+					}
+				}
+				set_state_flag = PRC_guerilla_warfare_flag
+			}
+			941 = {
+				add_province_modifier = {
+					static_modifiers = { guerilla_warfare }
+					province = {
+						all_provinces = yes
+					}
+				}
+				set_state_flag = PRC_guerilla_warfare_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 800
+		}
+	}
+	PRC_establish_guerilla_warfare_ordos = {
+		icon = hol_draw_up_staff_plans
+		available = {
+			746 = {
+				OR = {
+					is_controlled_by = ROOT
+					CONTROLLER = { is_in_faction_with = ROOT }
+				}
+				NOT = { has_state_flag = PRC_guerilla_warfare_flag }
+			}
+			has_war = yes
+		}
+		
+		visible = {
+			746 = {
+				OR = {
+					is_controlled_by = ROOT
+					CONTROLLER = { is_in_faction_with = ROOT }
+				}
+				NOT = { has_state_flag = PRC_guerilla_warfare_flag }
+			}
+		}
+
+		highlight_states = { highlight_state_targets = { state = 746 } }
+
+		days_remove = 60
+
+		cost = 0
+		custom_cost_text = custom_cost_10_cp
+		custom_cost_trigger = {
+			command_power > 9
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+
+		remove_effect = {
+			746 = {
+				add_province_modifier = {
+					static_modifiers = { guerilla_warfare }
+					province = {
+						all_provinces = yes
+					}
+				}
+				set_state_flag = PRC_guerilla_warfare_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 800
+		}
+	}
+}
+
+war_measures = {
+
+	PRC_disband_the_militia = {
+		icon = generic_political_discourse
+		available = {
+			tag = PRC
+		}
+		visible = {
+			tag = PRC
+		}
+
+		days_remove = 90
+		is_good = yes
+		cost = 50
+
+		cancel_if_not_visible = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = PRC_militia_disbanded_tt
+			delete_unit_template_and_units = { division_template = "Renmin Jundui" }
+			hidden_effect = {
+				set_country_flag = PRC_militia_disbanded
+			}
+			add_stability = 0.1
+			add_war_support = -0.25
+		}
+	}
+
+	PRC_scavenge_for_weapons = { 
+
+		icon = generic_prepare_civil_war
+	
+		allowed = {
+			tag = PRC
+		}
+
+		available = {
+			tag = PRC
+			has_completed_focus = PRC_scavenge_for_weapons
+			OR = {
+				has_war_with = JAP
+				has_war_with = CHI
+			}
+        }
+
+        visible = {
+			tag = PRC
+			has_completed_focus = PRC_scavenge_for_weapons
+        }
+
+		cost = 0
+
+        ai_will_do = {
+			factor = 500
+
+			modifier = {
+				factor = 0
+				has_equipment = { infantry_equipment > 100000 }
+			}
+		}
+
+		days_remove = 90
+		is_good = yes
+
+		modifier = {
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_war_with = JAP
+				}
+				add_equipment_to_stockpile = { type = jap_inf_1 amount = 2500 producer = JAP }
+			}
+			if = {
+				limit = {
+					has_war_with = CHI
+				}
+				add_equipment_to_stockpile = { type = infantry_equipment_6 amount = 2500 producer = CHI }
+			}
+		}
+	}
+}
+
+PRC_peoples_power_struggle = {
+
+	PRC_build_up_support_in_local = {
+		
+		icon = infiltrate_state
+		visible = {
+			has_government = communism
+			has_completed_focus = PRC_expanding_our_support_base
+		}
+		
+		available = {			
+			NOT = { has_war_with = event_target:WTT_current_china_leader }
+			NOT = { has_country_flag = PRC_building_up_support }
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 941
+				state = 615
+				state = 621
+				state = 926
+				state = 746
+			}
+		}
+		
+		modifier = {
+			political_power_cost = 0.25
+		}
+		
+		ai_will_do = {
+			base = 200
+
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+		days_re_enable = 0
+	
+		cost = 10
+
+		cancel_trigger = {
+			has_war_with = event_target:WTT_current_china_leader
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = PRC_building_up_support
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = PRC_building_up_support
+			941 = {
+				add_core_of = PRC
+			}
+			615 = {
+				add_core_of = PRC
+			}
+			621 = {
+				add_core_of = PRC
+			}
+			926 = {
+				add_core_of = PRC
+			}
+			746 = {
+				add_core_of = PRC
+			}
+			add_manpower = 100000
+			if = {
+				limit = {
+					num_of_controlled_states > 0
+				}
+				random_owned_controlled_state = {
+					prioritize = { 622 }
+					create_unit = { 
+						division = "division_template = \"Renmin Jundui\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = PRC
+						count = 12
+					}
+				}
+			}
+		}
+	}
+
+	PRC_build_up_support_in_northeastern_china = {
+		
+		icon = infiltrate_state
+		visible = {
+			has_government = communism
+			has_completed_focus = PRC_expanding_our_support_base
+		}
+		
+		available = {			
+			NOT = { has_war_with = event_target:WTT_current_china_leader }
+			NOT = { has_country_flag = PRC_building_up_support }
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 937
+				state = 743
+				state = 597
+				state = 614
+				state = 608
+				state = 949
+				state = 927
+				state = 950
+				state = 609
+			}
+		}
+		
+		modifier = {
+			political_power_cost = 0.25
+		}
+		
+		ai_will_do = {
+			base = 120
+
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+		days_re_enable = 0
+	
+		cost = 10
+
+		cancel_trigger = {
+			has_war_with = event_target:WTT_current_china_leader
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = PRC_building_up_support
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = PRC_building_up_support
+			937 = {
+				add_core_of = PRC
+			}
+			743 = {
+				add_core_of = PRC
+			}
+			597 = {
+				add_core_of = PRC
+			}
+			614 = {
+				add_core_of = PRC
+			}
+			608 = {
+				add_core_of = PRC
+			}
+			949 = {
+				add_core_of = PRC
+			}
+			927 = {
+				add_core_of = PRC
+			}
+			950 = {
+				add_core_of = PRC
+			}
+			609 = {
+				add_core_of = PRC
+			}
+			add_manpower = 100000
+			if = {
+				limit = {
+					num_of_controlled_states > 0
+				}
+				random_owned_controlled_state = {
+					prioritize = { 622 }
+					create_unit = { 
+						division = "division_template = \"Renmin Jundui\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = PRC
+						count = 12
+					}
+				}
+			}
+		}
+	}
+
+	PRC_build_up_support_in_southern_manchuria = {
+		
+		icon = infiltrate_state
+		visible = {
+			has_government = communism
+			has_completed_focus = PRC_expanding_our_support_base
+		}
+		
+		available = {			
+			NOT = { has_war_with = event_target:WTT_current_china_leader }
+			NOT = { has_country_flag = PRC_building_up_support }
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 611
+				state = 612
+				state = 945
+				state = 610
+				state = 715
+				state = 946
+				state = 716
+				state = 944
+				state = 745
+			}
+		}
+		
+		modifier = {
+			political_power_cost = 0.25
+		}
+		
+		ai_will_do = {
+			base = 100
+
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+		days_re_enable = 0
+	
+		cost = 10
+
+		cancel_trigger = {
+			has_war_with = event_target:WTT_current_china_leader
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = PRC_building_up_support
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = PRC_building_up_support
+			611 = {
+				add_core_of = PRC
+			}
+			612 = {
+				add_core_of = PRC
+			}
+			945 = {
+				add_core_of = PRC
+			}
+			610 = {
+				add_core_of = PRC
+			}
+			715 = {
+				add_core_of = PRC
+			}
+			946 = {
+				add_core_of = PRC
+			}
+			716 = {
+				add_core_of = PRC
+			}
+			944 = {
+				add_core_of = PRC
+			}
+			745 = {
+				add_core_of = PRC
+			}
+			add_manpower = 100000
+			if = {
+				limit = {
+					num_of_controlled_states > 0
+				}
+				random_owned_controlled_state = {
+					prioritize = { 622 }
+					create_unit = { 
+						division = "division_template = \"Renmin Jundui\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = PRC
+						count = 12
+					}
+				}
+			}
+		}
+	}
+
+	PRC_build_up_support_in_northern_manchuria = {
+		
+		icon = infiltrate_state
+		visible = {
+			has_government = communism
+			has_completed_focus = PRC_expanding_our_support_base
+		}
+		
+		available = {			
+			NOT = { has_war_with = event_target:WTT_current_china_leader }
+			NOT = { has_country_flag = PRC_building_up_support }
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 761
+				state = 951
+				state = 714
+				state = 942
+				state = 717
+				state = 328
+				state = 943
+			}
+		}
+		
+		modifier = {
+			political_power_cost = 0.25
+		}
+		
+		ai_will_do = {
+			base = 100
+
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+		days_re_enable = 0
+	
+		cost = 10
+
+		cancel_trigger = {
+			has_war_with = event_target:WTT_current_china_leader
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = PRC_building_up_support
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = PRC_building_up_support
+			761 = {
+				add_core_of = PRC
+			}
+			951 = {
+				add_core_of = PRC
+			}
+			714 = {
+				add_core_of = PRC
+			}
+			942 = {
+				add_core_of = PRC
+			}
+			717 = {
+				add_core_of = PRC
+			}
+			328 = {
+				add_core_of = PRC
+			}
+			943 = {
+				add_core_of = PRC
+			}
+			add_manpower = 100000
+			if = {
+				limit = {
+					num_of_controlled_states > 0
+				}
+				random_owned_controlled_state = {
+					prioritize = { 622 }
+					create_unit = { 
+						division = "division_template = \"Renmin Jundui\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = PRC
+						count = 12
+					}
+				}
+			}
+		}
+	}
+
+	PRC_build_up_support_in_qinghai = {
+		
+		icon = infiltrate_state
+		visible = {
+			has_government = communism
+			has_completed_focus = PRC_expanding_our_support_base
+		}
+		
+		available = {			
+			NOT = { has_war_with = event_target:WTT_current_china_leader }
+			NOT = { has_country_flag = PRC_building_up_support }
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 756
+				state = 948
+				state = 939
+				state = 616
+				state = 283
+				state = 754
+				state = 755
+				state = 604
+			}
+		}
+		
+		modifier = {
+			political_power_cost = 0.25
+		}
+		
+		ai_will_do = {
+			base = 60
+
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+		days_re_enable = 0
+	
+		cost = 10
+
+		cancel_trigger = {
+			has_war_with = event_target:WTT_current_china_leader
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = PRC_building_up_support
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = PRC_building_up_support
+			756 = {
+				add_core_of = PRC
+			}
+			948 = {
+				add_core_of = PRC
+			}
+			939 = {
+				add_core_of = PRC
+			}
+			616 = {
+				add_core_of = PRC
+			}
+			283 = {
+				add_core_of = PRC
+			}
+			754 = {
+				add_core_of = PRC
+			}
+			755 = {
+				add_core_of = PRC
+			}
+			604 = {
+				add_core_of = PRC
+			}
+			add_manpower = 100000
+			if = {
+				limit = {
+					num_of_controlled_states > 0
+				}
+				random_owned_controlled_state = {
+					prioritize = { 622 }
+					create_unit = { 
+						division = "division_template = \"Renmin Jundui\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = PRC
+						count = 12
+					}
+				}
+			}
+		}
+	}
+
+	PRC_build_up_support_in_northwestern_china = {
+		
+		icon = infiltrate_state
+		visible = {
+			has_government = communism
+			has_completed_focus = PRC_expanding_our_support_base
+		}
+		
+		available = {			
+			NOT = { has_war_with = event_target:WTT_current_china_leader }
+			NOT = { has_country_flag = PRC_building_up_support }
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 618
+				state = 760
+				state = 617
+				state = 759
+				state = 947
+				state = 287
+				state = 619
+			}
+		}
+		
+		modifier = {
+			political_power_cost = 0.25
+		}
+		
+		ai_will_do = {
+			base = 60
+
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+		days_re_enable = 0
+	
+		cost = 10
+
+		cancel_trigger = {
+			has_war_with = event_target:WTT_current_china_leader
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = PRC_building_up_support
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = PRC_building_up_support
+			618 = {
+				add_core_of = PRC
+			}
+			760 = {
+				add_core_of = PRC
+			}
+			617 = {
+				add_core_of = PRC
+			}
+			759 = {
+				add_core_of = PRC
+			}
+			947 = {
+				add_core_of = PRC
+			}
+			287 = {
+				add_core_of = PRC
+			}
+			619 = {
+				add_core_of = PRC
+			}
+			add_manpower = 100000
+			if = {
+				limit = {
+					num_of_controlled_states > 0
+				}
+				random_owned_controlled_state = {
+					prioritize = { 622 }
+					create_unit = { 
+						division = "division_template = \"Renmin Jundui\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = PRC
+						count = 12
+					}
+				}
+			}
+		}
+	}
+
+	PRC_build_up_support_in_eastern_china = {
+		
+		icon = infiltrate_state
+		visible = {
+			has_government = communism
+			has_completed_focus = PRC_expanding_our_support_base
+		}
+		
+		available = {			
+			NOT = { has_war_with = event_target:WTT_current_china_leader }
+			NOT = { has_country_flag = PRC_building_up_support }
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 924
+				state = 613
+				state = 598
+				state = 925
+				state = 606
+				state = 749
+			}
+		}
+		
+		modifier = {
+			political_power_cost = 0.25
+		}
+		
+		ai_will_do = {
+			base = 40
+
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+		days_re_enable = 0
+	
+		cost = 10
+
+		cancel_trigger = {
+			has_war_with = event_target:WTT_current_china_leader
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = PRC_building_up_support
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = PRC_building_up_support
+			924 = {
+				add_core_of = PRC
+			}
+			613 = {
+				add_core_of = PRC
+			}
+			598 = {
+				add_core_of = PRC
+			}
+			925 = {
+				add_core_of = PRC
+			}
+			606 = {
+				add_core_of = PRC
+			}
+			749 = {
+				add_core_of = PRC
+			}
+			add_manpower = 100000
+			if = {
+				limit = {
+					num_of_controlled_states > 0
+				}
+				random_owned_controlled_state = {
+					prioritize = { 622 }
+					create_unit = { 
+						division = "division_template = \"Renmin Jundui\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = PRC
+						count = 12
+					}
+				}
+			}
+		}
+	}
+
+	PRC_build_up_support_in_north_central_china = {
+		
+		icon = infiltrate_state
+		visible = {
+			has_government = communism
+			has_completed_focus = PRC_expanding_our_support_base
+		}
+		
+		available = {			
+			NOT = { has_war_with = event_target:WTT_current_china_leader }
+			NOT = { has_country_flag = PRC_building_up_support }
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 607
+				state = 936
+				state = 620
+				state = 935
+				state = 744
+			}
+		}
+		
+		modifier = {
+			political_power_cost = 0.25
+		}
+		
+		ai_will_do = {
+			base = 40
+
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+		days_re_enable = 0
+	
+		cost = 10
+
+		cancel_trigger = {
+			has_war_with = event_target:WTT_current_china_leader
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = PRC_building_up_support
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = PRC_building_up_support
+			607 = {
+				add_core_of = PRC
+			}
+			936 = {
+				add_core_of = PRC
+			}
+			620 = {
+				add_core_of = PRC
+			}
+			935 = {
+				add_core_of = PRC
+			}
+			744 = {
+				add_core_of = PRC
+			}
+			add_manpower = 100000
+			if = {
+				limit = {
+					num_of_controlled_states > 0
+				}
+				random_owned_controlled_state = {
+					prioritize = { 622 }
+					create_unit = { 
+						division = "division_template = \"Renmin Jundui\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = PRC
+						count = 12
+					}
+				}
+			}
+		}
+	}
+
+	PRC_build_up_support_in_south_central_china = {
+		
+		icon = infiltrate_state
+		visible = {
+			has_government = communism
+			has_completed_focus = PRC_expanding_our_support_base
+		}
+		
+		available = {			
+			NOT = { has_war_with = event_target:WTT_current_china_leader }
+			NOT = { has_country_flag = PRC_building_up_support }
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 600
+				state = 602
+				state = 934
+				state = 750
+				state = 603
+				state = 748
+			}
+		}
+		
+		modifier = {
+			political_power_cost = 0.25
+		}
+		
+		ai_will_do = {
+			base = 20
+
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+		days_re_enable = 0
+	
+		cost = 10
+
+		cancel_trigger = {
+			has_war_with = event_target:WTT_current_china_leader
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = PRC_building_up_support
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = PRC_building_up_support
+			600 = {
+				add_core_of = PRC
+			}
+			602 = {
+				add_core_of = PRC
+			}
+			934 = {
+				add_core_of = PRC
+			}
+			750 = {
+				add_core_of = PRC
+			}
+			603 = {
+				add_core_of = PRC
+			}
+			748 = {
+				add_core_of = PRC
+			}
+			add_manpower = 100000
+			if = {
+				limit = {
+					num_of_controlled_states > 0
+				}
+				random_owned_controlled_state = {
+					prioritize = { 622 }
+					create_unit = { 
+						division = "division_template = \"Renmin Jundui\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = PRC
+						count = 12
+					}
+				}
+			}
+		}
+	}
+
+	PRC_build_up_support_in_south_eastern_china = {
+		
+		icon = infiltrate_state
+		visible = {
+			has_government = communism
+			has_completed_focus = PRC_expanding_our_support_base
+		}
+		
+		available = {			
+			NOT = { has_war_with = event_target:WTT_current_china_leader }
+			NOT = { has_country_flag = PRC_building_up_support }
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 596
+				state = 595
+				state = 938
+			}
+		}
+		
+		modifier = {
+			political_power_cost = 0.25
+		}
+		
+		ai_will_do = {
+			base = 20
+
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+		days_re_enable = 0
+	
+		cost = 10
+
+		cancel_trigger = {
+			has_war_with = event_target:WTT_current_china_leader
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = PRC_building_up_support
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = PRC_building_up_support
+			596 = {
+				add_core_of = PRC
+			}
+			595 = {
+				add_core_of = PRC
+			}
+			938 = {
+				add_core_of = PRC
+			}
+			524 = {
+				add_core_of = PRC
+			}
+			add_manpower = 100000
+			if = {
+				limit = {
+					num_of_controlled_states > 0
+				}
+				random_owned_controlled_state = {
+					prioritize = { 622 }
+					create_unit = { 
+						division = "division_template = \"Renmin Jundui\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = PRC
+						count = 12
+					}
+				}
+			}
+		}
+	}
+
+	PRC_build_up_support_in_southern_china = {
+		
+		icon = infiltrate_state
+		visible = {
+			has_government = communism
+			has_completed_focus = PRC_expanding_our_support_base
+		}
+		
+		available = {			
+			NOT = { has_war_with = event_target:WTT_current_china_leader }
+			NOT = { has_country_flag = PRC_building_up_support }
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 593
+				state = 592
+				state = 599
+				state = 932
+				state = 594
+				state = 931
+				state = 591
+				state = 728
+				state = 729
+				state = 326
+			}
+		}
+		
+		modifier = {
+			political_power_cost = 0.25
+		}
+		
+		ai_will_do = {
+			base = 20
+
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+		days_re_enable = 0
+	
+		cost = 10
+
+		cancel_trigger = {
+			has_war_with = event_target:WTT_current_china_leader
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = PRC_building_up_support
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = PRC_building_up_support
+			593 = {
+				add_core_of = PRC
+			}
+			592 = {
+				add_core_of = PRC
+			}
+			599 = {
+				add_core_of = PRC
+			}
+			932 = {
+				add_core_of = PRC
+			}
+			594 = {
+				add_core_of = PRC
+			}
+			931 = {
+				add_core_of = PRC
+			}
+			591 = {
+				add_core_of = PRC
+			}
+			728 = {
+				add_core_of = PRC
+			}
+			729 = {
+				add_core_of = PRC
+			}
+			326 = {
+				add_core_of = PRC
+			}
+			add_manpower = 100000
+			if = {
+				limit = {
+					num_of_controlled_states > 0
+				}
+				random_owned_controlled_state = {
+					prioritize = { 622 }
+					create_unit = { 
+						division = "division_template = \"Renmin Jundui\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = PRC
+						count = 12
+					}
+				}
+			}
+		}
+	}
+
+	PRC_build_up_support_in_sichuan_china = {
+		
+		icon = infiltrate_state
+		visible = {
+			has_government = communism
+			has_completed_focus = PRC_expanding_our_support_base
+		}
+		
+		available = {			
+			NOT = { has_war_with = event_target:WTT_current_china_leader }
+			NOT = { has_country_flag = PRC_building_up_support }
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 753
+				state = 929
+				state = 605
+				state = 930
+				state = 928
+			}
+		}
+		
+		modifier = {
+			political_power_cost = 0.25
+		}
+		
+		ai_will_do = {
+			base = 20
+
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+		days_re_enable = 0
+	
+		cost = 10
+
+		cancel_trigger = {
+			has_war_with = event_target:WTT_current_china_leader
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = PRC_building_up_support
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = PRC_building_up_support
+			753 = {
+				add_core_of = PRC
+			}
+			929 = {
+				add_core_of = PRC
+			}
+			605 = {
+				add_core_of = PRC
+			}
+			930 = {
+				add_core_of = PRC
+			}
+			928 = {
+				add_core_of = PRC
+			}
+			add_manpower = 100000
+			if = {
+				limit = {
+					num_of_controlled_states > 0
+				}
+				random_owned_controlled_state = {
+					prioritize = { 622 }
+					create_unit = { 
+						division = "division_template = \"Renmin Jundui\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = PRC
+						count = 12
+					}
+				}
+			}
+		}
+	}
+
+	PRC_build_up_support_in_south_western_china = {
+		
+		icon = infiltrate_state
+		visible = {
+			has_government = communism
+			has_completed_focus = PRC_expanding_our_support_base
+		}
+		
+		available = {			
+			NOT = { has_war_with = event_target:WTT_current_china_leader }
+			NOT = { has_country_flag = PRC_building_up_support }
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 752
+				state = 751
+				state = 747
+				state = 325
+				state = 933
+			}
+		}
+		
+		modifier = {
+			political_power_cost = 0.25
+		}
+		
+		ai_will_do = {
+			base = 20
+
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+		days_re_enable = 0
+	
+		cost = 10
+
+		cancel_trigger = {
+			has_war_with = event_target:WTT_current_china_leader
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = PRC_building_up_support
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = PRC_building_up_support
+			752 = {
+				add_core_of = PRC
+			}
+			751 = {
+				add_core_of = PRC
+			}
+			747 = {
+				add_core_of = PRC
+			}
+			325 = {
+				add_core_of = PRC
+			}
+			933 = {
+				add_core_of = PRC
+			}
+			add_manpower = 100000
+			if = {
+				limit = {
+					num_of_controlled_states > 0
+				}
+				random_owned_controlled_state = {
+					prioritize = { 622 }
+					create_unit = { 
+						division = "division_template = \"Renmin Jundui\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = PRC
+						count = 12
+					}
+				}
+			}
+		}
+	}
+}

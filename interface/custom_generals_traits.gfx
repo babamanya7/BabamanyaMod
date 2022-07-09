@@ -1,0 +1,18 @@
+spriteTypes = {	
+    spriteType = {
+        name = "GFX_trait_FRA_emperor_of_the_french"
+        texturefile = "gfx/interface/traits/personal/trait_FRA_emperor_of_the_french.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_trait_SS_officer_trait"
+        texturefile = "gfx/interface/traits/personal/trait_SS_officer_trait.dds"
+    }
+}
+
+spriteTypes = {	
+    spriteType = {
+        name = "GFX_trait_SS_officer_trait_ai"
+        texturefile = "gfx/interface/traits/personal/trait_SS_officer_trait_ai.dds"
+    }
+}

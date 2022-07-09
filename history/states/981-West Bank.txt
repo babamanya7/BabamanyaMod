@@ -1,0 +1,22 @@
+
+state={
+	id=981
+	name="STATE_981" #West Bank
+	manpower = 351942
+	
+	state_category = rural
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 1
+		}
+		add_core_of = BRA
+	}
+
+	provinces={
+		1086 7107 
+	}
+}

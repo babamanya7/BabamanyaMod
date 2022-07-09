@@ -1,0 +1,1248 @@
+﻿l_russian:
+
+
+
+
+
+
+#################################################################################### ideas ####################################################################################
+  
+  GER_general_staff_dynamic_modifier:0 "Верховное командование сухопутных войск"
+  
+  cavalry_army_clique:0 "Кавалерийская армейская клика"
+  cavalry_army_clique_2:0 "Кавалерийская армейская клика"
+  cavalry_army_clique_3:0 "Кавалерийская армейская клика"
+  
+  mass_cal_production:0 "Костыль №1"
+  
+  inexperienced_work_force:0 "Неопытная рабочая сила"
+  inexperienced_work_force_desc:0 "Вынуждение многих крестьян и фермеров работать на фабриках привело к большим потерям в эффективности и производстве. Мы должны провести некоторые реформы и дать рабочим время адаптироваться к новым постоянным рабочим местам."
+  
+  SOV_second_five_year_plan_12_dynamic_modifier:0 "Советская промышленность"
+  SOV_second_five_year_plan_12_dynamic_modifier_desc:0 "Forcing many peasants and farmers into the factories have lead to large losses in efficiency and production. We must make some reforms and give the workers time to adapt to there new permanent jobs. Our great industry remains weak until we can finish the five year plan and bring our nation into the modern era"
+  SOV_second_five_year_plan_22_dynamic_modifier:0 "Советская промышленность"
+  SOV_second_five_year_plan_22_dynamic_modifier_desc:0 "Forcing many peasants and farmers into the factories have lead to large losses in efficiency and production. We must make some reforms and give the workers time to adapt to there new permanent jobs. Our great industry remains weak until we can finish the five year plan and bring our nation into the modern era"
+  SOV_third_five_year_plan_23_dynamic_modifier:0 "Советская промышленность"
+  SOV_third_five_year_plan_23_dynamic_modifier_desc:0 "Forcing many peasants and farmers into the factories have lead to large losses in efficiency and production. We must make some reforms and give the workers time to adapt to there new permanent jobs. Our great industry remains weak until we can finish the five year plan and bring our nation into the modern era"
+  SOV_third_five_year_plan_33_dynamic_modifier:0 "Советская промышленность"
+  SOV_third_five_year_plan_33_dynamic_modifier_desc:0 "Forcing many peasants and farmers into the factories have lead to large losses in efficiency and production. We must make some reforms and give the workers time to adapt to there new permanent jobs. Our great industry remains weak until we can finish the five year plan and bring our nation into the modern era"
+  SOV_fourth_five_year_plan_34_dynamic_modifier:0 "Советская промышленность"
+  SOV_fourth_five_year_plan_34_dynamic_modifier_desc:0 "Forcing many peasants and farmers into the factories have lead to large losses in efficiency and production. We must make some reforms and give the workers time to adapt to there new permanent jobs. Our great industry remains weak until we can finish the five year plan and bring our nation into the modern era"
+  SOV_fourth_five_year_plan_44_dynamic_modifier:0 "Советская промышленность"
+  SOV_fourth_five_year_plan_44_dynamic_modifier_desc:0 "Forcing many peasants and farmers into the factories have lead to large losses in efficiency and production. We must make some reforms and give the workers time to adapt to there new permanent jobs. Our great industry remains weak until we can finish the five year plan and bring our nation into the modern era"
+  
+  weak_tank_forces:0 "Cлабые танковые силы"
+  weak_tank_forces_2:0 "Cлабые танковые силы"
+  weak_tank_forces_3:0 "Cлабые танковые силы"
+  
+  
+  leslie_morshead:0 "Leslie Morshead"
+  leslie_morshead_desc:0 ""
+
+  BEL_paul_emile_janson:0 "Paul-Emile Janson"
+  paul_emile_janson_desc:0 ""
+
+  BEL_victor_matthys:0 "Victor Matthys"
+  victor_matthys_desc:0 ""
+
+  payment_sender_small:0 "Sending Payments"
+  payment_reciever_small:0 "Recieving Payments"
+  payment_sender_medium:0 "Sending Payments"
+  payment_reciever_medium:0 "Recieving Payments"
+  payment_sender_large:0 "Sending Payments"
+  payment_reciever_large:0 "Recieving Payments"
+
+  League_of_nations:0 "League of Nations Member"
+  League_of_nations_desc:0 ""
+
+  desire_for_independance:0 "Desire for Independance"
+  desire_for_independance_desc:0 ""
+
+  oil_mismanagment:0 "Oil Mismanagment"
+  oil_mismanagment_desc:0 ""
+  
+  partisan_suppression_focus_2:0 "Organized Partisans"
+  partisan_suppression_focus_2_desc:0 ""
+
+  MTG_naval_treaty_heavy_cruiser_limit_reached:0 "Heavy Cruiser Limit Reached"
+  MTG_naval_treaty_battleship_limit_reached:0 "Battleship Limit Reached"
+  MTG_naval_treaty_carrier_limit_reached:0 "Carrier Limit Reached"
+
+ 
+
+  pillarized_politics:0 "Pillarized Politics"
+  pillarized_politics_desc:0 ""
+
+  polarized_society_supportive:0 "Polarized Society"
+  polarized_society_supportive_desc:0 ""
+
+  polarized_society_supressed:0 "Polarized Society - Supressed"
+  polarized_society_supressed_desc:0 ""
+
+  polarized_society_anger:0 "Polarized Society"
+  polarized_society_anger_desc:0 ""
+
+  polarized_society_rebellion:0 "Polarized Society"
+  polarized_society_rebellion_desc:0 ""
+
+  policy_of_independance:0 "Policy of Independance"
+  policy_of_independance_desc:0 ""
+
+  policies_of_deterrence:0 "Policy of Deterrence"
+  policies_of_deterrence_desc:0 ""
+
+  national_labour_conference:0 "National Labour Conference"
+  national_labour_conference_desc:0 ""
+
+ 
+
+  SPA_ITA_spanish_civil_war_commitments:0 "Spanish Civil War Commitments"
+  SPA_ITA_spanish_civil_war_commitments_desc:0 ""
+
+  misak_i_milli:0 "Misak-ı Millî"
+  misak_i_milli_desc:0 "Misak-ı Millî - the National Oath. After the collapse of the Ottoman Empire and the conclusion of the War of Independence, we voluntarily surrendered a great deal of territory that we held and dropped our claims on the territory. The world is different now, and the people in these territories clamor for our return. We shall oblige them."
+
+  
+  islamic_restoration_1:0 "Tiny State Piety"
+  islamic_restoration_1_desc:0 ""
+
+  islamic_restoration_2:0 "Modest State Piety"
+  islamic_restoration_2_desc:0 ""
+
+  islamic_restoration_3:0 "Moderate State Piety"
+  islamic_restoration_3_desc:0 ""
+
+  islamic_restoration_4:0 "Considerable State Piety"
+  islamic_restoration_4_desc:0 ""
+
+  islamic_restoration_5:0 "Full State Piety"
+  islamic_restoration_5_desc:0 ""
+
+  motti_tactics_corps_spirit:0 "Motti Tactics"
+  motti_tactics_corps_spirit_desc:0 "ALLOWED IF THE FOLLOWING IS TRUE\nCountry is §YFINLAND§!"
+
+  valtion_lentokonetehdas:0 "Valtion Lentokonetehdas"
+  valtion_lentokonetehdas_desc:0 ""
+
+  vkt_armory:0 "VKT Armory"
+  vkt_armory_desc:0 ""
+
+  tikkakoski_armory:0 "Tikkakoski Armory"
+  tikkakoski_armory_desc:0 ""
+
+  semi_agrarian_nation:0 "Semi-Agrarian Nation"
+  semi_agrarian_nation_desc:0 ""
+
+  white_guards:0 "White Guards"
+  white_guards_desc:0 ""
+
+  white_guards_2:0 "White Guards"
+  white_guards_2_desc:0 ""
+
+  red_guards:0 "Red Guards"
+  red_guards_desc:0 ""
+
+  red_guards_2:0 "Red Guards"
+  red_guards_2_desc:0 ""
+
+  political_interventionism:0 "Political Interventionism"
+  political_interventionism_desc:0 ""
+
+  ger_light_0:0 "Panzer I"
+
+  military_funding_guaranteed:0 "Military Funding military_funding_guaranteed"
+  FIN_monarchy_restoration_desc:0 ""
+
+  FIN_monarchy_restoration:0 "Finnish Monarchy"
+  FIN_monarchy_restoration_desc:0 ""
+
+  FIN_viljami_kalliokoski:0 "Viljami Kalliokoski"
+  FIN_viljami_kalliokoski_desc:0 ""
+
+  FIN_vilho_annala:0 "Vilho Annala"
+  FIN_vilho_annala_desc:0 ""
+
+  FIN_otto_wille_kuusinen:0 "Otto Wille Kussinen"
+  FIN_otto_wille_kuusinen_desc:0 ""
+
+  factory_workers_dissent:0 "Dissent Among Factory Workers"
+  factory_workers_dissent_desc:0 ""
+
+  dockyard_workers_dissent:0 "Dissent Among Dockyard Workers"
+  dockyard_workers_dissent_desc:0 ""
+
+  construction_workers_dissent:0 "Dissent Among Construction Workers"
+  construction_workers_dissent_desc:0 ""
+
+  proliferation_of_dissension:0 "Proliferation of Dissension"
+  proliferation_of_dissension_desc:0 "By Spreading Dissent we can perform covert actions to gain communist support"
+
+  european_settlers:0 "European Settlers"
+  european_settlers_desc:0 ""
+
+  arms_industry_reorganization:0 "Arms Industry Reorganization"
+  arms_industry_reorganization_desc:0 ""
+
+  sissi_tactics:0 "Sissi Tactics"
+  sissi_tactics_desc:0 ""
+  sissi_tactics_tt:0 "Light Infantry will gain a §G+10%§! Movement Speed and a §G+50%§! breakthrough"
+  
+  moscow_armistice:0 "Moscow Armistice"
+  moscow_armistice_desc:0 ""
+
+  diversify_the_economy:0 "Diversify the Economy"
+  diversify_the_economy_desc:0 ""
+
+  commander_in_chief:0 "Mannerheim"
+  commander_in_chief_desc:0 ""
+
+  fennoman:0 "FENNOMAN"
+  fennoman_desc:0 ""
+
+  
+
+  aggressive_neutrality:0 "Armed Neutrality"
+  aggressive_neutrality_desc:0 "Neutrality by itself will not protect us. We must train the population to resist occupation and become self sufficient"
+
+  shadow_scheme_focus:0 "Теневые схемы"
+  rapid_wartime_expansion:0 "Быстрое наращивание военного потенциала"
+
+  internal_conflict:0 "Internal Conflict"
+  war_torn_country:0 "War Torn Country"
+  Recovering_from_war:0 "Recovering From War"
+
+  CHI_high_peoples_support_civil_war:0 "High Peoples Support"
+  CHI_high_peoples_support_civil_war_desc:0 ""
+
+  CHI_low_peoples_support_civil_war:0 "Low Peoples Support"
+  CHI_low_peoples_support_civil_war_desc:0 ""
+
+  warlord:0 "Warlord"
+  
+  CHI_hanyang_arsenal:0 "Hanyang Arsenal"
+  
+  CHI_mukden_arsenal:0 "Mukden Arsenal"
+  
+  CHI_guangdong_arsenal:0 "Guangdong Arsenal"
+  
+  CHI_liaoning_arsenal:0 "Liaoning Arsenal"
+  
+  CHI_yue_loong:0 "Yue Loong"
+  
+  CHI_kiangnan_shipyard:0 "Kiangnan Shipyard"
+  
+  CHI_minsheng_shipyard:0 "Minsheng Shipyard"
+  
+  CHI_qishuyan_machinery:0 "Qishuyan Machinery"
+  
+  CHI_camco:0 "CAMCO"
+  
+  CHI_cnac:0 "CNAC"
+
+  agrarian_society:0 "Agrarian Society"
+  agrarian_society_desc:0 "The local administrators believe that their agrarian lifestyle has made a large part of the Colonial population simply unfit for military service or warfare of any kind. They maintain that we should only recruit from the so-called "martial tribes". This belief is so wide-spread and well-entreched that it will require at least a generation to overcome. For the foreseeable future, we must accept that they would simply ignore any order to draft farmers."
+
+  POL_national_defence_fund:0 "National Defence Fund"
+  POL_national_defence_fund_desc:0 ""
+
+  POL_romanian_bridgehead_strategy:0 "Romanian Bridgehead Strategy"
+  POL_romanian_bridgehead_strategy_desc:0 ""
+
+  POL_large_scale_unemployment:0 "Large Scale Unemployment"
+  POL_large_scale_unemployment_desc:0 ""
+
+  POL_large_scale_unemployment_2:0 "Large Scale Unemployment"
+  POL_large_scale_unemployment_2_desc:0 ""
+
+  POL_marginalized_minorities:0 "Marginalized Minorities"
+  POL_marginalized_minorities_desc:0 ""
+
+  POL_national_mobalization:0 "National Defence Mobalization"
+  POL_national_mobalization_desc:0 ""
+
+  cmp_truck:0 "CMP Truck"
+  cmp_truck_desc:0 ""
+
+  Huba_mobalization_plans:0 "Huba Mobalization Plans"
+  Huba_mobalization_plans_desc:0 ""
+
+  local_training_camps:0 "Local Training Camps"
+  local_training_camps_desc:0 ""
+
+  aisin_gioro_puyi:0 "Aisin Gioro Puyi"
+  aisin_gioro_puyi_desc:0 ""
+
+  MAN_militarism:0 "Militarism"
+  MAN_militarism_desc:0 ""
+
+  MAN_special_labour_force:0 "Special Labour Force"
+  MAN_special_labour_force_desc:0 ""
+
+  MAN_special_labour_force_2:0 "Special Labour Force"
+  MAN_special_labour_force_2_desc:0 ""
+
+  MAN_unsan_gold_mine:0 "Unsan Gold Mine"
+  MAN_unsan_gold_mine_desc:0 ""
+
+  PRC_divided_politics:0 "Divided Politics"
+  PRC_divided_politics_desc:0 "The party is internally divided about the best way to proceed. Struggles between various factions have erupted and will continue until one of them reigns supreme."
+
+  irregular_army:0 "Irregular Army"
+  irregular_army_desc:0 ""
+
+  irregular_army_2:0 "Irregular Army"
+  irregular_army_2_desc:0 ""
+
+  irregular_army_3:0 "Irregular Army"
+  irregular_army_3_desc:0 ""
+
+  irregular_army_4:0 "Irregular Army"
+  irregular_army_4_desc:0 ""
+
+  irregular_army_5:0 "Irregular Army"
+  irregular_army_5_desc:0 ""
+
+  irregular_army_6:0 "Irregular Army"
+  irregular_army_6_desc:0 ""
+
+  irregular_army_7:0 "Irregular Army"
+  irregular_army_7_desc:0 ""
+
+  CHI_low_legitamacy:0 "Low Legitamacy"
+  CHI_low_legitamacy_desc:0 ""
+
+  rectification_campaign:0 "Rectification Campaigns"
+  rectification_campaign_desc:0 ""
+
+  a_new_china:0 "A New China"
+  a_new_china_desc:0 ""
+
+  PRC_revolutionary_military_commission_2:0 "Revolution Military Commission"
+  PRC_revolutionary_military_commission_2_desc:0 ""
+  
+  PRC_red_army_weakened_1:0 "Red Army Weakened"
+  PRC_red_army_weakened_1_desc:0 ""
+
+  PRC_red_army_weakened_2:0 "Red Army Weakened"
+  PRC_red_army_weakened_2_desc:0 ""
+
+  PRC_red_army_weakened_3:0 "Red Army Weakened"
+  PRC_red_army_weakened_3_desc:0 ""
+
+  PRC_red_army_weakened_4:0 "Red Army Weakened"
+  PRC_red_army_weakened_4_desc:0 ""
+
+  PRC_land_reforms:0 "Undergoing Land Reform"
+  PRC_land_reforms_desc:0 ""
+
+  PRC_land_reforms_2:0 "Land Reform"
+  PRC_land_reforms_2_desc:0 ""
+
+  PRC_maoism:0 "Maoism"
+  PRC_maoism_desc:0 "The Great Chairman has spent long months developing his political theories into a coherent ideology that will guide our country forward."
+
+  PRC_maoism_2:0 "Maoism"
+  PRC_maoism_2_desc:0 "The Great Chairman has spent long months developing his political theories into a coherent ideology that will guide our country forward."
+
+  PRC_maoism_3:0 "Maoism"
+  PRC_maoism_3_desc:0 "The Great Chairman has spent long months developing his political theories into a coherent ideology that will guide our country forward."
+
+  PRC_central_department_of_social_affairs:0 "CDSA"
+  PRC_central_department_of_social_affairs_desc:0 ""
+
+  PRC_central_department_of_social_affairs_2:0 "CDSA"
+  PRC_central_department_of_social_affairs_2_desc:0 ""
+
+  PRC_ban_the_opium_trade:0 "Compulsory Rehabilitation"
+  PRC_ban_the_opium_trade_desc:0 ""
+
+  danwei_work_groups:0 "Danwei Work Groups"
+  danwei_work_groups_desc:0 ""
+
+  PRC_resistance_from_landlords:0 "Resistance From Landlords"
+  PRC_resistance_from_landlords_desc:0 ""
+
+  PRC_laogai_system:0 "Laogai System"
+  PRC_laogai_system_desc:0 ""
+
+  PRC_first_five_year_plan:0 "First Five Year Plan"
+  PRC_first_five_year_plan_desc:0 ""
+
+  chairman:0 "Chairman"
+
+  CHI_new_life_movement:0 "New Life Movement"
+  CHI_new_life_movement_desc:0 ""
+
+  he_umezu_treaty:0 "He Umezu Treaty"
+  he_umezu_treaty_desc:0 ""
+
+  CHI_xue_yue:0 "Xue Yue"
+  CHI_xue_yue_desc:0 ""
+
+  CHI_huang_guangrei:0 "Huang Guangrei"
+  CHI_huang_guangrei_desc:0 ""
+  haung_guangrei_defects:0 "Huang Guangrei has defected"
+
+  CHI_war_of_resistance_2:0 "War of Resistance"
+  CHI_war_of_resistance_2_desc:0 ""
+
+  CHI_military_affairs_commission_1:0 "Disorganized Army"
+  CHI_military_affairs_commission_2:0 "Military Affairs Commission"
+  CHI_military_affairs_commission_3:0 "Military Affairs Commission"
+  CHI_military_affairs_commission_4:0 "Military Affairs Commission"
+  CHI_military_affairs_commission_5:0 "Military Affairs Commission"
+  CHI_military_affairs_commission_6:0 "Military Affairs Commission"
+  CHI_military_affairs_commission_7:0 "Military Affairs Commission"
+  CHI_military_affairs_commission_8:0 "Military Affairs Commission"
+  CHI_military_affairs_commission_9:0 "Military Affairs Commission"
+
+  he_zhonghan:0 "He Zhonghan"
+  he_zhonghan_desc:0 ""
+
+  alexander_von_falkenhausen:0 "Alexander Von Falkenhausen"
+  alexander_von_falkenhausen_desc:0 ""
+  Germany_withdraws_support:0 "Germany Withdraws Support"
+
+  AST_wool_industry:0 "Wool Industry Funds"
+  AST_wool_industry_desc:0 ""
+
+  RAJ_quit_india_resolution_curbed:0 "Quit India Resolution"
+  RAJ_quit_india_resolution_curbed_desc:0 ""
+
+  RAJ_riots_in_the_streets:0 "Riots In the Streets"
+  RAJ_riots_in_the_streets_desc:0 ""
+
+  HUN_balkan_opposition:0 "Balkan Opposition"
+  HUN_balkan_opposition_desc:0 ""
+
+  HUN_societal_inequality:0 "Societal Inequality"
+  HUN_societal_inequality_desc:0 ""
+
+  HUN_societal_inequality_1:0 "Societal Inequality"
+  HUN_societal_inequality_1_desc:0 ""
+
+  HUN_lothar_rendulic:0 "Dr. Lothar Rendulic"
+  HUN_viktor_seebauer:0 "Viktor Seebauer"
+  HUN_eugen_beyer:0 "Eugen Beyer"
+  HUN_henrik_werth_2:0 "Henrik Werth"
+
+  mausoleum_of_marasesti_never_again:0 "Pe aici nu se trece!"
+  mausoleum_of_marasesti_never_again_desc:0 ""
+
+  mausoleum_of_marasesti_romanian_resiliance:0 "Pe aici nu se trece!"
+  mausoleum_of_marasesti_romanian_resiliance_desc:0 ""
+
+  equipment_scavanging:0 "Equipment Scavanging"
+  equipment_scavanging_desc:0 ""
+
+  ROM_vanatori_de_munte_cap:0 "Vanatori De Munte"
+  ROM_vanatori_de_munte_cap_desc:0 ""
+
+  SAF_native_military_corps:0 "Native Military Corps"
+  SAF_native_military_corps_desc:0 ""
+
+  ten_year_rule:0 "Ten Year Rule"
+  ten_year_rule_desc:0 "The British Empire does not foresee us going to war up until 1942 at the very least. For that reason we have committed our economy to the needs of the people"
+
+  royal_twenty_centres:0 "Royal Twenty Centres"
+  royal_twenty_centres_desc:0 "The Great depression has lead to large amounts of unemployment. In order to get the population back to work, we have established work camps with minimum pay in exchange for labour. We have been heavily criticized however for the poor working conditions and pay."
+
+  royal_twenty_centres2:0 "Royal Twenty Centres"
+  royal_twenty_centres2_desc:0 "The Great depression has lead to large amounts of unemployment. In order to get the population back to work, we have established work camps with minimum pay in exchange for labour. We have been heavily criticized however for the poor working conditions and pay."
+
+  royal_canadian_army_headquarters:0 "Royal Canadian Army Headquarters"
+
+  crown_corporations:0 "Crown Corporations"
+  crown_corporations2:0 "Crown Corporations"
+
+  CAN_ernest_james_renaud:0 "Ernest James Renaud"
+
+  CAN_howard_reid:0 "Howard Reid"
+
+  leonard_w_murray:0 "Leonard W.Murray"
+
+  charles_de_gaulle:0 "Charles De Gaulle"
+
+  jean_de_lattre_de_tassigny:0 "Jean De Lattre De Tassigny"
+
+  alphonse_juin:0 "Alphonse Juin"
+
+  philippe_kieffer:0 "Philippe Kieffer"
+
+  french_perseverance:0 "French Perseverance"
+  french_perseverance_desc:0 ""
+
+  FRA_disjointed_government:0 "Disjointed Government"
+  FRA_disjointed_government_desc:0 "The state of French politics is far from stable. While reforms are needed and welcome, the nation is divided and getting drawn into a conflict would put it at great risk.§RDoubles the cost of Anti Ideology Raids§!"
+
+  FRA_grand_batterie:0 "Grand Batterie"
+  FRA_grand_batterie_desc:0 ""
+
+  FRA_static_command:0 "Static Command"
+  FRA_static_command_desc:0 "Being prepared for static warfare, the army is using telephones over radios. While it's safer and less likely to get cracked by the enemy, it greatly reduces our ability to make large manoeuvers."
+
+  FRA_widespread_fear_of_the_military:0 "Widespread fear of the military"
+  FRA_widespread_fear_of_the_military_desc:0 "It's a matter of time before the army launches a coup. We must act now, to rpeserve our nation and its integrity. Let's purge !"
+
+  FRA_fear_of_the_military:0 "Fear of the military"
+  FRA_fear_of_the_military_desc:0 "The army must be carefully controlled to prevent it from being too powerful for the government. Further new development the army wants will just serve their own interest."
+
+  FRA_respect_for_the_military:0 "Respect for the military"
+  FRA_respect_for_the_military_desc:0 "The army is well respected by the politicians."
+
+  FRA_trust_in_the_military:0 "Trust for the military"
+  FRA_trust_in_the_military_desc:0 "The government fully trusts the military and will do whatever it can to support it."
+
+  FRA_victors_of_wwi:0 "Victors of the Great War"
+  FRA_victors_of_wwi_desc:0 "The Great war came with a great cost to France and its people, with the treaty of Versailles France does not need to worry about war coming to its borders."
+
+  FRA_council_of_rambouillet:0 "Council of Rambouillet"
+  FRA_council_of_rambouillet_desc:0 ""
+
+  giovanni_messe_2:0 "Giovanni Messe"
+
+  ITA_retooling_the_industry:0 "Retooling The Industry"
+
+  standaradized_war_material:0 "Standardized War Material"
+
+  ITA_reverse_the_brain_drain:0 "Reverse the Brain Drain"
+
+  mediterrarian_tariffs:0 "Mediterrarian Trade Tariffs"
+
+  ITA_death_before_surrender:0 "Death before Surrender"
+
+  ITF_death_before_surrender:0 "Death before Surrender"
+
+  ITA_emmanuel_figurehead:0 "Figurehead King Emmanuel"
+  ITA_emmanuel_figurehead_desc:0 ""
+
+  ITA_grand_council_of_fascism:0 "Grand Council of Fascism"
+  ITA_grand_council_of_fascism_desc:0 "The Grand Council of Fascism has been responsible for much of the running of the country and is supportive of Fascism. They however hold alot of power and should not be considered loyal, if we are in a tricky prediciment."
+
+  gioventu_italiana_del_littorio:0 "Gioventu Italiana Littorio"
+  gioventu_italiana_del_littorio_desc:0 ""
+
+  ITA_intense_modernization_effort:0 "Intense Modernization Effort"
+  ITA_intense_modernization_effort_desc:0 ""
+
+  balkan_dominance:0 "Balkan Dominance"
+  balkan_dominance_desc:0 ""
+
+  mediterrarian_dominance:0 "Mediterrarian Dominance"
+  mediterrarian_dominance_desc:0 ""
+
+  ITA_poor_education_system:0 "Poor Education System"
+  ITA_poor_education_system_desc:0 ""
+
+  ITA_iir:0 "IIR"
+  ITA_iir_desc:0 "Institute for Industrial Reconstruction"
+
+  ITA_industry_wide_naval_production:0 "Industry Wide Naval Rearmament"
+  ITA_industry_wide_naval_production_desc:0 ""
+  ITA_industry_wide_naval_production_instant_desc:0 "\n§RGoing above partial mobalization will remove the dependency on Industry Wide Naval Rearmament§!"
+
+  ITA_modernization:0 "Fleet Modernization"
+  ITA_modernization_desc:0 ""
+
+  ITA_roman_heritage:0 "Roman Heritage"
+  ITA_roman_heritage_desc:0 ""
+  ITA_roman_division_names_list:0 "Unlockes the Roman Division Name List"
+
+  ITA_alpini_idea:0 "Alpini Training Programmes"
+  ITA_alpini_idea_desc:0 ""
+
+  rome_central_bank:0 "Rome Central Bank"
+
+  ITA_aeronautic_funding:0 "Aeronautic Funding"
+  ITA_aeronautic_funding_desc:0 ""
+
+  ITA_decima_flottiglia_mas:0 "Decima Flottiglia MAS"
+  ITA_decima_flottiglia_mas_desc:0 ""
+
+  ITA_inadequte_army:0 "Inadequate Army"
+  ITA_inadequte_army_desc:0 ""
+
+  ITA_inadequte_army_2:0 "Inadequate Army"
+  ITA_inadequte_army_2_desc:0 ""
+
+  ITA_inadequte_army_3:0 "Inadequate Army"
+  ITA_inadequte_army_3_desc:0 ""
+
+  ITA_inadequte_army_4:0 "Inadequate Army"
+  ITA_inadequte_army_4_desc:0 ""
+
+  ITA_inadequte_airforce:0 "Inadequate Airforce"
+  ITA_inadequte_airforce_desc:0 ""
+
+  ITA_inadequte_airforce_2:0 "Inadequate Airforce"
+  ITA_inadequte_airforce_2_desc:0 ""
+
+  ITA_inadequte_airforce_3:0 "Inadequate Airforce"
+  ITA_inadequte_airforce_3_desc:0 ""
+
+  ITA_inadequte_airforce_4:0 "Inadequate Airforce"
+  ITA_inadequte_airforce_4_desc:0 ""
+
+  ITA_inadequte_navy:0 "Inadequate Navy"
+  ITA_inadequte_navy_desc:0 ""
+
+  ITA_inadequte_navy_2:0 "Inadequate Navy"
+  ITA_inadequte_navy_2_desc:0 ""
+
+  ITA_inadequte_navy_3:0 "Inadequate Navy"
+  ITA_inadequte_navy_3_desc:0 ""
+
+  ITA_inadequte_navy_4:0 "Inadequate Navy"
+  ITA_inadequte_navy_4_desc:0 ""
+
+  ITA_rebuild_the_nation:0 "Rebuild the Nation"
+  ITA_rebuild_the_nation_desc:0 ""
+
+  ITA_national_revitalization:0 "National Revitalization"
+  ITA_national_revitalization_desc:0 ""
+
+  ansaldo:0 "Ansaldo"
+  ansaldo_desc:0 ""
+
+  franco_tosi_and_c:0 "Franco Tosi & C"
+  franco_tosi_and_c_desc:0 ""
+
+  leader_hospitalized:0 "Leader Hospitalized"
+
+  bribe_guc:0 "Budget Cuts"
+  bribe_guc_desc:0 "Recent events have demanded increase spending in certain areas, thus we have to temporarily cut the military budget"
+
+  bribe_gxc:0 "Large Budget Cuts"
+  bribe_gxc_desc:0 "Recent events have demanded a large increase in spending in certain areas, thus we have to temporarily cut the military budget"
+
+  JAP_gekokujo:0 "Gekokujō"
+  JAP_gekokujo_desc:0 "Our officer core is full of insubordination, usually following their own valition and disobeying high command."
+
+  JAP_quasi_legitimate_governement:0 "Quasi Legitimate Government"
+  JAP_quasi_legitimate_governement_desc:0 ""
+
+  JAP_ranks_purged:0 "Ranks Purged"
+  JAP_ranks_purged_desc:0 ""
+
+  JAP_navy_slighted:0 "Navy Slighted"
+  JAP_navy_slighted_desc:0 "Our recent backing of the Army has led the navy to feel slighted. Most likely they expect the army to lose and the conflict with China to end, with time and frequent provocation we expect them to come around soon."
+
+  JAP_new_order:0 "Imperial Rule Assistance Association"
+  JAP_new_order_desc:0 ""
+
+  JAP_tripartite_pact:0 "Tripartite Pact"
+  JAP_tripartite_pact_desc:0 ""
+
+  tomio_hara:0 "Tomio Hara"
+  tomio_hara_desc:0 ""
+
+  traditional_architecture:0 "Traditional Architecture"
+  traditional_architecture_desc:0 "Our architecture has its design rooted in traditional and is in accordance to our people's desire. While beautiful and elegant, they are mostly built from wood and are extremely vulnerable to any type of bombing."
+
+  JAP_interservice_rivalry_army_supreme:0 "Interservice Rivalry - Army Supreme"
+  JAP_interservice_rivalry_army_supreme_desc:0 ""
+
+  JAP_interservice_rivalry_army_supreme_unstable:0 "Interservice Rivalry - Army Supreme - Unstable"
+  JAP_interservice_rivalry_army_supreme_unstable_desc:0 ""
+
+  JAP_interservice_rivalry_navy_supreme:0 "Interservice Rivalry - Navy Supreme"
+  JAP_interservice_rivalry_navy_supreme_desc:0 ""
+
+  JAP_interservice_rivalry_navy_supreme_unstable:0 "Interservice Rivalry - Navy Supreme - Unstable"
+  JAP_interservice_rivalry_navy_supreme_unstable_desc:0 ""
+
+  power_cemented:0 "Power Cemented"
+  power_cemented_desc:0 "Following the great purge, Stalin's authority is large and undisputed."
+
+  power_cemented_2:0 "Power Cemented"
+  power_cemented_2_desc:0 "Following the great purge, Stalin's authority is large and undisputed."
+
+  Incompetent_army:0 "Widespread Army Incompetence"
+  Incompetent_army_desc:0 "Our army still maneuvers in long exposed columns plagued with no unison and inflexibility. Heavy equipment is also witheld from divisions without proper authorization from higher command"
+
+  Incompetent_army_2:0 "Limited Army Incompetence"
+  Incompetent_army_2_desc:0 "Our army still retreats without proper authorization from higher command and have a mentality that our means to fight are limitless so we should just keep retreating as we have a lot of territory, a lot of ground, a lot of population and that there will always be plenty of bread."
+
+  Incompetent_army_3:0 "Limited Army Incompetence"
+  Incompetent_army_3_desc:0 "Our army still retreats without proper authorization from higher command and have a mentality that our means to fight are limitless so we should just keep retreating as we have a lot of territory, a lot of ground, a lot of population and that there will always be plenty of bread."
+
+  Incompetent_navy:0 "Naval Incompetence"
+  Incompetent_navy_desc:0 ""
+
+  Incompetent_airforce:0 "Airforce Incompetence"
+  Incompetent_airforce_desc:0 ""
+
+  Incompetent_airforce_2:0 "Airforce Incompetence"
+  Incompetent_airforce_2_desc:0 ""
+
+  order_227:0 "Приказ 227"
+  order_227_desc:0 "It is time to finish retreating. Not one step back!"
+
+  planned_economy:0 "Плановая Экономика"
+  planned_economy_desc:0 ""
+
+  market_socialism:0 "Рыночный Социализм"
+  market_socialism_desc:0 ""
+
+  gaz_automobile_plants:0 "Автозаводы ГАЗ"
+  gaz_automobile_plants_desc:0 ""
+
+  sov_weak_industry:0 "Weak Industry"
+  sov_weak_industry_desc:0 "Our great industry remains weak until we can finish the five year plan and bring our nation into the modern era"
+
+  sov_weak_industry_2:0 "Weak Industry"
+  sov_weak_industry_2_desc:0 "Our great industry remains weak until we can finish the five year plan and bring our nation into the modern era"
+
+  sov_weak_industry_3:0 "Weak Industry"
+  sov_weak_industry_3_desc:0 "Our great industry remains weak until we can finish the five year plan and bring our nation into the modern era"
+
+  sov_weak_industry_4:0 "Weak Industry"
+  sov_weak_industry_4_desc:0 "Our great industry remains weak until we can finish the five year plan and bring our nation into the modern era"
+
+  lowered_worker_minimum_wage:0 "Пониженная минимальная заработная плата работников"
+  lowered_worker_minimum_wage_desc:0 ""
+
+  bread_basket_of_the_soviet_union:0 "Хлебная корзина Советского Союза"
+  bread_basket_of_the_soviet_union_desc:0 ""
+
+  peoples_commissariat_focus_2:0 "Народный комиссариат оборонной промышленности"
+  peoples_commissariat_focus_2_desc:0 ""
+  
+  peoples_commissariat_focus_3:0 "Народный комиссариат оборонной промышленности"
+  peoples_commissariat_focus_3_desc:0 ""
+  
+  peoples_commissariat_focus_4:0 "Народный комиссариат оборонной промышленности"
+  peoples_commissariat_focus_4_desc:0 ""
+  
+  peoples_commissariat_focus_5:0 "Народный комиссариат оборонной промышленности"
+  peoples_commissariat_focus_5_desc:0 ""
+  
+  peoples_commissariat_focus_6:0 "Народный комиссариат оборонной промышленности"
+  peoples_commissariat_focus_6_desc:0 ""
+
+  smersh:0 "СМЕРШ"
+  smersh_desc:0 "SMERSH, or 'Death to Spies', is a proposed counter-intelligence initiative that would serve a dual purpose; rooting out enemy spies and executing deserters and partisans within the ranks of the Red Army."
+
+  fear_from_the_purge:0 "Страх перед чисткой"
+  fear_from_the_purge_2:0 "Страх перед чисткой"
+
+  trotskyite_plot_purged_2:0 "Троцкистский заговор ликвидирован?"
+
+  comecon_economic_aid:0 "Comecon Economic Aid"
+
+  cockrill:0 "Cockrill"
+
+  BEL_frc:0 "Fonderie Royale de Canons"
+
+  gardec_shipyards:0 "Gardec Shipyards"
+
+  herstol:0 "Herstol Arms Industry"
+
+  ag_weser:0 "AG Weser"
+
+  support_of_the_ss:0 "Поддержка СС"
+  support_of_the_ss_desc:0 ""
+
+  GER_mefo_bills_instant_desc:0 "\n§RНачало войны или переход к гражданской экономике устранит зависимость от счетов MEFO, а также отсрочит необходимость их оплаты до окончания войны.§!"
+
+  GER_lack_of_offensive_plans:0 "Отсутствие планов наступления"
+  GER_lack_of_offensive_plans_desc:0 "Эта война вышла из того, что мы планировали, кто захочет умирать за Данциг?"
+
+  GER_lack_of_offensive_plans_initial:0 "Отсутствие планов наступления"
+  GER_lack_of_offensive_plans_initial_desc:0 "Эта война вышла из того, что мы планировали, кто захочет умирать за Данциг?"
+
+  GER_accepted_british_naval_dominance:0 "Берлинский военно-морской договор"
+  GER_accepted_british_naval_dominance_desc:0 "Мы приняли британское военно-морское господство и ограничили размер нашего флота"
+
+  planned_offensives:0 "Планируемые наступления"
+  planned_offensives_desc:0 ""
+
+  GER_reichkommissariats_governments:0 "Reichkommissariats"
+  GER_reichkommissariats_governments_desc:0 "With the formation of various Reichkommissariats, we can help deal with resistance"
+
+  GER_werwolf:0 "Тактика партизан-оборотней"
+  GER_werwolf_desc:0 "The Werwolves were a planned German resistance group that would fight on against the occupying powers when the war was lost."
+
+  prepare_sealion:0 "Prepare Sealion"
+
+  SOV_military_restructuring:0 "Военная реструктуризация"
+
+  SOV_permanent_revolution:0 "Permanent Revolution"
+
+  every_man_must_do_there_duty:0 "Every Man Must Do Their Duty"
+
+  SOV_comecon_member:0 "Comecon Member"
+
+  SOV_comecon_leader:0 "Comecon Leader"
+
+  SOV_comecon_leader_2:0 "Comecon Leader"
+
+  SOV_comecon_leader_3:0 "Comecon Leader"
+
+  SOV_comecon_leader_4:0 "Comecon Leader"
+
+  SOV_comecon_leader_5:0 "Comecon Leader"
+
+  SOV_comecon_leader_6:0 "Comecon Leader"
+
+  SOV_comecon_leader_7:0 "Comecon Leader"
+
+  SOV_comecon_leader_8:0 "Comecon Leader"
+
+  SOV_comecon_leader_9:0 "Comecon Leader"
+
+  SOV_comecon_leader_10:0 "Comecon Leader"
+
+  personality_cult:0 "Культ личности "
+
+  socialist_realism_workforce:0 "Социалистический реализм"
+
+  socialist_realism_people:0 "Социалистический реализм"
+
+  socialist_realism_army:0 "Социалистический реализм"
+
+  socialist_realism_partisans:0 "Социалистический реализм"
+
+  celebration_of_the_constitution:0 "Празднование Конституции"
+
+  militarized_schools_2:0 "Милитаризированное общество"
+
+  closed_city_networks:0 "Closed City Networks"
+
+  SOV_stavka:0 "Ставка"
+
+  SOV_Deep_battle:0 "Soviet Deep Battle"
+
+  SOV_eyes_to_the_east:0 "Взгляд на восток"
+
+  SOV_eyes_to_the_west:0 "Взгляд на запад"
+
+  SOV_foundations_of_retribution:0 "Foundation of Retribution"
+
+  SOV_cease_fire:0 "Eastern Front Cease-fire"
+
+  winter_experts:0 "Winter Experts"
+  winter_experts_desc:0 ""
+  
+  paton_institute_of_electric_welding:0 "Институт электросварки имени Е. О. Патона"
+  paton_institute_of_electric_welding_desc:0 ""
+  
+  institute_of_electric_welding:0 "Институт электросварки"
+  
+  
+  
+  
+  
+  
+  
+  
+  the_second_five_year_plan:0 "Вторая Пятилетка"
+  the_second_five_year_plan_desc:0 ""
+
+  the_third_five_year_plan:0 "Третья Пятилетка"
+  the_third_five_year_plan_desc:0 ""
+
+  the_fourth_five_year_plan:0 "Четвертая Пятилетка"
+  the_fourth_five_year_plan_desc:0 ""
+
+  legacy_of_the_five_year_plans:0 "Наследие Второй Пятилетки"
+  legacy_of_the_five_year_plans_desc:0 ""
+
+  legacy_of_the_five_year_plans_2:0 "Наследие Третей Пятилетки"
+  legacy_of_the_five_year_plans_2_desc:0 ""
+
+  legacy_of_the_five_year_plans_3:0 "Наследие Четвертой Пятилетки"
+  legacy_of_the_five_year_plans_3_desc:0 ""
+
+  
+  great_patriotic_war:0 "Великая Отечественная Война"
+  great_patriotic_war_desc:0 "We are at war, we must gather every inch of our strength to repel the invaders or face total destruction."
+
+  great_patriotic_war_2:0 "Великая Отечественная Война"
+  great_patriotic_war_2_desc:0 "We are at war, we must gather every inch of our strength to repel the invaders or face total destruction."
+
+  SOV_georgy_malenkov:0 "Georgy Malenkov"
+
+  georgy_zhukov_chief:0 "Georgy Zhukov"
+
+  vasily_chuikov:0 "Vasily Chuikov"
+
+  leonid_govorov:0 "Leonid Govorov"
+
+  economic_divide:0 "Экономический разрыв"
+  economic_divide_desc:0 "Наше нынешнее экономическое управление столкнулось с проблемой компетентности и идеологической лояльности между министром экономики Ялмаром Шактом и рейхскомиссаром авиации Германом Герингом. Это разделение нанесло ущерб нашей экономике, а также вызвало внутренние конфликты в правительстве, которые необходимо устранить. остановился."
+  economic_divide_2:0 "Напряженный экономический разрыв"
+  economic_divide_2_desc:0 "Наше нынешнее экономическое управление столкнулось с проблемой компетентности и идеологической лояльности между министром экономики Ялмаром Шактом и рейхскомиссаром авиации Германом Герингом. Это разделение нанесло ущерб нашей экономике, а также вызвало внутренние конфликты в правительстве, которые необходимо устранить. остановился."
+  operation_weserubung:0 "Operation Weserubung"
+
+  slovakian_opposition:0 "Slovakian Opposition"
+
+  GER_organization_todt:0 "Организация Тодта"
+
+  relaxed_industry:0 "Расслабленная промышленность"
+  relaxed_industry_desc:0 "Working hours are short and our civilians are used to luxuries"
+
+  active_industry:0 "Сверхмобилизованная промышленность"
+  active_industry_desc:0 "Increasing factory working hours and introducing strict rations will propel the war economy. The industry is now a lot more organized and is able to produce a lot more equipment"
+
+  GER_autarky_idea_desc:0 "Autarky puts the self reliance of the country above any trade with other nations"
+
+  GER_autarky_idea_2:0 "Пересмотренная автаркия"
+  GER_autarky_idea_2_desc:0 "The closing of imports is a major hinderence to the success of our economic policy. IF Autarky is going to be successful, we must implement it less strictly"
+
+  GER_aeronautic_funding:0 "Aeronautic Funding"
+
+  hitler_youth:0 "Гитлерюгенд"
+  hitler_youth_desc:0 ""
+
+  triumphant_will_2:0 "Triumphant Will"
+  triumphant_will_2_desc:0 ""
+
+  triumphant_will_3:0 "Triumphant Will"
+  triumphant_will_3_desc:0 ""
+
+  triumphant_will_4:0 "Triumphant Will"
+  triumphant_will_4_desc:0 ""
+
+  GER_barbarossa_preparation:0 "Подготовка к Барбароссе"
+
+  ewald_von_kleist:0 "Ewald von Kleist"
+  
+  intermixing_of_industries:0 "Смешение отраслей"
+
+  ger_daf:0 "Немецкий трудовой фронт"
+
+  ger_rls:0 "Служба труда Рейха"
+
+  bletchley_park:0 "Bletchley Park"
+
+  sour_loser_2:0 "Горький неудачник"
+  sour_loser_2_desc:0 "Bitterness over defeat in the Great War dominates the politics of this nation."
+
+  sour_loser_3:0 "Горький неудачник"
+  sour_loser_3_desc:0 "Bitterness over defeat in the Great War dominates the politics of this nation."
+
+  sour_loser_4:0 "Горький неудачник"
+  sour_loser_4_desc:0 "Bitterness over defeat in the Great War dominates the politics of this nation."
+
+  coal_liquidization:0 "Ликвидация угля"
+
+  ENG_empty_the_gold_reserves_idea:0 "Опустошить золотой запас"
+
+  ENG_commonwealth_free_trade_zone:0 "Зона свободной торговли Содружества"
+
+  ENG_tizard:0 "Миссия Тизарда"
+
+  USA_tizard:0 "Миссия Тизарда"
+
+  vauxhaul_motors_eng:0 "Vauxhaul Motors"
+
+  ENG_government_loans:0 "Government Loans"
+
+  stiff_upper_lip_2:0 "Британский стоицизм"
+  stiff_upper_lip_2_desc:0 "If you can keep your head when all about you\nAre losing theirs and blaming it on you,\nIf you can meet with Triumph and Disaster\nAnd treat those two impostors just the same\nYours is the Earth and everything that's in it,\nAnd - which is more - you'll be a Man, my son. "
+
+  stiff_upper_lip_3:0 "Британский стоицизм"
+  stiff_upper_lip_3_desc:0 "If you can keep your head when all about you\nAre losing theirs and blaming it on you,\nIf you can meet with Triumph and Disaster\nAnd treat those two impostors just the same\nYours is the Earth and everything that's in it,\nAnd - which is more - you'll be a Man, my son. "
+
+  ENG_duel_cabinet:0 "Duel Cabinet"
+  USA_peace_time:0 "Мирное время"
+  integrated_colony:0 "Integrated Colony"
+  USA_wpa_idea:0 "Администрация хода работ"
+
+  USA_food_lend_lease:0 "Продовольственный ленд-лиз США"
+
+  USA_great_depression_up_large_2_tt:0 "§Значительно увеличивается§! последствия Великой депрессии.\n" 
+  bs_great_depression:0 "Великая депрессия"
+  bs_great_depression_desc:0 "Although a worldwide phenomenon, the Great Depression started with a stock market crash in the United States and has caused unemployment rates to soar and tax revenue to plummet. The American people and its government have enough to worry about without getting involved in another war."
+  bs_great_depression_2:0 "Медленное восстановление"
+  bs_great_depression_2_desc:0 "Although a worldwide phenomenon, the Great Depression started with a stock market crash in the United States and has caused unemployment rates to soar and tax revenue to plummet. The American people and its government have enough to worry about without getting involved in another war."
+  bs_great_depression_3:0 "Быстрое восстановление"
+  bs_great_depression_3_desc:0 "We still remain Weakened."
+  bs_great_depression_4:0 "Медленный экономический рост"
+  bs_great_depression_4_desc:0 "End in Sight"
+
+  jock_campbell:0 "Jock Campbell"
+
+  richard_o_conner:0 "Richard O Conner"
+  
+  harry_hopkins:0 "Гарри Хопкинс"
+
+  leslie_mcnair:0 "Leslie McNair"
+
+  idea_courtney_hodges:0 "Courtney Hodges"
+
+  alexander_vandegrift:0 "Alexander Vandegrift"
+
+  willow_run:0 "Willow Run"
+  willow_run_desc:0 ""
+
+  napalm_bombs:0 "Напалмовые бомбы"
+  napalm_bombs_desc:0 ""
+
+  toledo_automobile_complex:0 "Автомобильный комплекс Толедо"
+  toledo_automobile_complex_desc:0 ""
+
+  chrysler_detroit_arsenals:0 "Крайслер Детройт Арсеналс"
+  chrysler_detroit_arsenals_desc:0 ""  
+
+  morgan_bank_loans:0 "J.P. Morgan Wartime Loans"
+  morgan_bank_loans_desc:0 ""
+
+  USA_selective_service:0 "Выборочный сервис"
+  USA_selective_service_desc:0 ""
+
+  USA_project_px:0 "Project P.X."
+  USA_project_px_desc:0 ""
+
+  USA_global_super_power:0 "Глобальная сверхдержава"
+  USA_global_super_power_desc:0 ""
+
+  USA_boulder_dam:0 "Строительство плотины Боулдер"
+
+  USA_marshall_plan_aid:0 "Marshall Plan Aid"
+
+  USA_rural_electrification_act:0 "Закон об электрификации сельских районов"
+  USA_price_controls:0 "Федеральный закон о справедливом ценообразовании"
+  USA_neutrality_act_1:0 "Закон о нейтралитете 1935 года"
+  USA_neutrality_act_2:0 "Обновленный Закон о нейтралитете 1935 года"
+  USA_neutrality_act_3:0 "Закон о нейтралитете Испании"
+
+  USA_agricultural_adjustment_act_1:0 "Первый закон о регулировании сельского хозяйства"
+  USA_agricultural_adjustment_act_1_desc:0 "The First Agricultural Adjustment Act, designed to raise prices on food, was a system in which the Federal Government payed farmers for farm products only to dispose of them, lowering surplus and raising prices, as well as paying farmer not to plant crops, and funding this through a tax on food producers."
+  
+  USA_agricultural_adjustment_act_2:0 "Второй закон о регулировании сельского хозяйства"
+  USA_agricultural_adjustment_act_2_desc:0 "The Second Agricultural Adjustment Act had most of the provisions of the first, with the exception that it would not be funded through a tax on producers in order to comply with US v Butler."
+
+  USA_political_corruption:0 "Политическая коррупция"
+  USA_works_progress_administration:0 "Администрирование хода работ"
+  USA_federal_works_agency:0 "Федеральное агентство работ"
+  USA_farmer_relief_act:0 "Закон о помощи фермерам"
+  USA_accumulated_wealth_tax:0 "Налог на накопленное богатство"
+  USA_accumulated_wealth_tax_2:0 "Налог на накопленное богатство"
+  USA_fair_labor_standards_act:0 "Закон о справедливых трудовых стандартах"
+  USA_worker_autonomy_act:0 "Закон об автономии труда"
+  USA_nira_act:0 "Закон NIRA"
+  USA_union_recognition_act:0 "Закон о правах профсоюзов"
+  USA_business_relations_act:0 "Закон об отношениях между бизнесом и профсоюзами"
+  USA_board_of_better_buisness:0 "Совет по улучшению бизнеса"
+  USA_wagner_steagall_act:0 "Закон Вагнера-Стигалла"
+  USA_cash_and_carry_act:0 "Закон о наличных деньгах с поправками"
+  USA_lend_lease_act:0 "Закон о ленд-лизе"
+  USA_liberty_ships:0 "Корабли типа Либерти"
+  USA_roosevelt_recession:0 "Рецессия Рузвельта"
+  USA_budget_balancing:0 "Балансировка бюджета"
+  USA_keynesian_economics:0 "Кейнсианская экономика"
+  USA_department_of_defense_2:0 "Министерство обороны"
+  USA_limited_rearmament:0 "Ограниченное перевооружение"
+  keynesian_militarism:0 "Кейнсианский милитаризм"
+  USA_army_segregation:0 "Сегрегация в дивизиях"
+  USA_army_segregation_desc:0 "The US has a policy of pushing black fellows into their own divisions. They usually have the roles of cooks, labourers and other miscellaneous odd jobs. Some black men don't like this but it's as good as it's gonna get until more reforms are made."
+  USA_army_segregation_2:0 "Сегрегация в бригадах"
+  USA_army_segregation_desc:0 "We have now incorporated black men into white divisions but they are still segregated into different brigades to avoid race conflict. This is a much better solution to what we had before but some in our society want it to go further."
+  
+  unreliable_torpedoes:0 "Ненадежные торпеды"
+  unreliable_torpedoes_desc:0 ""
+  unreliable_torpedoes_2:0 "Ненадежные торпеды"
+  unreliable_torpedoes_2_desc:0 ""
+
+  foreign_technologies:0 "Foreign Technologies"
+  major_technologies:0 "Major Nation Technologies"
+  major_technologies_research:0 "Major Nation Technologies"
+  foreign_technologies_desc:0 "Having our tanks and planes come from Foreign countries makes us reliant on their R&D departments for new developments"
+
+  can_join_factions_tt:0 "§WSet the rule:§! £trigger_yes Can join factions\n"
+
+
+  ###################################################################################################################################################################################################################################################################
+  ###################################################################################################################################################################################################################################################################
+  ###################################################################################################################################################################################################################################################################
+  ###################################################################################################################################################################################################################################################################
+
+
+  ministry_of_culture:0 "Министерство культуры"
+  ministry_of_defence:0 "Министерство обороны"
+  ministry_of_labour:0 "Министерство труда"
+  ministry_of_propaganda:0 "Министерство пропаганды"
+  ministry_of_business:0 "Министерство бизнеса"
+  economic_health:0 "Экономическая усталость"
+
+  army_theorist:0 "Армейский теоретик"
+  air_theorist:0 "Теоретик воздуха"
+  navy_theorist:0 "Военно-морской теоретик"
+
+  collectivization:0 "Коллективизация"
+
+  women_at_home:0 "Женщины дома"
+
+  women_in_the_workplace:0 "Женщины на работе"
+
+  women_in_the_workforce:0 "Женщины в рабочей силе"
+
+  women_in_the_army:0 "Женщины в армии"
+
+  women_in_the_frontlines:0 "Женщины на передовой"
+
+  EFFECT_CHANGE_LAW_ministry_of_culture:0 "Изменить закон о культуре на ‘$NAME|Y$’, который предоставляет ($DESC$)."
+  EFFECT_CHANGE_LAW_ministry_of_defence:0 "Изменить Закон об обороне на "$NAME|Y$", который предоставляет ($DESC$)."
+  EFFECT_CHANGE_LAW_ministry_of_propaganda:0 "Изменить закон о пропаганде на ‘$NAME|Y$’, который предоставляет ($DESC$)."
+  EFFECT_CHANGE_LAW_ministry_of_labour:0 "Изменить закон о труде на ‘$NAME|Y$’, который предоставляет ($DESC$)."
+  EFFECT_CHANGE_LAW_ministry_of_business:0 "Изменить бизнес-закон на "$NAME|Y$", который предоставляет ($DESC$)."
+  EFFECT_CHANGE_LAW_ministry_of_foreign_affairs:0 "Изменить закон об иностранных делах на ‘$NAME|Y$’, который предоставляет ($DESC$)."
+
+  issueing_war_bonds:0 "Выпуск военных облигаций"
+  No_bonds:0 "Без облигаций"
+
+  Series_A_bonds:0 "Облигации серии A"
+  Series_A_bonds_desc:0 "Приведет к выплате §R4% потребительских товаров в течение 2 лет§! После войны.\n"
+
+  Series_B_bonds:0 "Облигации серии B"
+  Series_B_bonds_desc:0 "Приведет к выплате в течение 2 лет §R8% потребительских товаров§! После войны.\n"
+
+  Series_C_bonds:0 "Облигации серии C"
+  Series_C_bonds_desc:0 "Приведет к выплате в течение 2 лет §R12% за потребительские товары§! После войны.\n"
+
+  Series_D_bonds:0 "Облигации серии D"
+  Series_D_bonds_desc:0 "Приведет к выплате в течение 2 лет §R16% потребительских товаров§! После войны.\n"
+
+  Series_E_bonds:0 "Облигации серии E"
+  Series_E_bonds_desc:0 "Приведет к выплате в течение 2 лет §R20% потребительских товаров§! После войны.\n"
+
+  Series_F_bonds:0 "Облигации серии F"
+  Series_F_bonds_desc:0 "Приведет к выплате в течение 2 лет §R25% потребительских товаров§! После войны.\n"
+
+  Series_G_bonds:0 "Облигации серии G"
+  Series_G_bonds_desc:0 "Приведет к выплате в течение 2 лет §R30% потребительских товаров§! После войны.\n"
+
+  no_propaganda:0 "Нет пропаганде"
+  
+  light_propaganda_effort:0 "Маломасштабная пропаганда"
+
+  large_propaganda_effort:0 "Масштабная пропаганда"
+
+  intensive_propaganda_effort:0 "Интенсивные пропагандистские кампании"
+
+  indoctrination:0 "Усилия по идеологической обработке"
+
+  fear_propaganda:0 "Кампании страха"
+
+  hollywood:0 "Голливуд"
+
+  shintoism:0 "Синтоизм"
+
+  offer_better_wages:0 "Предлагать более высокую заработную плату"
+
+  mandatory_army_service:0 "Обязательная служба в армии"
+
+  incentivise_employability_oppertunities:0 "Поощрять возможности трудоустройства"
+
+  conscript_men_into_the_factories:0 "Призыв людей на фабрики"
+
+  no_economic_policy:0 "Нет экономической политики"
+  
+  ministry_of_business_cost_factor:0 "Затраты на экономическую политику"
+
+  full_privatization:0 "Полная приватизация"
+
+  state_sponsored_economy:0 "Экономика, спонсируемая государством"
+
+  state_capitalism:0 "Государственный капитализм"
+
+  plan_economy:0 "Плановая экономика"
+
+  protectionism:0 "Протекционизм"
+
+  agrarian_socialism:0 "Аграрный социализм"
+
+  national_socialism:0 "Национал-социализм"
+
+  national_syndicalism:0 "Национальный синдикализм"
+
+  primative_economy:0 "Примитивная экономика"
+
+  agrarian_economy:0 "Аграрная экономика"
+
+
+
+  isolationist:0 "Isolationist"
+
+  defensive:0 "Defensive"
+
+  infiltration:0 "Inflitration"
+
+  aggressive:0 "Aggressive"
+
+  FRA_idea_Dyle_Plan:0 "Dyle Plan"
+
+  FRA_inadequate_army:0 "Inadequate Army"
+  FRA_inadequate_army_desc:0 ""
+
+  FRA_structured_doctrines:0 "Структурированные доктрины"
+  FRA_structured_doctrines_desc:0 "Because every reservist in France had to regulary redo some training, the French military decided to adopt very structural, fixed, and constant doctrines, to make sure each soldier will be well prepared in case of a mobilisation. While allowing French soldiers be have sufficient training, it also made French doctrinal upgrades harder that other nations."
+  FRA_structured_doctrines_1:0 "Структурированные доктрины"
+  FRA_structured_doctrines_1_desc:0 "Because every reservist in France had to regulary redo some training, the French military decided to adopt very structural, fixed, and constant doctrines, to make sure each soldier will be well prepared in case of a mobilisation. While allowing French soldiers be have sufficient training, it also made French doctrinal upgrades harder that other nations."
+  FRA_structured_doctrines_2:0 "Структурированные доктрины"
+  FRA_structured_doctrines_2_desc:0 "Because every reservist in France had to regulary redo some training, the French military decided to adopt very structural, fixed, and constant doctrines, to make sure each soldier will be well prepared in case of a mobilisation. While allowing French soldiers be have sufficient training, it also made French doctrinal upgrades harder that other nations."
+
+  GER_SS_redirection_of_war_production:0 "Перенаправление военного производства в СС"
+  GER_SS_redirection_of_war_production_desc:0 "Following the Himmler-Speer agreement, between 5% to 8% of Germany's war production was redirected to the Waffen-SS."
+
+  GER_SS_redirection_of_war_production_1:0 "Перенаправление военного производства в СС"
+  GER_SS_redirection_of_war_production_1_desc:0 "Following the Himmler-Speer agreement, between 5% to 8% of Germany's war production was redirected to the Waffen-SS."
+
+  offensive_in_preparation:0 "Подготовка к наступлению"
+  offensive_in_preparation_desc:0 "The country is preparing a vast offensive. Thus, General Staff is occupied, and it badly affects the army."
+
+  FRA_air_based_sea_supremacy_idea:0 "Air-based sea supremacy"
+  plan_V:0 "Plan V"
+  french_fighter_discount:0 "Plan VI"
+  FRA_french_youth_idea:0 "French Youths"
+  FRA_emperor_military_training_idea:0 "Military training for the emperor"
+  FRA_emperor_military_training_idea_desc:0 "Not having served in France, the emperor expressed his wish to follow military instruction, to be able to lead French troops directly on the battlefield."
+  FRA_rebuild_the_royale_idea:0 "Rebuild the Royale"
+  FRA_rebuild_the_royale_idea_desc:0 "The Trafalgar shadow has always been present on our country. It's time to take revenge, and teach the Royal Navy a lesson !"
+
+  SELECT_DESIGN_COMPANY_DESC:0 "\nBy selecting this §YDesign Company§! it will improve production on all equipment types listed above, EVEN if they have already been researched.\n"
+  DESIGN_COMPANY_DESC:0 "\nThis §YDesign Company§! will permanently improve production on all equipment types listed above, EVEN if they have already been researched.\n."
+
+  FRA_protected_by_the_maginot_line_1:0 "Protected by the Maginot Line"
+  FRA_protected_by_the_maginot_line_1_desc:0 "Having fortified the border gives France the opportunity to plan and prepare carefully, but it does sacrifice some flexibility in the event of something unexpected"
+
+
+  CAN_fairchild_aircraft_ltd:0 "Fairchild Aircraft Ltd"
+  dominion_foundries:0 "Dominion Foundries"
+  montreal_locomotive_works:0 "Montreal Locomotive Works"
+  stelco:0 "Stelco"
+  sorel_industries:0 "Sorel Industries"
+  manfred_weiss_s_and_m_works:0 "Manfred Weiss S&M Works"
+  potez:0 "Potez"
+  daimler:0 "Daimler"
+  krupp_tank:0 "Krupp"
+  alkett:0 "Alkett"
+  lavochkin:0 "Lavochkin"
+  petlyakov:0 "Petlyakov"
+  nuffield_mechanizations:0 "Nuffield Mechanizations"
+  leyland_motors:0 "Leyland Motors"
+  department_of_tank_design:0 "Department of Tank Design"
+  bristol:0 "Bristol"
+  kier:0 "Kier"
+  reggiane:0 "Reggiane"
+  breda_aircraft:0 "Breda"
+  cant:0 "CANT"
+  kawasaki_aircraft:0 "Kawasaki Aircraft"
+  FRA_foreign_legion:0 "Foreign Legion"
+  FRA_foreign_legion_desc:0 "The French Foreign Legion was an elite unit, composed of volunteers from all around the globe."
+  ig_farben:0 "IG Farben"
+  ig_farben_desc:0 "IG Farben are keenly interested in Industrial research."
+
+  krupp_lost:0 "Krupp has gone bankrupt"
+  daimler_lost:0 "Daimler has gone bankrupt"
+  man_lost:0 "MAN has gone bankrupt"
+  henschel_lost:0 "Henschel has gone bankrupt"
+  junkers_lost:0 "Junkers has gone bankrupt"
+  heinkel_lost:0 "Heinkel has gone bankrupt"
+  dornier_lost:0 "Dornier has gone bankrupt"
+
+  tank_manufacturer:0 ""
+  aircraft_manufacturer:0 ""
+  naval_manufacturer:0 ""

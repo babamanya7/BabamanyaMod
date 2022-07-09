@@ -1,0 +1,68 @@
+add_namespace = chi_armor
+
+
+country_event = {
+	id = chi_armor.801
+	title = chi_armor.801.t
+	desc = chi_armor.801.d
+
+	mean_time_to_happen = { days = 2 }
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = CHI
+		PRC = { exists = yes }
+		NOT = { PRC = { has_war_with = JAP } }
+		NOT = { CHI = { has_war_with = JAP } }
+		NOT = { 609 = { is_controlled_by = JAP } }
+	}
+
+	option = {
+		name = chi_armor.801.a
+		trigger = {
+			is_in_faction = yes
+		}
+
+		CHI = { 
+			add_ideas = {
+				internal_conflict
+			}
+			add_stability = 0.2
+		}
+	}
+
+	option = {
+		name = chi_armor.801.a
+		trigger = {
+			is_in_faction = no
+		}
+
+		set_rule = { can_create_factions = yes }
+		create_faction = "CHI_the_peoples_front"
+
+		CHI = { 
+			add_ideas = {
+				internal_conflict
+			}
+			add_stability = 0.2
+		}
+	}
+}
+
+##################################### CHI Shanghai Incident
+
+country_event = {
+	id = chi_armor.802
+	title = chi_armor.802.t
+	desc = chi_armor.802.d
+	picture = GFX_report_event_chinese_soldiers_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = chi_armor.802.a
+		add_war_support = 0.05
+	}
+}
+

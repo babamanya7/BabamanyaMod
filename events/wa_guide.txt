@@ -1,0 +1,188 @@
+﻿add_namespace = guide_sov
+add_namespace = guide_ger
+add_namespace = guide
+
+country_event = {
+	id = guide.1
+	title = guide.1.t
+	desc  = guide.1.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	################### economy sov
+	option = {
+		name = guide.1.a
+		trigger = {
+			tag = SOV
+		}
+		country_event = guide_sov.2
+	}
+	
+	################### economy ger
+	option = {
+		name = guide.1.a
+		trigger = {
+			tag = GER
+		}
+		country_event = guide_ger.2
+	}
+
+	################### tech tree's sov
+	option = {
+		name = guide.1.b
+		trigger = {
+			tag = SOV
+		}
+		country_event = guide_sov.3
+	}
+	
+	################### tech tree's ger
+	option = {
+		name = guide.1.b
+		trigger = {
+			tag = GER
+		}
+		country_event = guide_ger.3
+	}
+
+	################### army ger
+	option = {
+		name = guide.1.c
+		trigger = {
+			tag = GER
+		}
+		country_event = guide_ger.4
+	}
+	
+	################### army sov
+	option = {
+		name = guide.1.c
+		trigger = {
+			tag = SOV
+		}
+		country_event = guide_sov.4
+	}
+
+	################### i already understand
+	option = {
+		name = afo_event.1.e
+	}
+}
+
+country_event = {
+	id = guide_sov.2
+	title = guide_sov.2.t
+	desc  = guide_sov.2.d
+
+	is_triggered_only = yes
+
+	################### back
+	option = {
+		name = guide.2.a
+		country_event = guide.1
+	}
+
+	################### i am ready to play now
+	option = {
+		name = afo_event.2.e
+	}
+}
+
+country_event = {
+	id = guide_sov.3
+	title = guide_sov.3.t
+	desc  = guide_sov.3.d
+
+	is_triggered_only = yes
+
+	################### back
+	option = {
+		name = guide.2.a
+
+		country_event = guide.1
+	}
+
+	################### i am ready to play now
+	option = {
+		name = afo_event.3.b
+	}
+}
+
+country_event = {
+	id = guide_sov.4
+	title = guide_sov.4.t
+	desc  = guide_sov.4.d
+
+	is_triggered_only = yes
+
+	################### back
+	option = {
+		name = guide.2.a
+		country_event = guide.1
+	}
+
+	################### i am ready to play now
+	option = {
+		name = afo_event.4.b
+	}
+}
+
+
+
+country_event = {
+	id = guide_ger.2
+	title = guide_ger.2.t
+	desc  = guide_ger.2.d
+
+	is_triggered_only = yes
+
+	################### back
+	option = {
+		name = guide.2.a
+		country_event = guide.1
+	}
+
+	################### i am ready to play now
+	option = {
+		name = afo_event.2.e
+	}
+}
+
+country_event = {
+	id = guide_ger.3
+	title = guide_ger.3.t
+	desc  = guide_ger.3.d
+
+	is_triggered_only = yes
+
+	################### back
+	option = {
+		name = guide.2.a
+
+		country_event = guide.1
+	}
+
+	################### i am ready to play now
+	option = {
+		name = afo_event.3.b
+	}
+}
+
+country_event = {
+	id = guide_ger.4
+	title = guide_ger.4.t
+	desc  = guide_ger.4.d
+
+	is_triggered_only = yes
+
+	################### back
+	option = {
+		name = guide.2.a
+		country_event = guide.1
+	}
+
+	################### i am ready to play now
+	option = {
+		name = afo_event.4.b
+	}
+}

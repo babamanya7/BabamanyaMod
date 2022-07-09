@@ -1,0 +1,6 @@
+sound = {
+	name = "diplomatic_failure"
+	file = "menu/diplomatic_failure.wav"
+	volume = 1
+	always_load = no
+}

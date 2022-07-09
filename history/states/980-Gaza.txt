@@ -1,0 +1,21 @@
+
+state={
+	id=980
+	name="STATE_980" #Gaza
+	manpower = 83142
+	
+	state_category = pastoral
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
+		add_core_of = BRA
+	}
+
+	provinces={
+		13341 
+	}
+}

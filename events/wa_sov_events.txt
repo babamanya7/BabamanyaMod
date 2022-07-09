@@ -1,0 +1,580 @@
+add_namespace = sov_armor
+
+country_event = {
+	id = sov_armor.555
+	hidden = yes
+
+	trigger = {
+		tag = SOV
+		any_controlled_state = {
+			is_core_of = SOV
+		}
+	}
+	
+	immediate = {
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = SOV
+					is_core_of = EST
+					is_core_of = LAT
+					is_core_of = LIT
+				}
+				is_owned_by = GER
+				is_fully_controlled_by = SOV
+			}
+			SOV = {
+				transfer_state = PREV
+			}
+		}
+	}
+
+	option = {}
+
+}
+
+country_event = {
+	id = sov_armor.800
+	title = sov_armor.800.t
+	desc = sov_armor.800.d
+
+	picture = GFX_yevgeni_oskarovich_paton
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		SOV = {
+			has_completed_focus = SOV_tankograd
+		}
+	}
+	
+	
+	option = {
+		name = sov_armor.800.a
+		set_technology = { weld_armor_2 = 1 }
+		swap_ideas = {
+			remove_idea = weak_tank_forces
+			add_idea = weak_tank_forces_2
+		}
+	}
+}
+
+
+####################################### England proposes a joint invasion of Iran
+
+country_event = {
+	id = sov_armor.801
+	title = sov_armor.801.t
+	desc = sov_armor.801.d
+
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = sov_armor.801.a
+		ENG = { country_event = { days = 1 id = eng_armor.847 } }
+		ai_chance = { 
+			factor = 25 
+		}
+	}
+
+	option = {
+		name = sov_armor.801.b
+		ENG = { country_event = { days = 1 id = eng_armor.848 } }
+		ai_chance = { 
+			factor = 0 
+		}
+	}
+}
+
+####################################### Romaina asks for white peace
+
+country_event = {
+	id = sov_armor.802
+	title = sov_armor.802.t
+	desc = sov_armor.802.d
+
+	picture = GFX_report_event_romania_poland_visit
+
+	is_triggered_only = yes
+
+	option = {
+		name = sov_armor.802.a
+		ROM = { country_event = { id = rom_armor.1 } }
+		ai_chance = { 
+			factor = 0 
+		}
+	}
+
+	option = {
+		name = sov_armor.802.b
+		ROM = { country_event = { id = rom_armor.2 } }
+		ai_chance = { 
+			factor = 25 
+		}
+	}
+
+	option = {
+		name = sov_armor.802.c
+		ROM = { country_event = { id = rom_armor.3 } }
+		ai_chance = { 
+			factor = 0 
+		}
+	}
+}
+
+####################################### Romaina rejects puppet status
+
+country_event = {
+	id = sov_armor.803
+	title = sov_armor.803.t
+	desc = sov_armor.803.d
+
+	picture = GFX_report_event_romania_poland_visit
+
+	is_triggered_only = yes
+
+	option = {
+		name = sov_armor.803.a
+		ROM = { country_event = { days = 1 id = rom_armor.1 } }
+		ai_chance = { 
+			factor = 0 
+		}
+	}
+
+	option = {
+		name = sov_armor.803.b
+		ROM = { country_event = { days = 1 id = rom_armor.3 } }
+		ai_chance = { 
+			factor = 25 
+		}
+	}
+}
+
+####################################### Socialist Realism
+
+country_event = {
+	id = sov_armor.804
+	title = sov_armor.804.t
+	desc = sov_armor.804.d
+
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+
+	is_triggered_only = yes
+
+	option = {
+		name = sov_armor.804.a
+		add_ideas = socialist_realism_workforce
+		ai_chance = { 
+			factor = 0 
+		}
+	}
+
+	option = {
+		name = sov_armor.804.b
+		add_ideas = socialist_realism_people
+		add_political_power = 50
+		ai_chance = { 
+			factor = 25 
+		}
+	}
+
+	option = {
+		name = sov_armor.804.c
+		add_ideas = socialist_realism_army
+		army_experience = 25
+		ai_chance = { 
+			factor = 25 
+		}
+	}
+
+	option = {
+		name = sov_armor.804.e
+		add_ideas = socialist_realism_partisans
+		ai_chance = { 
+			factor = 25 
+		}
+	}
+}
+
+####################################### Bulgaria asks for white peace
+
+country_event = {
+	id = sov_armor.807
+	title = sov_armor.807.t
+	desc = sov_armor.807.d
+
+	picture = GFX_report_event_romania_poland_visit
+
+	is_triggered_only = yes
+
+	option = {
+		name = sov_armor.807.a
+		ROM = { country_event = { id = bul_armor.1 } }
+		ai_chance = { 
+			factor = 0 
+		}
+	}
+
+	option = {
+		name = sov_armor.807.b
+		ROM = { country_event = { id = bul_armor.2 } }
+		ai_chance = { 
+			factor = 25 
+		}
+	}
+
+	option = {
+		name = sov_armor.807.c
+		ROM = { country_event = { id = bul_armor.3 } }
+		ai_chance = { 
+			factor = 0 
+		}
+	}
+}
+
+####################################### Bulgaria rejects puppet status
+
+country_event = {
+	id = sov_armor.808
+	title = sov_armor.808.t
+	desc = sov_armor.808.d
+
+	picture = GFX_report_event_romania_poland_visit
+
+	is_triggered_only = yes
+
+	option = {
+		name = sov_armor.808.a
+		ROM = { country_event = { days = 1 id = bul_armor.1 } }
+		ai_chance = { 
+			factor = 0 
+		}
+	}
+
+	option = {
+		name = sov_armor.808.b
+		ROM = { country_event = { days = 1 id = bul_armor.3 } }
+		ai_chance = { 
+			factor = 25 
+		}
+	}
+}
+
+####################################### Liberation of Western Belarus
+
+country_event = {
+	id = sov_armor.809
+	title = sov_armor.809.t
+	desc = sov_armor.809.d
+
+	picture = GFX_report_event_soldiers_marching
+
+	mean_time_to_happen = { days = 2 }
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		96 = { is_fully_controlled_by = SOV }
+		95 = { is_fully_controlled_by = SOV }
+		94 = { is_fully_controlled_by = SOV }
+		93 = { is_fully_controlled_by = SOV }
+		91 = { is_fully_controlled_by = SOV }
+		89 = { is_fully_controlled_by = SOV }
+	}
+
+	option = {
+		name = sov_armor.809.a
+		ai_chance = { 
+			factor = 1 
+		}
+		97 = { add_core_of = SOV }
+		96 = { add_core_of = SOV }
+		95 = { add_core_of = SOV }
+		94 = { add_core_of = SOV }
+		93 = { add_core_of = SOV }
+		91 = { add_core_of = SOV }
+		89 = { add_core_of = SOV }
+	}
+}
+
+####################################### Reserves recruited
+
+country_event = {
+	id = sov_armor.817
+	title = sov_armor.817.t
+	desc = sov_armor.817.d
+
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	option = { #Appeal to Patriotism
+		name = sov_armor.817.a
+		ai_chance = { 
+			factor = 1
+		}
+	}
+}
+
+
+
+
+################################################# Molotov Ribbentrop pact invade?
+
+
+
+
+country_event = {
+	id = sov_armor.819
+	title = sov_armor.819.t
+	desc = sov_armor.819.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sov_armor.819.a
+		declare_war_on = { 
+			type = take_state_focus
+			target = POL
+			generator = { 96 95 97 94 93 91 89 }
+		}
+		ai_chance = {
+			factor = 99
+
+			modifier = {
+				factor = 0
+				has_war_With = JAP
+			}
+			modifier = {
+				factor = 0
+				POL = { is_in_faction_with = USA }
+			}
+
+			modifier = {
+				factor = 0
+				date > 1941.1.1
+			}
+		}
+	}
+
+	option = {
+		name = sov_armor.819.b
+		ai_chance = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				NOT = { POL = { is_in_faction_with = USA } }
+				NOT = { has_war_With = JAP }
+				date < 1941.1.1
+			}
+		}
+	}
+}
+
+####################################### Inexperienced Workforce
+
+# More experienced workforce
+country_event = {
+	id = sov_armor.820
+	title = sov_armor.820.t
+	desc = sov_armor.820.d
+	picture = GFX_report_event_tank_factory
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+
+	trigger = {
+		OR = {
+			has_dynamic_modifier = { modifier = SOV_second_five_year_plan_12_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_second_five_year_plan_22_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_third_five_year_plan_23_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_third_five_year_plan_33_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_34_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_44_dynamic_modifier }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_to_variable = { var = SOV_fyp_production_factory_efficiency_gain_factor value = 0.05 }
+			add_to_variable = { var = SOV_fyp_industrial_capacity_factory value = 0.05 }
+			country_event = { id = sov_armor.821 days = 365 }
+		}
+	}
+	option = {
+		name = sov_armor.820.a
+		custom_effect_tooltip = sov_armor.820.a_tt
+	}
+}
+
+# More experienced workforce
+country_event = {
+	id = sov_armor.821
+	title = sov_armor.820.t
+	desc = sov_armor.820.d
+	picture = GFX_report_event_tank_factory
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_dynamic_modifier = { modifier = SOV_second_five_year_plan_12_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_second_five_year_plan_22_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_third_five_year_plan_23_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_third_five_year_plan_33_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_34_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_44_dynamic_modifier }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_to_variable = { var = SOV_fyp_production_factory_efficiency_gain_factor value = 0.05 }
+			add_to_variable = { var = SOV_fyp_industrial_capacity_factory value = 0.05 }
+			country_event = { id = sov_armor.822 days = 365 }
+		}
+	}
+	option = {
+		name = sov_armor.820.a
+		custom_effect_tooltip = sov_armor.820.a_tt
+	}
+}
+
+# More experienced workforce
+country_event = {
+	id = sov_armor.822
+	title = sov_armor.820.t
+	desc = sov_armor.820.d
+	picture = GFX_report_event_tank_factory
+
+	is_triggered_only = yes
+
+	trigger = {	
+		OR = {
+			has_dynamic_modifier = { modifier = SOV_second_five_year_plan_12_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_second_five_year_plan_22_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_third_five_year_plan_23_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_third_five_year_plan_33_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_34_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_44_dynamic_modifier }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_to_variable = { var = SOV_fyp_production_factory_efficiency_gain_factor value = 0.05 }
+			add_to_variable = { var = SOV_fyp_industrial_capacity_factory value = 0.05 }
+			country_event = { id = sov_armor.823 days = 365 }
+		}
+	}
+	option = {
+		name = sov_armor.820.a
+		custom_effect_tooltip = sov_armor.820.a_tt
+	}
+}
+
+# More experienced workforce
+country_event = {
+	id = sov_armor.823
+	title = sov_armor.820.t
+	desc = sov_armor.820.d
+	picture = GFX_report_event_tank_factory
+
+	is_triggered_only = yes
+
+	trigger = {	
+		OR = {
+			has_dynamic_modifier = { modifier = SOV_second_five_year_plan_12_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_second_five_year_plan_22_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_third_five_year_plan_23_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_third_five_year_plan_33_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_34_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_44_dynamic_modifier }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_to_variable = { var = SOV_fyp_production_factory_efficiency_gain_factor value = 0.05 }
+			add_to_variable = { var = SOV_fyp_industrial_capacity_factory value = 0.05 }
+			country_event = { id = sov_armor.824 days = 365 }
+		}
+	}
+	option = {
+		name = sov_armor.820.a
+		custom_effect_tooltip = sov_armor.820.a_tt
+	}
+}
+
+# More experienced workforce
+country_event = {
+	id = sov_armor.824
+	title = sov_armor.820.t
+	desc = sov_armor.820.d
+	picture = GFX_report_event_tank_factory
+
+	is_triggered_only = yes
+
+	trigger = {	
+		OR = {
+			has_dynamic_modifier = { modifier = SOV_second_five_year_plan_12_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_second_five_year_plan_22_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_third_five_year_plan_23_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_third_five_year_plan_33_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_34_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_44_dynamic_modifier }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_to_variable = { var = SOV_fyp_production_factory_efficiency_gain_factor value = 0.05 }
+			add_to_variable = { var = SOV_fyp_industrial_capacity_factory value = 0.05 }
+			country_event = { id = sov_armor.825 days = 365 }
+		}
+	}
+	option = {
+		name = sov_armor.820.a
+		custom_effect_tooltip = sov_armor.820.a_tt
+	}
+}
+
+# More experienced workforce
+country_event = {
+	id = sov_armor.825
+	title = sov_armor.820.t
+	desc = sov_armor.820.d
+	picture = GFX_report_event_tank_factory
+
+	is_triggered_only = yes
+
+	trigger = {	
+		OR = {
+			has_dynamic_modifier = { modifier = SOV_second_five_year_plan_12_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_second_five_year_plan_22_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_third_five_year_plan_23_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_third_five_year_plan_33_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_34_dynamic_modifier }
+			has_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_44_dynamic_modifier }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_to_variable = { var = SOV_fyp_production_factory_efficiency_gain_factor value = 0.05 }
+			add_to_variable = { var = SOV_fyp_industrial_capacity_factory value = 0.05 }
+		}
+	}
+	option = {
+		name = sov_armor.820.a
+		custom_effect_tooltip = sov_armor.820.a_tt
+	}
+}

@@ -1,0 +1,2794 @@
+add_namespace = ger_armor
+add_namespace = ww2_germany
+
+country_event = {
+	id = ger_armor.45
+	title = ger_armor.45.t
+	desc = ger_armor.45.d
+	picture = GFX_report_event_dead_general
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		219 = {
+			is_owned_by = GER
+		}
+		195 = {
+			is_owned_by = GER
+		}
+		217 = {
+			is_owned_by = GER
+		}
+		229 = {
+			is_owned_by = GER
+		}
+	}
+
+	immediate = {
+		activate_mission = cap_sov
+	}
+	
+	option = {
+		name = ger_armor.45.a
+	}
+}
+
+# Kluge Dead
+country_event = {
+	id = ww2_germany.45
+	title = ww2_germany.45.t
+	desc = ww2_germany.45.d
+	picture = GFX_report_event_dead_general
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1944.8.18
+		tag = GER
+		has_country_flag = valkyrie_purge
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_global_flag = kluge_dead
+	}
+	
+	option = {
+		name = ww2_germany.45.a
+		remove_unit_leader = 2
+		custom_effect_tooltip = remove_chief_of_army
+		hidden_effect = {sound_effect = diplomatic_failure}
+	}
+}
+
+# Operation Panzerfaust
+country_event = {
+	id = ww2_germany.44
+	title = ww2_germany.44.t
+	desc = ww2_germany.44.d
+	picture = GFX_report_event_operation_panzerfaust
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war_with = SOV
+		SOV = {
+			controls_state = 73
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = ww2_germany.44.a
+		news_event = { hours = 6 id = news.339 }
+		set_global_flag = operation_panzerfaust
+		HUN = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Ferenc Szalasi"
+				desc = "POLITICS_SZALASI_DESC"
+				picture = "Portrait_Hungary_Ferenc_Szalasi.dds"
+				expire = "1956.5.16"
+				ideology = nazism
+				traits = {
+					stout_defender
+				}
+			}
+		}
+		GER = {
+			puppet = HUN
+		}
+	}
+}
+
+# Konigsberg Falls
+country_event = {
+	id = ww2_germany.47
+	title = ww2_germany.47.t
+	desc = ww2_germany.47.d
+	picture = GFX_report_event_konigsberg_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war_with = SOV
+		date > 1943.1.1
+		SOV = { has_full_control_of_state = 763 }
+	}
+
+	option = {
+		name = ww2_germany.47.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Danzig Falls
+country_event = {
+	id = ww2_germany.48
+	title = ww2_germany.48.t
+	desc = ww2_germany.48.d
+	picture = GFX_report_event_danzig_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		has_war_with = SOV
+		SOV = { has_full_control_of_state = 85 }
+	}
+
+	option = {
+		name = ww2_germany.48.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Prague Falls
+country_event = {
+	id = ww2_germany.49
+	title = ww2_germany.49.t
+	desc = ww2_germany.49.d
+	picture = GFX_report_event_prague_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		has_war_with = SOV
+		SOV = { controls_state = 9 }
+	}
+
+	option = {
+		name = ww2_germany.49.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Zagreb Falls
+country_event = {
+	id = ww2_germany.50
+	title = ww2_germany.50.t
+	desc = ww2_germany.50.d
+	picture = GFX_report_event_zagreb_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		has_war_with = YUG
+		SOV = { controls_state = 109 }
+	}
+
+	option = {
+		name = ww2_germany.50.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Breslau Falls
+country_event = {
+	id = ww2_germany.51
+	title = ww2_germany.51.t
+	desc = ww2_germany.51.d
+	picture = GFX_report_event_breslau_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		AND = {
+			OR = {
+				SOV = { controls_state = 66 }
+				FRA = { controls_state = 66 }
+			}
+		}
+	}
+
+	option = {
+		name = ww2_germany.51.a
+		add_stability = -0.01
+		hidden_effect = { sound_effect = diplomatic_failure }
+	}
+}
+
+# Berlin Falls
+country_event = {
+	id = ww2_germany.52
+	title = ww2_germany.52.t
+	desc = ww2_germany.52.d
+	picture = GFX_report_event_berlin_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		SOV = { controls_state = 810 }
+	}
+
+	option = {
+		name = ww2_germany.52.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.1
+		set_global_flag = fall_of_berlin
+	}
+}
+
+# Budapest Falls
+country_event = {
+	id = ww2_germany.53
+	title = ww2_germany.53.t
+	desc = ww2_germany.53.d
+	picture = GFX_report_event_budapest_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war_with = SOV
+		SOV = {
+			controls_state = 889
+		}
+	}
+
+	option = {
+		name = ww2_germany.53.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.05
+	}
+}
+
+# Sarajevo Falls
+country_event = {
+	id = ww2_germany.54
+	title = ww2_germany.54.t
+	desc = ww2_germany.54.d
+	picture = GFX_report_event_sarajevo_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		YUG = { controls_state = 104 }
+	}
+
+	option = {
+		name = ww2_germany.54.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Frankfurt Falls
+country_event = {
+	id = ww2_germany.55
+	title = ww2_germany.55.t
+	desc = ww2_germany.55.d
+	picture = GFX_report_event_frankfurt_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		OR = {
+			SOV = { controls_state = 55 }
+			FRA = { controls_state = 55 }
+		}
+	}
+
+	option = {
+		name = ww2_germany.55.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Munich Falls
+country_event = {
+	id = ww2_germany.56
+	title = ww2_germany.56.t
+	desc = ww2_germany.56.d
+	picture = GFX_report_event_munich_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		AND = {
+			OR = {
+				SOV = { controls_state = 52 }
+				FRA = { controls_state = 52 }
+			}
+		}
+	}
+
+	option = {
+		name = ww2_germany.56.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Hamsterdam Falls
+country_event = {
+	id = ww2_germany.60
+	title = ww2_germany.60.t
+	desc = ww2_germany.60.d
+	picture = GFX_report_event_amsterdam_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		GER = {
+			OR = {
+				has_war_with = FRA
+				has_war_with = SOV
+			}
+		}
+		AND = {
+			OR = {
+				SOV = { controls_state = 7 }
+				FRA = { controls_state = 7 }
+			}
+		}
+	}
+
+	option = {
+		name = ww2_germany.60.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Cologne Falls
+country_event = {
+	id = ww2_germany.61
+	title = ww2_germany.61.t
+	desc = ww2_germany.61.d
+	picture = GFX_report_event_cologne_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		AND = {
+			OR = {
+				SOV = { controls_state = 51 }
+				FRA = { controls_state = 51 }
+			}
+		}
+	}
+
+	option = {
+		name = ww2_germany.61.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Strasbourg Falls
+country_event = {
+	id = ww2_germany.62
+	title = ww2_germany.62.t
+	desc = ww2_germany.62.d
+	picture = GFX_report_event_strasbourg_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		AND = {
+			OR = {
+				SOV = { controls_state = 28 }
+				FRA = { controls_state = 28 }
+			}
+		}
+	}
+
+	option = {
+		name = ww2_germany.62.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Stuttgart Falls
+country_event = {
+	id = ww2_germany.63
+	title = ww2_germany.63.t
+	desc = ww2_germany.63.d
+	picture = GFX_report_event_stuttgart_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		AND = {
+			OR = {
+				SOV = { controls_state = 50 }
+				FRA = { controls_state = 50 }
+			}
+		}
+	}
+
+	option = {
+		name = ww2_germany.63.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Dortmund Falls
+country_event = {
+	id = ww2_germany.64
+	title = ww2_germany.64.t
+	desc = ww2_germany.64.d
+	picture = GFX_report_event_dortmund_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		AND = {
+			OR = {
+				SOV = { controls_state = 57 }
+				FRA = { controls_state = 57 }
+			}
+		}
+	}
+
+	option = {
+		name = ww2_germany.64.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Bratislava Falls
+country_event = {
+	id = ww2_germany.65
+	title = ww2_germany.65.t
+	desc = ww2_germany.65.d
+	picture = GFX_report_event_bratislava_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		AND = {
+			OR = {
+				SOV = { controls_state = 70 }
+				FRA = { controls_state = 70 }
+			}
+		}
+	}
+
+	option = {
+		name = ww2_germany.65.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Krakow Falls
+country_event = {
+	id = ww2_germany.66
+	title = ww2_germany.66.t
+	desc = ww2_germany.66.d
+	picture = GFX_report_event_krakow_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		AND = {
+			OR = {
+				SOV = { controls_state = 88 }
+				FRA = { controls_state = 88 }
+			}
+		}
+	}
+
+	option = {
+		name = ww2_germany.66.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Warsaw Falls
+country_event = {
+	id = ww2_germany.67
+	title = ww2_germany.67.t
+	desc = ww2_germany.67.d
+	picture = GFX_report_event_warsaw_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		AND = {
+			OR = {
+				SOV = { controls_state = 10 }
+				FRA = { controls_state = 10 }
+			}
+		}
+	}
+
+	option = {
+		name = ww2_germany.67.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Dresden Falls
+country_event = {
+	id = ww2_germany.68
+	title = ww2_germany.68.t
+	desc = ww2_germany.68.d
+	picture = GFX_report_event_dresden_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		AND = {
+			OR = {
+				SOV = { controls_state = 65 }
+				FRA = { controls_state = 65 }
+			}
+		}
+	}
+
+	option = {
+		name = ww2_germany.68.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Stettin Falls
+country_event = {
+	id = ww2_germany.69
+	title = ww2_germany.69.t
+	desc = ww2_germany.69.d
+	picture = GFX_report_event_stettin_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		AND = {
+			OR = {
+				SOV = { controls_state = 63 }
+				FRA = { controls_state = 63 }
+			}
+		}
+	}
+
+	option = {
+		name = ww2_germany.69.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Vienna Falls
+country_event = {
+	id = ww2_germany.70
+	title = ww2_germany.70.t
+	desc = ww2_germany.70.d
+	picture = GFX_report_event_vienna_falls
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1943.1.1
+		AND = {
+			OR = {
+				SOV = { controls_state = 882 }
+				FRA = { controls_state = 882 }
+			}
+		}
+	}
+
+	option = {
+		name = ww2_germany.70.a
+		hidden_effect = {sound_effect = diplomatic_failure}
+		add_stability = -0.01
+	}
+}
+
+# Черный барон умер в Нормандии
+country_event = {
+	id = ger_armor.57
+	title = ger_armor.57.t
+	desc = ger_armor.57.d
+	picture = GFX_report_event_wittmann_dead
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.57.a
+		set_global_flag = blackbarondead
+		hidden_effect = {sound_effect = diplomatic_failure}
+		news_event = { hours = 6 id = news.338 }
+		add_war_support = -0.03
+	}
+}
+
+# Will the Black Baron live or die?
+country_event = {
+	id = ger_armor.59
+	hidden = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1944.1.1
+		tag = GER
+		FRA = {
+			controls_state = 15
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		GER = { country_event = { id = ger_armor.57 } }
+	}
+	option = {
+		name = ww2_germany.59.a
+		set_global_flag = intro3
+	}
+}
+
+
+
+
+
+
+country_event = {
+	id = ger_armor.424
+	hidden = yes
+	
+	trigger = {
+		tag = GER
+		any_controlled_state = {
+			is_core_of = SOV
+		}
+	}
+	
+	immediate = {
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = SOV
+					is_core_of = EST
+					is_core_of = LAT
+					is_core_of = LIT
+				}
+				is_owned_by = SOV
+				is_fully_controlled_by = GER
+			}
+			GER = {
+				transfer_state = PREV
+			}
+		}
+	}
+	
+	option = {}
+	
+}
+
+
+
+
+country_event = {
+	id = ger_armor.205
+	title = ger_armor.205.t
+	desc = ger_armor.205.d
+	picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = IRQ
+		date > 1941.4.1
+	}
+	
+	option = {
+		name = ger_armor.205.a
+		ai_chance = { factor = 100 }
+		GER = { country_event = generic.2 }
+		IRQ = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+				hostility_reason = asked_to_join
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.206
+	title = ger_armor.206.t
+	desc = ger_armor.206.d
+	picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BUL
+		date > 1940.6.1
+	}
+	
+	option = {
+		name = ger_armor.206.a
+		ai_chance = { factor = 100 }
+		GER = { country_event = generic.2 }
+		BUL = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+				hostility_reason = asked_to_join
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.207
+	title = ger_armor.207.t
+	desc = ger_armor.207.d
+	picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ROM
+		date > 1940.6.1
+		ROM = { has_war = no }
+	}
+	
+	option = {
+		name = ger_armor.206.a
+		ai_chance = { factor = 100 }
+		GER = { country_event = generic.2 }
+		ROM = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+				hostility_reason = asked_to_join
+			}
+		}
+	}
+}
+
+
+
+
+
+#################################################  German entry in Russia
+
+country_event = {
+	id = ger_armor.305
+	title = ger_armor.305.t
+	desc = ger_armor.305.d
+	picture = GFX_report_event_soldiers_marching
+	
+	
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ger
+		has_war_with = SOV
+		date > 1941.09.24
+	}
+	
+	option = {
+		name = ger_armor.305.a
+		ai_chance = { factor = 1}
+		custom_effect_tooltip = GER_general_winter_tt
+		add_to_variable = { GER_general_staff_acclimatization_cold_climate_gain_factor = 0.4 }
+		add_to_variable = { GER_general_staff_winter_attrition_factor = -0.05 }
+		add_to_variable = { GER_general_staff_industrial_capacity_factory = -0.05 }
+		SOV = {
+			add_ideas = SOV_siberian_lessons
+		}
+	}
+}
+
+
+
+##Events: German entry in the Baltic
+
+country_event = {
+	id = ger_armor.405
+	title = ger_armor.405.t
+	desc = ger_armor.405.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ger_armor.405.a
+		
+	}
+}
+
+country_event = {
+	id = ger_armor.400
+	title = ger_armor.400.t
+	desc = ger_armor.400.d
+	picture = GFX_report_event_generic_military_parade
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		OR = {
+			controls_state = 189
+			controls_state = 190
+			controls_state = 12
+			controls_state = 11
+			controls_state = 191
+			controls_state = 13
+		}
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = ger_armor.400.a
+		ai_chance = { factor = 1}
+		custom_effect_tooltip = german_entry_baltic
+	}
+}
+
+country_event = {
+	id = ger_armor.401
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 189
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		189 = {
+			set_compliance = 15
+			set_resistance = 0
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.402
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 190
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		190 = {
+			set_compliance = 15
+			set_resistance = 0
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.403
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 12
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		12 = {
+			set_compliance = 15
+			set_resistance = 0
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.404
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 11
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		11 = {
+			set_compliance = 15
+			set_resistance = 0
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.405
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 191
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		191 = {
+			set_compliance = 15
+			set_resistance = 0
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.406
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 13
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		13 = {
+			set_compliance = 15
+			set_resistance = 0
+		}
+	}
+}
+
+##Events: German entry into the Ukraine
+
+country_event = {
+	id = ger_armor.407
+	title = ger_armor.407.t
+	desc = ger_armor.407.d
+	picture = GFX_report_event_generic_military_parade
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		OR = {
+			controls_state = 192
+			controls_state = 193
+			controls_state = 196
+			controls_state = 197
+			controls_state = 198
+			controls_state = 199
+			controls_state = 200
+			controls_state = 201
+			controls_state = 202
+			controls_state = 203
+			controls_state = 221
+			controls_state = 225
+			controls_state = 226
+			controls_state = 227
+			controls_state = 228
+			controls_state = 259
+		}
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = ger_armor.407.a
+		ai_chance = { factor = 1}
+		custom_effect_tooltip = german_entry_baltic
+	}
+}
+
+country_event = {
+	id = ger_armor.408
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 192
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		192 = { set_compliance = 15 }
+	}
+}
+
+country_event = {
+	id = ger_armor.409
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 193
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		193 = { set_compliance = 15 }
+	}
+}
+
+country_event = {
+	id = ger_armor.410
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 196
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		196 = { set_compliance = 15 }
+	}
+}
+
+country_event = {
+	id = ger_armor.411
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 197
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		197 = { set_compliance = 15 }
+	}
+}
+
+country_event = {
+	id = ger_armor.412
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 198
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		198 = { set_compliance = 15 }
+	}
+}
+
+country_event = {
+	id = ger_armor.413
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 199
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		199 = { set_compliance = 15 }
+	}
+}
+
+country_event = {
+	id = ger_armor.414
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 200
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		200 = { set_compliance = 15 }
+	}
+}
+
+country_event = {
+	id = ger_armor.415
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 201
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		202 = { set_compliance = 15 }
+	}
+}
+
+country_event = {
+	id = ger_armor.416
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 202
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		202 = { set_compliance = 15 }
+	}
+}
+
+country_event = {
+	id = ger_armor.417
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 203
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		203 = { set_compliance = 15 }
+	}
+}
+
+country_event = {
+	id = ger_armor.418
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 221
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		221 = { set_compliance = 15 }
+	}
+}
+
+country_event = {
+	id = ger_armor.419
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 225
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		225 = { set_compliance = 15 }
+	}
+}
+
+country_event = {
+	id = ger_armor.420
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 226
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		226 = { set_compliance = 15 }
+	}
+}
+
+country_event = {
+	id = ger_armor.421
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 227
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		227 = { set_compliance = 15 }
+	}
+}
+
+country_event = {
+	id = ger_armor.422
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 228
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		228 = { set_compliance = 15 }
+	}
+}
+
+country_event = {
+	id = ger_armor.423
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		controls_state = 259
+		has_war_with = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		259 = { set_compliance = 15 }
+	}
+}
+
+################################################# Ally with Finland
+
+
+
+
+country_event = {
+	id = ger_armor.801
+	title = ger_armor.801.t
+	desc = ger_armor.801.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.801.a
+		GER = { country_event = { id = ger_armor.802 days = 1 } }
+		GER = { add_to_faction = FIN }
+		FIN = { remove_country_leader_trait = stout_defender }
+		add_state_claim = 213
+		add_state_claim = 215
+		add_state_claim = 216
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = ger_armor.801.b
+		GER = { country_event = { id = ger_armor.803 days = 1 } }
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.802
+	title = ger_armor.802.t
+	desc = ger_armor.802.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.802.a
+	}
+}
+
+country_event = {
+	id = ger_armor.803
+	title = ger_armor.803.t
+	desc = ger_armor.803.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.803.a
+	}
+}
+
+
+
+
+
+################################################# Valkyrie
+
+
+
+
+
+country_event = {
+	id = ger_armor.804
+	title = ger_armor.804.t
+	desc = ger_armor.804.d
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 3 }
+
+	trigger = {
+		tag = GER
+		has_government = fascism
+		has_war_with = SOV
+		OR = {
+			has_war_with = FRA
+			has_war_with = ENG
+			has_war_with = USA
+		}
+		check_variable = { var = GER_Wehrmacht_attitude value = 70 compare = greater_than_or_equals }
+		date > 1944.7.13
+		OR = {
+			202 = { is_controlled_by = SOV }
+			206 = { is_controlled_by = SOV }
+		}
+		OR = {
+			surrender_progress > 0.05
+			99 = { CONTROLLER = { has_war_with = GER } }
+			735 = { CONTROLLER = { has_war_with = GER } }
+			22 = { CONTROLLER = { has_war_with = GER } }
+			21 = { CONTROLLER = { has_war_with = GER } }
+			19 = { CONTROLLER = { has_war_with = GER } }
+			23 = { CONTROLLER = { has_war_with = GER } }
+			30 = { CONTROLLER = { has_war_with = GER } }
+			14 = { CONTROLLER = { has_war_with = GER } }
+			15 = { CONTROLLER = { has_war_with = GER } }
+			785 = { CONTROLLER = { has_war_with = GER } }
+			29 = { CONTROLLER = { has_war_with = GER } }
+			6 = { CONTROLLER = { has_war_with = GER } }
+			35 = { CONTROLLER = { has_war_with = GER } }
+			7 = { CONTROLLER = { has_war_with = GER } }
+		}
+	}
+	
+	immediate = {
+		news_event = { hours = 1 id = wtt_news.51 }
+	}
+
+	option = {
+		name = ger_armor.804.a
+		ai_chance = {
+			base = 75
+		}
+		add_war_support = 0.1
+		add_stability = -0.1
+		remove_unit_leader = 4
+		remove_unit_leader = 17
+		custom_effect_tooltip = remove_chief_of_army
+		show_ideas_tooltip = franz_halder
+		subtract_from_variable = { var = GER_Wehrmacht_attitude value = 50 }
+		subtract_from_variable = { var = GER_Wehrmacht_influence value = 0 }
+		hidden_effect = {
+			remove_ideas = franz_halder
+			set_country_flag = valkyrie_purge
+			sound_effect = diplomatic_failure
+		}
+	}
+
+	option = {
+		name = ger_armor.804.b
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		add_war_support = 0.1
+		add_stability = -0.4
+		remove_unit_leader = 17
+		custom_effect_tooltip = remove_chief_of_army
+		subtract_from_variable = { var = GER_Wehrmacht_attitude value = 30 }
+		subtract_from_variable = { var = GER_Wehrmacht_influence value = 0 }
+		hidden_effect = { sound_effect = diplomatic_failure }
+	}
+}
+
+
+
+
+
+################################################# Todt Dies
+
+
+
+
+
+country_event = {
+	id = ger_armor.805
+	title = ger_armor.805.t
+	desc = ger_armor.805.d
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GER
+		has_government = fascism
+		date > 1942.2.8
+	}
+
+	option = {
+		name = ger_armor.805.a
+		hidden_effect = {
+			set_country_flag = todt_died
+		}
+	}
+}
+
+
+
+
+
+################################################# Japan technological exchange
+
+
+
+
+
+country_event = {
+	id = ger_armor.809
+	title = ger_armor.809.t
+	desc = ger_armor.809.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.809.a
+		JAP = { country_event = { id = ger_armor.810 } }
+		navy_experience = 40
+		add_tech_bonus = {
+			name = JAP_german_technological_exchange
+			bonus = 0.5
+			uses = 1
+			category = bb_tech
+		}
+		add_tech_bonus = {
+			name = JAP_german_technological_exchange
+			bonus = 0.5
+			uses = 1
+			category = cv_tech
+		}
+	}
+
+	option = {
+		name = ger_armor.809.b
+		JAP = { country_event = { id = ger_armor.811 } }
+	}
+}
+
+country_event = {
+	id = ger_armor.810
+	title = ger_armor.810.t
+	desc = ger_armor.810.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.809.a
+		navy_experience = 40
+		add_tech_bonus = {
+			name = JAP_german_technological_exchange
+			bonus = 0.5
+			uses = 2
+			category = armor
+		}
+		if = {
+			limit = {
+				GER = { has_tech = ger_heavy_3 }
+			}
+			JAP = {
+				set_technology = {
+					ger_heavy_2 = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				GER = { has_tech = ger_heavy_3 }
+			}
+			JAP = {
+				set_technology = {
+					ger_heavy_2 = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.811
+	title = ger_armor.811.t
+	desc = ger_armor.811.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.811.a
+	}
+}
+
+
+
+
+
+################################################# Japan technological exchange
+
+
+
+
+
+country_event = {
+	id = ger_armor.812
+	title = ger_armor.812.t
+	desc = ger_armor.812.d
+
+	trigger = {
+		original_tag = GER
+		has_government = fascism
+		has_country_flag = flight_of_hess
+		if = {
+			limit = {
+				date > 1942.7.1
+			}
+			122 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+		}
+		else = {
+			127 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = ger_armor.812.a
+		add_war_support = 0.05
+	}
+
+	option = {
+		name = ger_armor.812.b
+		add_political_power = -50
+		clr_country_flag = flight_of_hess
+	}
+}
+
+
+
+
+
+################################################# Economic Events
+
+
+
+
+
+country_event = {
+	id = ger_armor.823
+	title = ger_armor.823.t
+	desc = ger_armor.823.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.823.a
+		swap_ideas = {
+			remove_idea = economic_divide
+			add_idea = economic_divide_2
+		}
+	}
+}
+
+
+
+
+
+################################################# Mutual assistence Italy
+
+
+
+
+
+country_event = {
+	id = ger_armor.824
+	title = ger_armor.824.t
+	desc = ger_armor.824.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.824.a
+		ai_chance = {
+			factor = 1
+		}
+		add_opinion_modifier = { target = GER modifier = mutual_assistance }
+		reverse_add_opinion_modifier = { target = GER modifier = mutual_assistance}
+		GER = {
+			country_event = {
+				id = ger_armor.825
+				hours = 6
+			}
+		}
+	}
+	option = {
+		name = ger_armor.824.b
+		ai_chance = {
+			factor = 0
+		}
+		GER = {
+			country_event = {
+				id = ger_armor.826
+				hours = 6
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.825
+	title = ger_armor.825.t
+	desc = ger_armor.825.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.825.a
+		39 = {
+			add_resource = {
+				type = coal
+				amount = 15
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.826
+	title = ger_armor.826.t
+	desc = ger_armor.826.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.826.a
+	}
+}
+
+
+
+
+
+################################################# Puppet the Axis
+
+
+
+
+
+country_event = {
+	id = ger_armor.827
+	title = ger_armor.827.t
+	desc = ger_armor.827.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.827.a
+		GER = {
+			country_event = { id = ger_armor.828 hours = 5 }
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0.5
+
+				surrender_progress > 0.05
+			}
+			modifier = {
+				factor = 0.5
+
+				surrender_progress > 0.1
+			}
+			modifier = {
+				factor = 0
+				tag = HUN
+			}
+			modifier = {
+				factor = 0
+				tag = ROM
+			}
+			modifier = {
+				factor = 0
+				tag = BUL
+			}
+		}
+	}
+	option = {
+		name = ger_armor.827.b
+		GER = {
+			country_event = { id = ger_armor.829 hours = 5 }
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = italy_switching_sides
+			}
+		}
+	}
+	option = {
+		name = ger_armor.827.c
+		GER = {
+			country_event = { id = ger_armor.830 hours = 5 }
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 5
+
+				surrender_progress > 0.05
+			}
+			modifier = {
+				factor = 5
+
+				surrender_progress > 0.1
+			}
+			modifier = {
+				factor = 30
+
+				surrender_progress > 0.2
+			}
+			modifier = {
+				factor = 0
+				tag = ITA
+			}
+		}
+	}
+}
+
+########################## Refuses
+
+country_event = {
+	id = ger_armor.828
+	title = ger_armor.828.t
+	desc = ger_armor.828.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.828.a
+		GER = {
+			remove_from_faction = FROM
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FROM
+		}
+		if = {
+			limit = { tag = ITA }
+			set_rule = { can_create_factions = yes }
+			create_faction = italy_empire
+		}
+		FROM = {
+			country_event = { id = ger_armor.831 hours = 5 }
+		}
+		ai_chance = {
+			base = 5
+		}
+	}
+	option = {
+		name = ger_armor.828.b
+		FROM = {
+			country_event = { id = ger_armor.834 hours = 5 }
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+########################## Asks for more autonomy
+
+country_event = {
+	id = ger_armor.829
+	title = ger_armor.829.t
+	desc = ger_armor.829.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.829.a ########################## Country submits, becomes Reichsprotectorate
+		FROM = {
+			country_event = { id = ger_armor.833 hours = 5 }
+		}
+		ai_chance = {
+			base = 3
+		}
+	}
+	option = {
+		name = ger_armor.829.b ########################## refuse autonomy
+		FROM = {
+			country_event = { id = ger_armor.835 hours = 5 }
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+
+########################## Country submits, becomes Reichskommissariats
+
+country_event = {
+	id = ger_armor.830
+	title = ger_armor.830.t
+	desc = ger_armor.830.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.830.a
+		FROM = {
+			country_event = { id = ger_armor.832 hours = 5 }
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+########################## Germany rejects greater autonomy
+
+country_event = {
+	id = ger_armor.835
+	title = ger_armor.835.t
+	desc = ger_armor.835.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.835.a ########################## Refuses
+		GER = {
+			country_event = { id = ger_armor.828 hours = 5 }
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0
+				tag = HUN
+			}
+			modifier = {
+				factor = 0
+				tag = BUL
+			}
+		}
+	}
+	option = {
+		name = ger_armor.835.b ########################## Country submits, becomes Reichskommissariats
+		GER = {
+			country_event = { id = ger_armor.830 hours = 5 }
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.831
+	title = ger_armor.831.t
+	desc = ger_armor.831.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.831.a
+	}
+}
+
+country_event = {
+	id = ger_armor.832
+	title = ger_armor.832.t
+	desc = ger_armor.832.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.832.a
+		trigger = { tag = ITA }
+		ITA = {
+			set_cosmetic_tag = ITA_reichskommissariat
+		}
+		GER = {
+			set_autonomy = { target = ITA autonomy_state = autonomy_reichskommissariat }
+		}
+	}
+
+	option = {
+		name = ger_armor.832.a
+		trigger = { tag = HUN }
+		HUN = {
+			set_cosmetic_tag = HUN_reichskommissariat
+		}
+		GER = {
+			set_autonomy = { target = HUN autonomy_state = autonomy_reichskommissariat }
+		}
+	}
+
+	option = {
+		name = ger_armor.832.a
+		trigger = { tag = ROM }
+		ROM = {
+			set_cosmetic_tag = ROM_reichskommissariat
+		}
+		GER = {
+			set_autonomy = { target = ROM autonomy_state = autonomy_reichskommissariat }
+		}
+	}
+
+	option = {
+		name = ger_armor.832.a
+		trigger = { tag = BUL }
+		BUL = {
+			set_cosmetic_tag = BUL_reichskommissariat
+		}
+		GER = {
+			set_autonomy = { target = BUL autonomy_state = autonomy_reichskommissariat }
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.833
+	title = ger_armor.833.t
+	desc = ger_armor.833.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.833.a
+		trigger = { tag = ITA }
+		GER = {
+			set_autonomy = { target = ITA autonomy_state = autonomy_reichsprotectorate }
+		}
+	}
+
+	option = {
+		name = ger_armor.833.a
+		trigger = { tag = HUN }
+		GER = {
+			set_autonomy = { target = HUN autonomy_state = autonomy_reichsprotectorate }
+		}
+	}
+
+	option = {
+		name = ger_armor.833.a
+		trigger = { tag = ROM }
+		GER = {
+			set_autonomy = { target = ROM autonomy_state = autonomy_reichsprotectorate }
+		}
+	}
+
+	option = {
+		name = ger_armor.833.a
+		trigger = { tag = BUL }
+		GER = {
+			set_autonomy = { target = BUL autonomy_state = autonomy_reichsprotectorate }
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.834
+	title = ger_armor.834.t
+	desc = ger_armor.834.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.834.a
+	}
+}
+
+
+
+
+
+################################################# Invade Poland, no focus required
+
+
+
+
+
+country_event = {
+	id = ger_armor.839
+	title = ger_armor.839.t
+	desc = ger_armor.839.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		NOT = { has_war_with = GER }
+		NOT = { is_in_faction_with = POL }
+		NOT = { POL = { is_subject_of = GER } }
+		POL = { has_war = yes }
+		POL = { surrender_progress > 0.3 }
+		OR = {
+			POL = { is_in_faction = no }
+			NOT = {
+				POL = {
+					any_allied_country = {
+						is_major = yes
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = ger_armor.839.a
+		ai_chance = {
+			base = 75
+			modifier = {
+				factor = 0
+				threat > 0.7
+			}
+		}
+#		85 = { add_core_of = GER }
+		add_state_claim = 798
+		add_state_claim = 797
+		add_state_claim = 86
+		add_state_claim = 762
+		declare_war_on = {
+			target = POL
+			type = take_state_focus
+			generator = { 798 797 86 762 }
+		}
+		
+	}
+
+	option = {
+		name = ger_armor.839.b
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 0
+				threat < 0.7
+			}
+		}
+	}
+}
+
+
+
+
+
+################################################# Fate of YUG
+
+
+
+
+
+country_event = {
+	id = ger_armor.840
+	title = ger_armor.840.t
+	desc = ger_armor.840.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.840.a
+		ai_chance = {
+			factor = 5
+		}
+		effect_tooltip = {
+			set_state_controller = 45
+			set_state_controller = 888
+			economy_fatigue_level_down_2 = yes
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.841
+	title = ger_armor.841.t
+	desc = ger_armor.841.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.841.a
+		ai_chance = {
+			factor = 5
+		}
+		effect_tooltip = {
+			set_state_controller = 851
+			set_state_controller = 106
+			economy_fatigue_level_down_2 = yes
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.842
+	title = ger_armor.842.t
+	desc = ger_armor.842.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.842.a
+		ai_chance = {
+			factor = 5
+		}
+		if = {
+			limit = {
+				is_in_faction_with = ALB
+			}
+			effect_tooltip = {
+				ALB = {
+					transfer_state = 849
+					transfer_state = 850
+					transfer_state = 105
+				}
+			}
+			effect_tooltip = {
+				set_state_controller = 102
+				set_state_controller = 908
+				economy_fatigue_level_down_2 = yes
+			}
+		}
+		else = {
+			effect_tooltip = {
+				set_state_controller = 849
+				set_state_controller = 850
+				set_state_controller = 105
+				set_state_controller = 102
+				set_state_controller = 908
+				economy_fatigue_level_down_2 = yes
+			}
+		}
+	}
+}
+
+
+
+
+
+################################################# Fate of GRE
+
+
+
+
+
+country_event = {
+	id = ger_armor.843
+	title = ger_armor.843.t
+	desc = ger_armor.843.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.843.a
+		ai_chance = {
+			factor = 5
+		}
+		effect_tooltip = {
+			if = {
+				limit = {
+					is_in_faction_with = ITA
+					ALB = { is_subject_of = ITA }
+				}
+				BUL = {
+					set_state_controller = 184
+					set_state_controller = 731
+					economy_fatigue_level_down_2 = yes
+				}
+			}
+			else_if = {
+				limit = {
+					is_in_faction_with = ITA
+					NOT = { ALB = { is_subject_of = ITA } }
+				}
+				BUL = {
+					set_state_controller = 184
+					set_state_controller = 731
+					economy_fatigue_level_down_2 = yes
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { is_in_faction_with = ITA }
+				}
+				BUL = {
+					set_state_controller = 185
+					set_state_controller = 47
+					set_state_controller = 186
+					set_state_controller = 182
+					set_state_controller = 184
+					set_state_controller = 731
+					economy_fatigue_level_down_2 = yes
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.844
+	title = ger_armor.844.t
+	desc = ger_armor.844.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.844.a
+		ai_chance = {
+			factor = 5
+		}
+		effect_tooltip = {
+			if = {
+				limit = {
+					is_in_faction_with = BUL
+					ALB = { is_subject_of = ITA }
+				}
+				ALB = {
+					set_state_controller = 185
+					set_state_controller = 47
+					set_state_controller = 186
+					set_state_controller = 182
+				}
+				ITA = {
+					economy_fatigue_level_down_2 = yes
+				}
+			}
+			else_if = {
+				limit = {
+					is_in_faction_with = BUL
+					NOT = { ALB = { is_subject_of = ITA } }
+				}
+				ITA = {
+					set_state_controller = 185
+					set_state_controller = 47
+					set_state_controller = 186
+					set_state_controller = 182
+					economy_fatigue_level_down_2 = yes
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { is_in_faction_with = BUL }
+				}
+				ITA = {
+					set_state_controller = 185
+					set_state_controller = 47
+					set_state_controller = 186
+					set_state_controller = 182
+					set_state_controller = 184
+					set_state_controller = 731
+					economy_fatigue_level_down_2 = yes
+					country_event = { id = ger_armor.844 }
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+################################################# Fate of GRE
+
+
+
+
+
+
+country_event = {
+	id = ger_armor.845
+	title = ger_armor.845.t
+	desc = ger_armor.845.d
+
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.845.a
+		GER = { country_event = { id = ger_armor.846 hours = 6 } }
+		every_country = {
+			limit = {
+				NOT = {
+					is_in_faction_with = GER
+					is_subject_of = GER
+				}
+				NOT = { tag = HUN }
+				NOT = { tag = ROM }
+				NOT = { tag = BUL }
+				NOT = { tag = FIN }
+				NOT = { tag = CRO }
+			}
+			SWE = { add_opinion_modifier = { target = PREV modifier = embargo } }
+		}
+		ai_chance = { 
+			factor = 25 
+		}
+	}
+}
+
+country_event = {
+	id = ger_armor.846
+	title = ger_armor.846.t
+	desc = ger_armor.846.d
+
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.846.a
+	}
+}
+
+country_event = {
+	id = ger_armor.847
+	title = ger_armor.847.t
+	desc = ger_armor.847.d
+
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = ger_armor.847.b
+		ai_chance = { 
+			factor = 0 
+		}
+	}
+}
+
+################################################# Hitler's Suicide
+
+
+
+
+
+
+country_event = {
+	id = ger_armor.857
+	title = ger_armor.857.t
+	desc = ger_armor.857.d
+	picture = GFX_report_event_german_reichstag_bombed
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		OR = {
+			810 = {
+				is_fully_controlled_by = controller
+				CONTROLLER = { has_war_with = ROOT }
+			}
+			804 = {
+				is_fully_controlled_by = controller
+				CONTROLLER = { has_war_with = ROOT }
+			}
+			64 = {
+				is_fully_controlled_by = controller
+				CONTROLLER = { has_war_with = ROOT }
+			}
+		}
+	}
+
+	option = {
+		name = ger_armor.857.a
+
+		hidden_effect = {
+			news_event = { id = afo_news.7 hours = 6 }
+			sound_effect = diplomatic_failure
+		}
+		add_war_support = -0.3
+		remove_ideas = death_before_defeat
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Karl Donitz"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Portrait_Germany_Karl_Donitz.dds"
+			expire = "1975.1.1"
+			ideology = nazism
+			traits = {
+			}
+		}
+	}
+}
+
+
+
+
+
+################################################# Soviets demand easetern poland
+
+
+
+
+
+country_event = {
+	id = ger_armor.858
+	title = ger_armor.858.t
+	desc = ger_armor.858.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ger_armor.858.a
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				NOT = {
+					surrender_progress > 0.2
+				}
+			}
+		}
+		effect_tooltip = {
+			SOV = {
+				if = {
+					limit = { GER = { controls_state = 96 } }
+					transfer_state = 96
+				}
+				if = {
+					limit = { GER = { controls_state = 95 } }
+					transfer_state = 95
+				}
+				if = {
+					limit = { GER = { controls_state = 94 } }
+					transfer_state = 94
+				}
+				if = {
+					limit = { GER = { controls_state = 93 } }
+					transfer_state = 93
+				}
+				if = {
+					limit = { GER = { controls_state = 91 } }
+					transfer_state = 91
+				}
+				if = {
+					limit = { GER = { controls_state = 89 } }
+					transfer_state = 89
+				}
+				if = {
+					limit = { GER = { controls_state = 97 } }
+					transfer_state = 97
+				}
+				if = {
+					limit = { GER = { controls_state = 784 } }
+					transfer_state = 784
+				}
+			}
+		}
+		SOV = {country_event = { id = sov_armor.853} }
+	}
+
+	option = {
+		name = ger_armor.858.b
+		ai_chance = { factor = 70 }
+		effect_tooltip = {
+			SOV = {
+				create_wargoal = {
+					type = take_state_focus
+					target = GER
+					generator = { 96 95 94 93 91 89 97 784 }
+				}
+			}
+		}
+		SOV = { country_event = { id = sov_armor.854 } }
+	}
+}
+
+################################################# Why Die for danzig?
+
+
+
+
+
+country_event = {
+	id = ger_armor.862
+	title = ger_armor.862.t
+	desc = ger_armor.862.d
+
+	trigger = {
+		tag = GER
+		has_government = fascism
+		GER = { has_completed_focus = GER_danzig_or_war }
+		NOT = { has_country_flag = GER_planned_offensives }
+		has_war_with = POL
+		any_enemy_country = {
+			is_major = yes
+			has_government = democratic
+		}
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit  = {
+				has_idea = GER_lack_of_offensive_plans_initial
+			}
+			hidden_effect = {
+				remove_ideas = GER_lack_of_offensive_plans_initial
+				add_timed_idea = {
+					idea = GER_lack_of_offensive_plans
+					days = 120
+				}
+				set_country_flag = GER_lack_of_offensive_plans_over
+			}
+		}
+		else = {
+			hidden_effect = {
+				add_timed_idea = {
+					idea = GER_lack_of_offensive_plans
+					days = 120
+				}
+				set_country_flag = GER_lack_of_offensive_plans_over
+			}
+		}
+	}
+
+	option = {
+		name = ger_armor.862.a
+		effect_tooltip = {
+			add_timed_idea = {
+				idea = GER_lack_of_offensive_plans
+				days = 120
+			}
+		}
+	}
+}
+
+
+
+
+################################################# War with the USA
+
+
+
+
+country_event = {
+	id = ger_armor.865
+	title = ger_armor.865.t
+	desc = ger_armor.865.d
+	picture = GFX_report_event_hitler_speech_reichstag
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_government = fascism
+		has_global_flag = tripartite_pact_signed
+		AND = {
+			has_war_with = ENG
+			ENG = { has_government = democratic }
+		}
+		OR = {
+			AND = {
+				JAP = { has_war_with = USA }
+				OR = {
+					JAP = { has_government = fascism }
+					JAP = { has_government = neutrality }
+				}
+			}
+			AND = {
+				ITA = { has_war_with = USA }
+				OR = {
+					ITA = { has_government = fascism }
+					ITA = { has_government = neutrality }
+				}
+			}
+		}
+		USA = { has_completed_focus = USA_lend_lease_act }
+		USA = { has_government = democratic }
+		NOT = { has_war_with = USA }
+	}
+
+	option = {
+		name = ger_armor.865.a
+		declare_war_on = {
+			target = USA
+			type = annex_everything
+		}
+		add_political_power = 150
+		add_war_support = 0.1
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
