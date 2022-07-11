@@ -90,7 +90,7 @@ focus_tree = {
 			army_experience = 5
 			add_doctrine_cost_reduction = {
 				name = AST_additional_militia_training
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -166,7 +166,7 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = AST_additional_militia_training
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -254,7 +254,7 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = AST_additional_militia_training
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -523,7 +523,7 @@ focus_tree = {
 			army_experience = 5
 			add_doctrine_cost_reduction = {
 				name = AST_introduce_unconventional_warfare
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}			
@@ -652,7 +652,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = AST_expand_the_raaf
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -676,7 +676,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = AST_expand_the_raaf
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -765,7 +765,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = AST_expand_the_raaf
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -790,7 +790,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = AST_expand_the_raaf
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1148,7 +1148,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = AST_expand_the_raaf
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1218,7 +1218,7 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = AST_expand_the_raaf
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1301,7 +1301,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = AST_expand_the_raaf
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1325,7 +1325,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = AST_expand_the_raaf
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1657,7 +1657,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = AST_pacific_area_navy
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}

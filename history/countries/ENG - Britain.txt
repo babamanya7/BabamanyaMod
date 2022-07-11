@@ -1,5 +1,5 @@
 ﻿capital = 126
-
+give_guarantee = POL
 if = {
 	limit = {
 		NOT = {

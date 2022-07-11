@@ -545,7 +545,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_gaz_automobile_plants
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 5
 		}
@@ -984,7 +984,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_bread_basket_of_the_soviet_union
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 5
 		}
@@ -1574,7 +1574,7 @@ focus_tree = {
 		x = 16
 		y = 6
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1598,7 +1598,7 @@ focus_tree = {
 			custom_effect_tooltip = SOV_an_adaptable_army_ns_tt
 			add_doctrine_cost_reduction = {
 				name = SOV_lessons_of_war
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1722,7 +1722,7 @@ focus_tree = {
 			set_technology = { motorized_rocket_unit = 1 }
 			add_doctrine_cost_reduction = {
 				name = SOV_rockets
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1755,8 +1755,8 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = SOV_guards
-				cost_reduction = 0.8
-				uses = 1
+				cost_reduction = 0.5
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -1819,8 +1819,8 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = SOV_perfecting_the_armour_core
-				cost_reduction = 0.8
-				uses = 1
+				cost_reduction = 0.5
+				uses = 2
 				category = land_doctrine
 			}
 			swap_ideas = {
@@ -1940,7 +1940,7 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = SOV_deep_battle
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -2104,7 +2104,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = SOV_transpolar_flights
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -2334,7 +2334,7 @@ focus_tree = {
 			air_experience = 50
 			add_doctrine_cost_reduction = {
 				name = SOV_evolution_of_the_air_strategy
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 3
 				category = air_doctrine
 			}
@@ -3923,7 +3923,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = SOV_modernization_of_the_red_army
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -4055,7 +4055,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = SOV_development_of_the_shock_army
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -4533,19 +4533,19 @@ focus_tree = {
 			add_command_power = 25
 			add_doctrine_cost_reduction = {
 				name = SOV_military_reorganization
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
 			add_doctrine_cost_reduction = {
 				name = SOV_military_reorganization
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
 			add_doctrine_cost_reduction = {
 				name = SOV_military_reorganization
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
@@ -5247,7 +5247,7 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 3
+		cost = 2
 
 		ai_will_do = {
 			factor = 100
@@ -5509,7 +5509,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = SOV_emergency_powers
-		cost = 3
+		cost = 2
 
 		available = {
 
@@ -5603,7 +5603,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_smersh
-		cost = 4
+		cost = 2
 
 		available = {
 
@@ -5625,7 +5625,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_smersh
-		cost = 4
+		cost = 2
 
 		available = {
 			OR = {
@@ -6144,7 +6144,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = SOV_socialism_in_one_country
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -8009,12 +8009,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_has_civil_war_no_tt
-				has_civil_war = no
-				NOT = { has_war_with = STA }
-			}
-			has_completed_focus = SOV_great_purge
+			
 		}
 		
 		search_filters = {}
@@ -9055,7 +9050,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_preemptive_invasion_of_iran
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1

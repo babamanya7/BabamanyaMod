@@ -199,7 +199,7 @@ NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 5000										--Max army experience a c
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 5000										--Max navy experience a country can store
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 5000										--Max air experience a country can store
 
-NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0003
+NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00055
 NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.002
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 1									-- Most xp you can gain per day
 
@@ -487,7 +487,7 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_PLANE_COUNT_TO_SUB_DETECTION = 0.2					-- Factor
 
 NDefines.NNavy.DEPTH_CHARGE_STAT_FOR_SHIP_TO_BE_SUB_HUNTER = 12						-- amount of depth charge required for a ship to be considred a sub hunter and so good for convoy escort
 
-NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 336									-- base hours needed to prepare an invasion
+NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 168									-- base hours needed to prepare an invasion
 
 NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO	= 0.05									-- total sum of fleet's anti air will be multiplied with this ratio and added to calculations anti-air of individual ships while air damage reduction
 NDefines.NNavy.ANTI_AIR_TARGETING = 1.0               		                        -- how good ships are at hitting aircraft

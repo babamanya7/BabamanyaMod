@@ -1410,6 +1410,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_war_support = 0.5
 			create_country_leader = {
 				name = "Ion Antonescu"
 				desc = "POLITICS_ION_ANTONESCU_DESC"

@@ -1188,7 +1188,7 @@
 			army_experience = 10
 				add_doctrine_cost_reduction = {
 					name = SAF_special_service_battalion
-					cost_reduction = 0.8
+					cost_reduction = 0.5
 					uses = 1
 					category = land_doctrine
 				}			
@@ -1304,7 +1304,7 @@
 			army_experience = 10
 			add_doctrine_cost_reduction = {
 				name = SAF__south_african_military_college
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}			

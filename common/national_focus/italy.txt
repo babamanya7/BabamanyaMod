@@ -1830,7 +1830,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = ITA_infantry_modernization
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1864,7 +1864,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = ITA_artillery_modernization
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1900,7 +1900,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = ITA_multipurpose_guns
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1985,7 +1985,7 @@ focus_tree = {
 			army_experience = 30
 			add_doctrine_cost_reduction = {
 				name = ITA_fund_military_excercises
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -2121,7 +2121,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = ITA_realization_of_modern_warfare
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -2268,7 +2268,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = ITA_quality_over_quantity
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -2385,7 +2385,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = ITA_picchiatello
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -2420,7 +2420,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = ITA_bombardieri
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -2449,7 +2449,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = ITA_develop_series_5_fighters
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -2517,7 +2517,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = ITA_analyse_war_reports
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -2763,7 +2763,7 @@ focus_tree = {
 			navy_experience = 20
 			add_doctrine_cost_reduction = {
 				name = ITA_hold_naval_wargames
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}

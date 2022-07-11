@@ -384,6 +384,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_war_support = 0.5
 			add_threat = 1
 			if = {
 				limit = { 
@@ -1847,7 +1848,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = HUN_theoretical_air_efforts
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1952,7 +1953,7 @@ focus_tree = {
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = HUN_establish_the_air_force
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -2332,7 +2333,7 @@ focus_tree = {
 			army_experience = 10
 			add_doctrine_cost_reduction = {
 				name = HUN_army_maneuvers
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}			
@@ -2374,7 +2375,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = HUN_mobile_focus
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -2633,7 +2634,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = HUN_mobile_corps_doctrine
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -2675,7 +2676,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = HUN_home_defense
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}

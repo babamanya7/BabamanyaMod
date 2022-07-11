@@ -2106,7 +2106,7 @@ focus_tree = {
 			show_ideas_tooltip = hajime_sugiyama
 			add_doctrine_cost_reduction = {
 				name = USA_louisiana_maneuvers
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -2550,7 +2550,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = JAP_armored_divisions
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -2633,7 +2633,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = op_dest_bonus
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 3
 				category = air_doctrine
 			}
@@ -2970,7 +2970,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = JAP_new_bomber_projections
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -3857,7 +3857,7 @@ focus_tree = {
 			navy_experience = 50
 			add_doctrine_cost_reduction = {
 				name = JAP_carrier_warfare_experiments
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 3
 				category = naval_doctrine
 			}
@@ -4321,7 +4321,7 @@ focus_tree = {
 			navy_experience = 50
 			add_doctrine_cost_reduction = {
 				name = JAP_carrier_warfare_experiments
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 4
 				category = naval_doctrine
 			}
@@ -6314,7 +6314,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = JAP_strike_south_doctrine
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}

@@ -18,6 +18,43 @@ guide = {
 			country_event = guide.1
 		}
 	}
+	annex_ai_free_fra = {
+	
+		available = {
+			has_country_flag = case_anton_fra
+			OR = {
+				tag = ENG
+				tag = USA
+			}
+		}
+		
+		visible = {
+			has_country_flag = bots_annexed
+		}
+		
+		complete_effect = {
+			if = {
+				limit = {
+					tag = USA
+				}
+				USA = {
+					annex_country = { target = FRA transfer_troops = yes }
+				}
+			}
+			if = {
+				limit = {
+					tag = ENG
+				}
+				ENG = {
+					annex_country = { target = FRA transfer_troops = yes }
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	
 	cap_sov = {
 	
@@ -73,6 +110,79 @@ guide = {
 		}
 	}
 	
+	annex_ROM = {
+		available = {
+			tag = GER
+			ROM = {
+				is_ai = yes
+			}
+			date > 1941.1.1
+		}
+		
+		visible = {
+			tag = GER
+			ROM = {
+				is_ai = yes
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 0
+
+		complete_effect = {
+			GER = {
+				annex_country = { target = ROM transfer_troops = yes }
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = ROM
+				}
+				add_compliance = 50
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	annex_HUN = {
+		available = {
+			tag = GER
+			HUN = {
+				is_ai = yes
+			}
+		}
+		
+		visible = {
+			tag = GER
+			HUN = {
+				is_ai = yes
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 0
+
+		complete_effect = {
+			GER = {
+				annex_country = { target = HUN transfer_troops = yes }
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = HUN
+				}
+				add_compliance = 50
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
 	annex_bul = {
 		available = {
 			tag = GER
@@ -83,7 +193,7 @@ guide = {
 		
 		visible = {
 			tag = GER
-			CAN = {
+			BUL = {
 				is_ai = yes
 			}
 		}
@@ -98,7 +208,7 @@ guide = {
 			}
 			every_controlled_state = {
 				limit = {
-					is_core_of = CAN
+					is_core_of = BUL
 				}
 				add_compliance = 50
 			}
@@ -8564,6 +8674,11 @@ war_measures = {
 				tag = USA
 				tag = FRA
 			}
+			GRE = { has_capitulated = yes }
+			BEL = { has_capitulated = yes }
+			HOL = { has_capitulated = yes }
+			LUX = { has_capitulated = yes }
+			YUG = { has_capitulated = yes }
 		}
 
 		visible = {
@@ -8573,7 +8688,7 @@ war_measures = {
 				tag = ENG
 				tag = USA
 				tag = FRA
-			}	
+			}
 		}
 
 		fire_only_once = yes
@@ -8581,6 +8696,7 @@ war_measures = {
 		cost = 15
 
 		complete_effect = {
+			set_country_flag = bots_annexed
 			if = {
 				limit = {
 					tag = ENG

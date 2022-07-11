@@ -1700,7 +1700,7 @@
 			army_experience = 20
 			add_doctrine_cost_reduction = {
 				name = CAN_independent_command
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1935,7 +1935,7 @@
 			army_experience = 5 
 			add_doctrine_cost_reduction = {
 				name = CAN_army_modernization
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -2181,7 +2181,7 @@
 			army_experience = 5
 			add_doctrine_cost_reduction = {
 				name = CAN_red_deer_training_camp
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}			
@@ -2833,7 +2833,7 @@
 			}
 			add_doctrine_cost_reduction = {
 				name = CAN_rcaf_station_borden
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -2857,7 +2857,7 @@
 			}
 			add_doctrine_cost_reduction = {
 				name = CAN_rcaf_station_borden
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -3140,7 +3140,7 @@
 			}
 			add_doctrine_cost_reduction = {
 				name = CAN_commonwealth_air_training_plan
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -3164,7 +3164,7 @@
 			}
 			add_doctrine_cost_reduction = {
 				name = CAN_commonwealth_air_training_plan
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -3515,7 +3515,7 @@
 			navy_experience = 25
 			add_doctrine_cost_reduction = {
 				name = CAN_escort_fleet
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -3554,7 +3554,7 @@
 			navy_experience = 25
 			add_doctrine_cost_reduction = {
 				name = CAN_fleet_in_being
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 				

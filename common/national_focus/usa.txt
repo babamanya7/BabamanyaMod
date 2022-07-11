@@ -175,7 +175,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = USA_modernize_the_army
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1250,9 +1250,7 @@ focus_tree = {
 
 		available = {
 			congress_high_support_trigger = yes
-			threat > 0.8
-			FRA = { has_capitulated = yes }
-			date > 1941.2.1
+			GER = { has_war_with = SOV }
 		}
 		
 		bypass = {
@@ -2796,7 +2794,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = USA_fund_the_navy
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 3
 				category = naval_doctrine
 			}
@@ -2830,8 +2828,8 @@ focus_tree = {
 			army_experience = 50
 			add_doctrine_cost_reduction = {
 				name = USA_louisiana_maneuvers
-				cost_reduction = 0.8
-				uses = 2
+				cost_reduction = 0.5
+				uses = 1
 				category = land_doctrine
 			}
 			custom_effect_tooltip = louisiana_maneuvers_tt
@@ -3245,7 +3243,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = USA_first_special_service_force
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -3432,8 +3430,8 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = USA_support_rock_island
-				cost_reduction = 0.8
-				uses = 2
+				cost_reduction = 0.5
+				uses = 1
 				category = land_doctrine
 			}
 		}
@@ -3532,8 +3530,8 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = USA_tank_experiments
-				cost_reduction = 0.8
-				uses = 2
+				cost_reduction = 0.5
+				uses = 1
 				category = land_doctrine
 			}
 			set_technology = { USA_separate_tank_bats_tech = 1 }
@@ -3592,7 +3590,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = USA_tank_destroyer_doctrine
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -3633,7 +3631,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = USA_heavy_tank_doctrine
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -3673,7 +3671,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = USA_armored_infantry
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -3713,7 +3711,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = USA_main_battle_tanks
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -3743,7 +3741,7 @@ focus_tree = {
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = USA_air_war_plans_division
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 5
 				category = air_doctrine
 			}
@@ -3772,7 +3770,7 @@ focus_tree = {
 			#add_ideas = air_support_focus
 			add_doctrine_cost_reduction = {
 				name = USA_air_support
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 3
 				category = cat_battlefield_support
 			}
@@ -3806,7 +3804,7 @@ focus_tree = {
 			#add_ideas = willow_run
 			add_doctrine_cost_reduction = {
 				name = USA_carpet_bombing
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 3
 				category = cat_strategic_destruction
 			}
@@ -3955,7 +3953,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = USA_us_army_airforce
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -4041,7 +4039,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = USA_battleship_primacy_doctrine
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 5
 				category = fleet_in_being_tree
 			}
@@ -4065,7 +4063,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = USA_advanced_mahanian_doctrine
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -4151,7 +4149,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = USA_carrier_primacy_doctrine
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 3
 				category = naval_doctrine
 			}
@@ -4261,7 +4259,7 @@ focus_tree = {
 			navy_experience = 25
 			add_doctrine_cost_reduction = {
 				name = USA_convoy_tactics
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -4331,7 +4329,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = USA_unrestricted_submarine_warfare
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}

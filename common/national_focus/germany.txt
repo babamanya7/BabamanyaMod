@@ -1385,8 +1385,8 @@ focus_tree = {
 			army_experience = 20
 			add_doctrine_cost_reduction = {
 				name = GER_selection_of_the_okw_land_doc_bonus
-				cost_reduction = 0.8
-				uses = 2
+				cost_reduction = 0.5
+				uses = 1
 				category = land_doctrine
 			}
 			add_tech_bonus = {
@@ -1419,7 +1419,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = GER_war_of_movement
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1454,7 +1454,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = GER_guderians_wooden_panzers
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1489,7 +1489,7 @@ focus_tree = {
 			show_ideas_tooltip = ewald_von_kleist
 			add_doctrine_cost_reduction = {
 				name = GER_creation_of_the_panzertruppe
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1522,7 +1522,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = GER_refinement_of_bewegungskrieg
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -1602,7 +1602,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = artillery_warfare_bonus
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1629,7 +1629,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = GER_aggressive_artillery
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1804,7 +1804,7 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = air_sup_bonus
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -1832,7 +1832,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = GER_the_great_sky_war
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 3
 				category = air_doctrine
 			}
@@ -2125,7 +2125,7 @@ focus_tree = {
 			
 			add_doctrine_cost_reduction = {
 				name = GER_sturzbomber_programm
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -5567,7 +5567,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = GER_observations_from_spain
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -5684,7 +5684,7 @@ focus_tree = {
 			navy_experience = 25
 			add_doctrine_cost_reduction = {
 				name = GER_naval_effort
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
@@ -5818,7 +5818,7 @@ focus_tree = {
 				}
 				add_doctrine_cost_reduction = {
 					name = GER_surface_raiders
-					cost_reduction = 0.8
+					cost_reduction = 0.5
 					uses = 2
 					category = naval_doctrine
 				}
@@ -5829,7 +5829,7 @@ focus_tree = {
 				}
 				add_doctrine_cost_reduction = {
 					name = GER_surface_raiders
-					cost_reduction = 0.8
+					cost_reduction = 0.5
 					uses = 2
 					category = naval_doctrine
 				}
@@ -5840,7 +5840,7 @@ focus_tree = {
 				}
 				add_doctrine_cost_reduction = {
 					name = USA_carrier_primacy_doctrine
-					cost_reduction = 0.8
+					cost_reduction = 0.5
 					uses = 2
 					category = naval_doctrine
 				}
@@ -5928,7 +5928,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = GER_trade_interdiction
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 3
 				category = naval_doctrine
 			}

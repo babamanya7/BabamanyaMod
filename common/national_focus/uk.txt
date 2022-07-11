@@ -1271,7 +1271,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = ENG_modernize_the_royal_army
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -1362,7 +1362,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = ENG_combat_services
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1390,7 +1390,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = ENG_armoured_fighting_vehicles_school
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -1619,7 +1619,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = fighter_command_focus
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1664,7 +1664,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = bomber_command_focus
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1702,7 +1702,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = coastal_command_focus
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1931,7 +1931,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = ENG_a_s_warfare
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
@@ -1974,7 +1974,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = ENG_anti_submarine_training_school
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -2009,7 +2009,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = ENG_a_s_warfare
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 3
 				category = naval_doctrine
 			}

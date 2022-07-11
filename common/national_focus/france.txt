@@ -2742,7 +2742,7 @@ focus_tree = {
 			air_experience = 50
 			add_doctrine_cost_reduction = {
 				name = FRA_air_doctrine
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 3
 				category = air_doctrine
 			}
@@ -3477,7 +3477,7 @@ focus_tree = {
 			remove_ideas = FRA_static_command
 			add_doctrine_cost_reduction = {
 				name = FRA_battle_of_maneuver
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -3597,7 +3597,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = FRA_air_ground_cooperation
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 3
 				category = air_doctrine
 			}
@@ -3650,7 +3650,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = FRA_army_reform
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -3675,7 +3675,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = FRA_new_army_bureau
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -4209,7 +4209,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = FRA_naval_doctrine
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 3
 				category = naval_doctrine
 			}

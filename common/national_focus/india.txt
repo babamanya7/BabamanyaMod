@@ -820,7 +820,7 @@ continuous_focus_position = { x = 50 y = 680}
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = RAJ_lessons_of_the_great_war
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1356,7 +1356,7 @@ continuous_focus_position = { x = 50 y = 680}
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = RAJ_modernizing_army
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}			
@@ -1438,7 +1438,7 @@ continuous_focus_position = { x = 50 y = 680}
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = RAJ_british_pilot_training
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1644,7 +1644,7 @@ continuous_focus_position = { x = 50 y = 680}
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = RAJ_royal_indian_air_force
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -2286,7 +2286,7 @@ continuous_focus_position = { x = 50 y = 680}
 			navy_experience = 10
 			add_doctrine_cost_reduction = {
 				name = RAJ_royal_indian_navy
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
@@ -2474,7 +2474,7 @@ continuous_focus_position = { x = 50 y = 680}
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = RAJ_modernizing_navy
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
