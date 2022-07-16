@@ -1168,7 +1168,7 @@ FRA_vichy_france = {
 						}
 						FRA = { transfer_state = PREV }
 					}
-					set_country_flag = case_anton_fra
+					set_global_flag = case_anton_fra
 				}
 			}
 			GER = { annex_country = { target = ROOT } }

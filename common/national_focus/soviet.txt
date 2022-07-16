@@ -1661,6 +1661,13 @@ focus_tree = {
 			}
 			if = {
 				limit = {
+					has_idea = SOV_purged_junior_army_officers_3
+					has_completed_focus = SOV_assert_soviet_naval_presence
+				}
+				add_timed_idea = { idea = SOV_military_restructuring days = 140 }
+			}
+			else_if = {
+				limit = {
 					has_idea = SOV_purged_junior_army_officers_2
 					has_completed_focus = SOV_assert_soviet_naval_presence
 				}
@@ -1678,6 +1685,12 @@ focus_tree = {
 					has_completed_focus = SOV_assert_soviet_naval_presence
 				}
 				add_timed_idea = { idea = SOV_military_restructuring days = 35 }
+			}
+			else_if = {
+				limit = {
+					has_idea = SOV_purged_junior_army_officers_3
+				}
+				add_timed_idea = { idea = SOV_military_restructuring days = 140 }
 			}
 			else_if = {
 				limit = {
@@ -6479,7 +6492,7 @@ focus_tree = {
 			clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
 			set_country_flag = { flag = SOV_paranoia_random_purge_cooldown_from_focus_flag days = 15 } #Used to prevent random purges from popping up while this is active
 			set_country_flag = SOV_trial_of_the_generals_flag #Used to unlock the next purge focus
-			add_ideas = SOV_purged_junior_army_officers_2
+			add_ideas = SOV_purged_junior_army_officers_3
 			SOV_paranoia_high_increase_effect = yes
 
 			#Historical
@@ -6674,21 +6687,6 @@ focus_tree = {
 			}
 			else = {
 				custom_effect_tooltip = SOV_behead_the_snake_no_lar_tt
-			}
-			if = {
-				limit = {
-					has_idea = trotskyite_plot_purged
-				}
-				swap_ideas = {
-					remove_idea = trotskyite_plot_purged
-					add_idea = trotskyite_plot_purged_2
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = trotskyite_plot_purged_2
-				}
-				remove_ideas = trotskyite_plot_purged_2
 			}
 
 			SOV_paranoia_high_decrease_effect = yes

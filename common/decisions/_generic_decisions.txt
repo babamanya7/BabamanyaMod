@@ -21,7 +21,7 @@ guide = {
 	annex_ai_free_fra = {
 	
 		available = {
-			has_country_flag = case_anton_fra
+			has_global_flag = case_anton_fra
 			OR = {
 				tag = ENG
 				tag = USA
@@ -8622,50 +8622,7 @@ war_measures = {
 #		}
 #		
 #	}
-	annex_fra = {
-
-		available = {
-			OR = {
-				tag = ENG
-				tag = USA
-				tag = FRA
-			}
-		}
-
-		visible = {
-			has_war = yes
-			date > 1941.1.1	
-			OR = {
-				tag = ENG
-				tag = USA
-				tag = FRA
-			}	
-			FRA = {
-				is_ai = yes
-			}
-		}
-		
-		complete_effect = {
-			if = {
-				limit = {
-					tag = ENG
-				}
-				ENG = {
-					annex_country = { target = FRA transfer_troops = yes }
-				}
-			}
-			if = {
-				limit = {
-					tag = USA
-				}
-				USA = {
-					annex_country = { target = FRA transfer_troops = yes }
-				}
-			}
-		}
-		
-		
-	}
+	
 	annex_bots = {
 
 		available = {

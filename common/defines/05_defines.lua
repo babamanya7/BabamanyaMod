@@ -7,7 +7,7 @@ NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 1200										-- Days of client lag fo
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 10000											-- Days of client lag for pause of gamespeed.
 NDefines.NGame.EVENT_TIMEOUT_DEFAULT = 14											-- Default days before an event times out if not scripted
 NDefines.NGame.MAP_SCALE_PIXEL_TO_KM = 9.485
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.5, 0.35, 0.2, 0.045, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.5, 0.35, 0.2, 0.055, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- Diplomacy
 NDefines.NIntel.ARMY_DEPLOYED_MANPOWER_COUNT_RANGE_INTEL_MIN = 0.2

@@ -485,10 +485,7 @@ focus_tree = {
 				technology = excavation4
 				technology = excavation5
 			}
-			swap_ideas = {
-				remove_idea = GER_autarky_idea
-				add_idea = GER_autarky_idea_2
-			}
+			
 			reverse_add_opinion_modifier = { target = HOL modifier = autarky_measures }
 			reverse_add_opinion_modifier = { target = BEL modifier = autarky_measures }
 			reverse_add_opinion_modifier = { target = LUX modifier = autarky_measures }
@@ -1645,69 +1642,15 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GER_ussr_tractor_experiments
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = GER_war_of_movement }
-		x = 2
-		y = 1
-		relative_position_id = GER_war_of_movement
-		cost = 1
-
-		available_if_capitulated = yes
-
-		available = {
-			NOT = { has_completed_focus = GER_eastern_lebensraum }
-			OR = {
-				NOT = { has_completed_focus = GER_bulwark_against_bolshevism }
-				NOT = { has_completed_focus = GER_the_great_red_menace }
-			}
-		}
-
-		bypass = { 
-			OR = {
-				has_war_with = SOV
-				NOT = { country_exists = SOV }
-				has_completed_focus = GER_bulwark_against_bolshevism
-				has_completed_focus = GER_the_great_red_menace
-			}
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-			SOV = {
-				country_event = { id = germany.75 days = 1 }
-				custom_effect_tooltip = needs_approval
-			}
-			# Actual reward effects added in event if Soviets approve
-			effect_tooltip = {
-				# Trade influence with the USSR? Or simply let the opinion mod do the work
-				add_tech_bonus = {
-					name = GER_soviet_treaty_support
-					bonus = 1.0
-					uses = 1
-					category = motorized_equipment
-				}
-				add_tech_bonus = {
-					name = GER_soviet_treaty_med
-					bonus = 1.0
-					uses = 1
-					category = armor
-				}
-			}
-		}
-	}
+	
 
 	focus = {
 		id = GER_durchbruchwagen
 		icon = GFX_goal_army_innovations_2
-		prerequisite = { focus = GER_ussr_tractor_experiments }
-		x = 0
+		prerequisite = { focus = GER_war_of_movement }
+		x = 2
 		y = 1
-		relative_position_id = GER_ussr_tractor_experiments
+		relative_position_id = GER_war_of_movement
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2672,9 +2615,14 @@ focus_tree = {
 		icon = GFX_goal_ger_anschluss
 		prerequisite = { focus = GER_rhineland }
 		available = {
-			is_puppet = no
-			has_army_manpower = { size > 500000 }
-			NOT = { has_idea = rhineland_challenge_met }
+			if = {
+				limit = {
+					is_ai = no
+				}
+				is_puppet = no
+				has_army_manpower = { size > 500000 }
+				NOT = { has_idea = rhineland_challenge_met }
+			}
 		}
 		cancel = {
 			OR = {
@@ -2689,7 +2637,7 @@ focus_tree = {
 		relative_position_id = GER_rhineland
 		cost = 10
 		ai_will_do = {
-			factor = 10
+			factor = 100
 			modifier = {
 				factor = 0
 				date < 1938.1.1
@@ -2900,13 +2848,11 @@ focus_tree = {
 		will_lead_to_war_with = CZE
 		will_lead_to_war_with = FRA
 		available = {
-			is_puppet = no
-			has_army_manpower = { size > 750000 } #80 div	
-			NOT = {
-				AND = {
-					CZE = { is_in_faction_with = GER }
-					has_war = yes
+			if = {
+				limit = {
+					is_ai = no
 				}
+				has_army_manpower = { size > 750000 } #80 div	
 			}
 		}
 		bypass = {
@@ -3128,9 +3074,14 @@ focus_tree = {
 		icon = GFX_goal_ger_fate_of_czechoslovakia
 		prerequisite = { focus = GER_first_vienna_award }
 		available = { 
-			is_puppet = no
-			has_army_manpower = { size > 850000 }
-			NOT = { has_war_with = CZE }
+			if = {
+				limit = {
+					is_ai = no
+				}
+				is_puppet = no
+				has_army_manpower = { size > 850000 }
+				NOT = { has_war_with = CZE }
+			}
 		}
 
 		bypass = {
@@ -3373,6 +3324,10 @@ focus_tree = {
 
 		will_lead_to_war_with = POL
 		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
 			is_puppet = no
 			has_army_manpower = { size > 1000000 } #100 div			
 			#Make custom trigger tooltip here
@@ -3412,6 +3367,7 @@ focus_tree = {
 						}
 					}
 				}
+			}
 			}
 		}
 
@@ -5153,28 +5109,10 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 			modifier = {
-				factor = 0
-				OR = {
-					has_army_manpower = { size < 1199999 }
-					any_home_area_neighbor_country = {
-						has_war_with = ROOT
-					}
-				}
-			}
-			modifier = {
-				factor = 0 #AI should not pick this focus if it does not share a border with the Soviets
-				NOT = { 
-					any_home_area_neighbor_country = {
-						tag = SOV
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-				date < 1941.4.4
+				factor = 10000000
+				date > 1941.5.1
 			}
 		}	
 		completion_reward = {

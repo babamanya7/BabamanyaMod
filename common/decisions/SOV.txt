@@ -823,7 +823,6 @@ SOV_paranoia_system = {
 				has_idea = SOV_purged_junior_army_officers_2
 				has_idea = SOV_purged_junior_army_officers_3
 			}
-			 
 		}
 
 		days_remove = SOV_reinforce_officer_ranks_days
@@ -831,17 +830,17 @@ SOV_paranoia_system = {
 		days_re_enable = 1
 
 		custom_cost_trigger = {
-			command_power > 49
-			has_political_power > 49
-			has_army_experience > 49
+			command_power > 74
+			has_political_power > 74
+			has_army_experience > 74
 		}
-		custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_50
+		custom_cost_text = decision_cost_CP_75_pp_75_ArmXP_75
 
 		complete_effect = {
 			hidden_effect = {
-				add_command_power = -50
-				add_political_power = -50
-				army_experience = -50
+				add_command_power = -75
+				add_political_power = -75
+				army_experience = -75
 			}
 		}
 
@@ -2290,7 +2289,7 @@ SOV_propaganda_campaigns = {
 			controls_state = 219 #Moscow
 			219 = {
 				any_neighbor_state = {
-					controller = {
+					CONTROLLER = {
 						has_war_with = ROOT
 					}
 				}
@@ -9410,12 +9409,12 @@ SOV_great_patriotic_war = {
 		}
 
 		visible = {
-			 
+			has_war = yes
 			NOT = { has_country_flag = SOV_order_227_flag }			
 			FROM = {
 				is_controlled_by = ROOT
 				any_neighbor_state = {
-					controller = { has_war_with = ROOT }
+					NOT = { is_controlled_by = ROOT }
 				}
 			}
 		}
@@ -9498,13 +9497,12 @@ SOV_great_patriotic_war = {
 		}
 
 		visible = {
-			has_completed_focus = SOV_emergency_powers
-			 
-			NOT = { has_country_flag = SOV_order_227_flag }
+			has_war = yes
+			NOT = { has_country_flag = SOV_order_227_flag }			
 			FROM = {
 				is_controlled_by = ROOT
 				any_neighbor_state = {
-					controller = { has_war_with = ROOT }
+					NOT = { is_controlled_by = ROOT }
 				}
 			}
 		}
@@ -9521,7 +9519,7 @@ SOV_great_patriotic_war = {
 					NOT = { is_controlled_by = ROOT }
 					NOT = {
 						any_neighbor_state = {
-							controller = { has_war_with = ROOT }
+							CONTROLLER = { has_war_with = ROOT }
 						}
 					}
 				}
@@ -10386,10 +10384,10 @@ SOV_great_patriotic_war = {
 			has_war = yes
 			has_country_flag = SOV_order_227_flag
 			244 = {
-				controller = { has_war_with = ROOT }
+				CONTROLLER = { has_war_with = ROOT }
 			}
 			208 = {
-				controller = { has_war_with = ROOT }
+				CONTROLLER = { has_war_with = ROOT }
 			}
 			195 = { is_controlled_by = ROOT }
 		}
@@ -12866,10 +12864,12 @@ SOV_military_reform = {
 			OR = {
 				NOT = { has_country_flag = SOV_army_reform_1 }
 				AND = {
+					has_army_experience > 199
 					custom_trigger_tooltip = {
 						tooltip = SOV_has_not_officers_purged_tt
 						NOT = { has_idea = SOV_purged_junior_army_officers_1 }
 						NOT = { has_idea = SOV_purged_junior_army_officers_2 }
+						NOT = { has_idea = SOV_purged_junior_army_officers_3 }
 					}
 				}
 			}
@@ -12883,7 +12883,7 @@ SOV_military_reform = {
 		ai_will_do = {
 			factor = 5000
 		}
-		days_remove = 30
+		days_remove = 60
 
 		remove_effect = {
 			if = {
