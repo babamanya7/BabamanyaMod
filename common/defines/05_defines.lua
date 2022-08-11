@@ -278,6 +278,8 @@ NDefines.NMilitary.NON_CORE_SUPPLY_AIR_SPEED = -0.4			   						-- we are not run
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.02    					-- air global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.03    					-- global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.5
+NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 21   					-- Every X days the equipment will be sent, regardless if still didn't produced all that has been requested.
+NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 14		  				-- How many days must pass until we may give another reinforcement request
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- Country
 
 
@@ -294,8 +296,9 @@ NDefines.NCountry.EVENT_PROCESS_OFFSET = 7											-- Events are checked every
 NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0									-- Conversion scale for planes to air supply
 NDefines.NCountry.AIR_SUPPLY_DROP_EXPIRATION_HOURS = 24								-- Air drop length after being dropped
 
-NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 1						-- Modifier for army equipment reinforcement speed
-
+NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.2						-- Modifier for army equipment reinforcement speed
+NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 8.0
+NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.05
 NDefines.NCountry.RESISTANCE_STRENGTH_FROM_VP = 0.0015								-- How much strength ticking speed gives each VP score
 
 NDefines.NCountry.POLITICAL_POWER_CAP = 5000.0	
@@ -659,6 +662,6 @@ NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 2 								-- penalty to flow
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 14
 
 NDefines.NSupply.SUPPLY_PATH_MAX_DISTANCE = 70										-- max time it can take
-NDefines.NSupply.RAILWAY_DISTANCE_FACTOR_FOR_REINFORCEMENT_SPEED = 0.05 			-- time factor for total railway distance
+NDefines.NSupply.RAILWAY_DISTANCE_FACTOR_FOR_REINFORCEMENT_SPEED = 0.06 			-- time factor for total railway distance
 NDefines.NSupply.NAVAL_BASE_FLOW = 6.0
 NDefines.NSupply.NAVAL_FLOW_PER_LEVEL = 2.0
